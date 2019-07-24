@@ -1,0 +1,214 @@
+
+//screens
+$mobile:  650px;
+$tablet:  1024px;
+$desktop: 1320px;
+$wide:    1400px;
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Roboto:300,400,400i,500,700,900&subset=latin-ext');
+$font-main: "Roboto Black", sans-serif;
+$font-secondary: "Baloo Bhaijaan", cursive;
+
+//colors
+$color-primary: #5bb798;
+$color-primary-light: rgb(219, 241, 233);
+$color-black: #312b25;
+$color-gray: rgb(141, 141, 141);
+$color-lightgray: rgb(215, 215, 215);
+$color-light: rgb(247, 247, 247);
+$baloo-letter-spacing:2px;
+
+//font sizes
+$inuit-font-size-h1:  36px !default;
+$inuit-font-size-h2:  28px !default;
+$inuit-font-size-h3:  24px !default;
+$inuit-font-size-h4:  20px !default;
+$inuit-font-size-h5:  18px !default;
+$inuit-font-size-h6:  16px !default;
+
+body{
+  font-family: $font-secondary;
+}
+
+/*//other
+$inuit-wrapper-width: 1320px;
+$global-radius: 6px !default;
+$global-btn-radius: 10%  50% !default;
+$global-transition: all 300ms ease-in-out !default;
+
+//spacing
+$inuit-global-baseline:     6px !default;
+
+$inuit-global-spacing-unit-factor-tiny:   6px !default;
+$inuit-global-spacing-unit-factor-small:  12px !default;
+$inuit-global-spacing-unit-factor:        24px !default;
+$inuit-global-spacing-unit-factor-large:  48px !default;
+$inuit-global-spacing-unit-factor-huge:   96px !default;
+
+$inuit-global-spacing-unit-tiny:  36px !default;
+$inuit-global-spacing-unit-small: 72px !default;
+$inuit-global-spacing-unit:       144px !default;
+$inuit-global-spacing-unit-large: 288px !default;
+$inuit-global-spacing-unit-huge:  576px !default;
+
+$inuit-global-font-size:    16px !default;
+$inuit-global-line-height:  144px !default;
+
+
+//align-text
+.u-text-left {
+  text-align: left;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-text-right {
+  text-align: right;
+}
+.u-text-justify {
+  text-align: justify;
+}
+
+//spacing
+$inuit-spacing-directions: (
+        null: null,
+        "-top": "-top",
+        "-right": "-right",
+        "-bottom": "-bottom",
+        "-left": "-left",
+        "-horizontal": "-left" "-right",
+        "-vertical": "-top" "-bottom",
+) !default;
+
+$inuit-spacing-properties: (
+        "padding": "padding",
+        "margin": "margin",
+) !default;
+
+$inuit-spacing-sizes: (
+        null: $inuit-global-spacing-unit,
+        "-tiny": $inuit-global-spacing-unit-tiny,
+        "-small": $inuit-global-spacing-unit-small,
+        "-large": $inuit-global-spacing-unit-large,
+        "-huge": $inuit-global-spacing-unit-huge,
+        "-none": 0
+) !default;
+
+$inuit-spacing-directions: null !default;
+$inuit-widths-breakpoint-separator: \@ !default;
+$inuit-responsive-spacing-directions: null !default;
+$inuit-responsive-spacing-properties: null !default;
+$inuit-responsive-spacing-sizes: null !default;
+
+
+
+
+
+
+
+html {
+  font-size: ($inuit-global-font-size / 16px) * 1em; !* [1] *!
+  line-height: $inuit-global-line-height / $inuit-global-font-size; !* [1] *!
+  overflow-y: scroll; !* [2] *!
+  min-height: 100%; !* [3] *!
+  font-family: $font-main;
+  color: $color-black;
+}
+
+
+.u-hidden {
+  display: none !important;
+}
+@mixin inuit-hidden-visually() {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+@media print {
+  !*1. Black prints faster: http://www.sanbeiji.com/archives/953*!
+  *, *:before, *:after {
+    background: transparent !important;
+    color: #000 !important; !* [1] *!
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a, a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  !*Don’t show links that are fragment identifiers, or use the `javascript: `pseudo protocol.*!
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  !*Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables*!
+  thead {
+    display: table-header-group;
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "components/components.header";
+
