@@ -1,0 +1,39 @@
+
+.c-header{
+  ul{
+    list-style-type: none;
+    li a{
+      text-decoration: none;
+    }
+  }
+}
+
+/*  LOGO and NAME  */
+.c-header-logo{
+  height: 5rem;
+  width: auto;
+}
+
+.c-header-heading{}
+
+/*  COUNTERS  */
+.c-counters{}
+
+.c-counter-name{
+  color: $color-primary;
+}
+
+.c-counter-value{
+  color: $color-black;
+}
+
+/*  NAVIGATION  */
+.c-nav{}
+
+.c-nav-ul{}
+
+.c-nav-li{}
+
+.c-nav_item{
+  color: $color-primary;
+}

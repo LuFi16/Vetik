@@ -150,5 +150,25 @@ html {
   }
 
 }*/
+.c-header ul {
+  list-style-type: none; }
+  .c-header ul li a {
+    text-decoration: none; }
+
+/*  LOGO and NAME  */
+.c-header-logo {
+  height: 5rem;
+  width: auto; }
+
+/*  COUNTERS  */
+.c-counter-name {
+  color: #5bb798; }
+
+.c-counter-value {
+  color: #312b25; }
+
+/*  NAVIGATION  */
+.c-nav_item {
+  color: #5bb798; }
 
 /*# sourceMappingURL=main.css.map */
