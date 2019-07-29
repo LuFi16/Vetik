@@ -20,7 +20,9 @@ $color-light:          rgb(247, 247, 247);
 
 $color-doc-text: #8d8d8d;
 $color-doc-bcg: #f7f7f7;
-
+$color-footer-bcg: #312b25;
+/*$color-footer-line: #5d5853;*/
+$color-footer-line: #797571;
 
 $baloo-letter-spacing:2px;
 
@@ -194,27 +196,7 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import "components/components.header";
 @import "components/components.content";
+@import "components/components.footer";
 
