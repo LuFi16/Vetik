@@ -232,7 +232,7 @@ body {
   padding: 2rem; }
 
 .c-nav_item:hover {
-  color: #312b25; }
+  color: #347861; }
 
 .c-content {
   display: flex;
@@ -302,6 +302,9 @@ body {
   border-bottom-right-radius: 10% 50%;
   border-bottom-left-radius: 10% 50%; }
 
+.c-desc-btn:hover {
+  background-color: #347861; }
+
 .c-footer {
   background-color: #312b25;
   color: #f7f7f7;
@@ -310,7 +313,7 @@ body {
   font-family: "Roboto", sans-serif;
   /*position: absolute;
   bottom: 0;*/
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding: 0 1rem;
   line-height: 2;
                /*
