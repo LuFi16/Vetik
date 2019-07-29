@@ -12,8 +12,9 @@
   font-size: 0.9rem;
   letter-spacing: 2px;
   line-height: 1.5;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   margin-left: 4rem;    //dodělat, aby nebyl široký přes celou obrazovku
+  z-index: 3;         //which element is below/on top (1 - below, 999 - on top)
 }
 
 .c-content_intro{
@@ -26,11 +27,28 @@
 .c-intro_logo{
   width: 25rem;
   height: auto;
+  z-index: 2;
+
+ /* background-image: url("../img/hp-green.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: top;
+  background-position-x: -15%;*/
+}
+
+.c-intro_logo-bcg{
+  position: absolute;
+  left: 0;
+  top: 7rem;
+  width: 40%;
+  height: auto;
+  z-index: 1;
 }
 
 .c-intro_desc{
   width: 50%;
   text-align: center;
+  padding-right: 2rem;
 }
 
 .c-desc-text{
