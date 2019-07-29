@@ -171,7 +171,9 @@ body {
 /*  LOGO and NAME  */
 .c-header_brand {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none;
+  color: #312b25; }
 
 .c-brand_logo {
   height: 5rem; }
@@ -228,6 +230,9 @@ body {
   letter-spacing: 2px;
   line-height: 1.5;
   padding: 2rem; }
+
+.c-nav_item:hover {
+  color: #312b25; }
 
 .c-content {
   display: flex;

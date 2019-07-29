@@ -25,6 +25,8 @@ body{
 .c-header_brand{
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: $color-black;
 }
 
 .c-brand_logo{
@@ -97,4 +99,8 @@ body{
   letter-spacing: 2px;
   line-height: 1.5;
   padding: 2rem;
+}
+
+.c-nav_item:hover{
+  color: $color-black;
 }
