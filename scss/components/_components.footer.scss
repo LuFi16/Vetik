@@ -84,12 +84,18 @@
 }
 
 .c-ftr_links-out_img{
-  width: 2rem;
-  height: auto;
+  /*width: 2rem;
+  height: auto;*/
   padding: 0 1rem;
+  font-size: 2rem;
+  color: $color-footer-line;
 }
 
-#c-logo-fb:hover{}
+#c-logo-fb:hover{
+  color: $color-facebook;
+}
 
-#c-logo-yt{}
+#c-logo-yt:hover{
+  color: $color-youtube;
+}
 

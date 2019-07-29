@@ -368,8 +368,16 @@ vertical-align: top;*/ }
   padding: 2rem; }
 
 .c-ftr_links-out_img {
-  width: 2rem;
-  height: auto;
-  padding: 0 1rem; }
+  /*width: 2rem;
+  height: auto;*/
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #797571; }
+
+#c-logo-fb:hover {
+  color: #4367af; }
+
+#c-logo-yt:hover {
+  color: #e52320; }
 
 /*# sourceMappingURL=main.css.map */
