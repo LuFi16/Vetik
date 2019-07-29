@@ -1,0 +1,59 @@
+
+.c-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.c-content_doctor{
+  display: inline-block;
+  text-decoration: none;
+  color: $color-doc-text;
+  background-color: $color-doc-bcg;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding: 1rem;
+  margin-left: 4rem;    //dodělat, aby nebyl široký přes celou obrazovku
+}
+
+.c-content_intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.c-intro_logo{
+  width: 25rem;
+  height: auto;
+}
+
+.c-intro_desc{
+  width: 50%;
+  text-align: center;
+}
+
+.c-desc-text{
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.c-desc-btn{
+  font-family: "Baloo Bhaijaan", cursive;
+  font-size: 1.6rem;
+  color: $color-light;
+  background-color: $color-primary;
+  letter-spacing: 2px;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  border: none;
+  /*border-radius: 50px;*/
+  border-top-left-radius: 10% 50%;
+  border-top-right-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}

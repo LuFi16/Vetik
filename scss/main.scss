@@ -18,6 +18,9 @@ $color-gray:           rgb(141, 141, 141);
 $color-lightgray:      rgb(215, 215, 215);
 $color-light:          rgb(247, 247, 247);
 
+$color-doc-text: #8d8d8d;
+$color-doc-bcg: #f7f7f7;
+
 
 $baloo-letter-spacing:2px;
 
@@ -213,4 +216,5 @@ html {
 
 
 @import "components/components.header";
+@import "components/components.content";
 
