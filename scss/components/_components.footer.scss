@@ -2,26 +2,94 @@
 .c-footer{
   background-color: $color-footer-bcg;
   color: $color-light;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  /*position: absolute;
+  bottom: 0;*/
+  margin-top: 2rem;
+  padding: 0 1rem;
+  line-height: 2;/*
+  vertical-align: top;*/
+  h3{
+    font-family: "Baloo Bhaijaan", cursive;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 0;
+    /*line-height: 0;*/
+    margin-bottom: 0.5rem;
+  }
+}
+.c-footer_in{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid $color-footer-line;
+  padding-top: 2rem;
 }
 
-.c-footer_desc{}
+.c-footer_desc{
+  box-sizing: border-box;
+  padding: 0 3rem 1rem 3rem;
+  max-width: 24rem;
+}
 
-.c-ftr-desc_text{}
+.c-ftr-desc_text{
+  margin: 0;
+}
 
-.c-footer_insta{}
+.c-footer_insta{
+  box-sizing: border-box;
+  padding: 0 3rem 1rem 3rem;
+  border-left: 1px solid $color-footer-line;
+  border-right: 1px solid $color-footer-line;
+  max-width: 24.4rem;
+}
+
+.c-ftr_line-height-padding{
+  padding-bottom: 0.5rem;
+}
 
 .c-ftr-insta_img{}
 
-.c-footer_links-in{}
+.c-footer_links-in{
+  box-sizing: border-box;
+  padding: 0 3rem 1rem 3rem;
+}
 
-.c-ftr_ul{}
+.c-ftr_ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-.c-ftr_li{}
+.c-ftr_li{
+  a{
+    text-decoration: none;
+    color: $color-light;
+  }
+  a:hover{
+    color: $color-primary;
+  }
+}
 
-.c-footer_links-out{}
+.c-footer_links-out{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
 
 .c-ftr_links-out_img{
   width: 2rem;
   height: auto;
+  padding: 0 1rem;
 }
+
+#c-logo-fb:hover{}
+
+#c-logo-yt{}
 

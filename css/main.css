@@ -299,10 +299,77 @@ body {
 
 .c-footer {
   background-color: #312b25;
+  color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  /*position: absolute;
+  bottom: 0;*/
+  margin-top: 2rem;
+  padding: 0 1rem;
+  line-height: 2;
+               /*
+vertical-align: top;*/ }
+  .c-footer h3 {
+    font-family: "Baloo Bhaijaan", cursive;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 0;
+    /*line-height: 0;*/
+    margin-bottom: 0.5rem; }
+
+.c-footer_in {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid #797571;
+  padding-top: 2rem; }
+
+.c-footer_desc {
+  box-sizing: border-box;
+  padding: 0 3rem 1rem 3rem;
+  max-width: 24rem; }
+
+.c-ftr-desc_text {
+  margin: 0; }
+
+.c-footer_insta {
+  box-sizing: border-box;
+  padding: 0 3rem 1rem 3rem;
+  border-left: 1px solid #797571;
+  border-right: 1px solid #797571;
+  max-width: 24.4rem; }
+
+.c-ftr_line-height-padding {
+  padding-bottom: 0.5rem; }
+
+.c-footer_links-in {
+  box-sizing: border-box;
+  padding: 0 3rem 1rem 3rem; }
+
+.c-ftr_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.c-ftr_li a {
+  text-decoration: none;
   color: #f7f7f7; }
+.c-ftr_li a:hover {
+  color: #5bb798; }
+
+.c-footer_links-out {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem; }
 
 .c-ftr_links-out_img {
   width: 2rem;
-  height: auto; }
+  height: auto;
+  padding: 0 1rem; }
 
 /*# sourceMappingURL=main.css.map */
