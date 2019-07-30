@@ -1,13 +1,4 @@
-@media (max-width: $tablet){
-  .c-tablet-hide{
-    display: none !important;
-  }
-}
-@media (min-width: $tablet+1px){
-  .c-desktop-hide{
-    display: none !important;
-  }
-}
+
 .c-content{
   display: flex;
   flex-direction: column;
@@ -22,19 +13,29 @@
   letter-spacing: 2px;
   line-height: 1.5;
   padding: 0.7rem 1rem;
-  margin-left: 4rem;    //dodělat, aby nebyl široký přes celou obrazovku
   z-index: 3;         //which element is below/on top (1 - below, 999 - on top)
+  @media (max-width: $tablet){
+    text-align: center;
+    margin: 0 1rem;
+  }
+  @media (min-width: $tablet+1px){
+    margin-left: 4rem;    //dodělat, aby nebyl široký přes celou obrazovku
+  }
 }
 
 .c-content_intro{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 100%;
+  @media (max-width: $tablet){
+    flex-direction: column;
+  }
+  @media (min-width: $tablet+1px){
+    flex-direction: row;
+  }
 }
 
 .c-intro_logo{
-  width: 25rem;
   height: auto;
   z-index: 2;
 
@@ -43,39 +44,63 @@
   background-size: 100%;
   background-position-y: top;
   background-position-x: -15%;*/
+
+  @media (max-width: $tablet){
+    margin: auto;
+    max-width: 20rem;
+  }
+  @media (min-width: $tablet+1px){
+    width: 25rem;
+  }
 }
 
 .c-intro_logo-bcg{
-  position: absolute;
-  left: 0;
-  top: 7rem;
-  width: 40%;
-  height: auto;
-  z-index: 1;
+  @media (max-width: $tablet){
+    display: none;
+  }
+  @media (min-width: $tablet+1px){
+    position: absolute;
+    left: 0;
+    top: 7rem;
+    width: 40%;
+    height: auto;
+    z-index: 1;
+  }
 }
 
 .c-intro_desc{
-  width: 50%;
   text-align: center;
-  padding-right: 2rem;
+  @media (max-width: $tablet){
+    padding: 0 1.5rem;
+  }
+  @media (min-width: $tablet+1px){
+    width: 50%;
+    padding-right: 2rem;
+  }
 }
 
 .c-desc-text{
-  font-size: 2.5rem;
   letter-spacing: 2px;
   line-height: 1.5;
+  @media (max-width: $tablet){
+    margin: 0;
+    padding: 0.5rem 0 2rem 0;
+    font-size: 1.6rem;
+  }
+  @media (min-width: $tablet+1px){}
+  @media (max-width: 430px){
+    font-size: 1.3rem;
+  }
 }
 
 .c-desc-btn{
   font-family: $font-secondary;
-  font-size: 1.6rem;
   color: $color-light;
   background-color: $color-primary;
   letter-spacing: 2px;
   line-height: normal;
   text-transform: uppercase;
   text-align: center;
-  padding: 1rem 3rem;
   cursor: pointer;
   border: none;
   /*border-radius: 50px;*/
@@ -83,6 +108,18 @@
   border-top-right-radius: 10% 50%;
   border-bottom-right-radius: 10% 50%;
   border-bottom-left-radius: 10% 50%;
+  @media (max-width: $tablet){
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+  @media (min-width: $tablet+1px){
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+  }
+  @media (max-width: 318px){
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
 }
 
 .c-desc-btn:hover{
