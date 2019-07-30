@@ -1,20 +1,4 @@
 
-@media (max-width: $tablet){
-  .c-tablet-hide{
-    display: none !important;
-  }
-}
-@media (min-width: $tablet+1px){
-  .c-desktop-hide{
-    display: none !important;
-  }
-}
-
-body{
-  padding: 0;
-  margin: 0;
-}
-
 
 .c-header{
   ul{
@@ -84,7 +68,6 @@ body{
 
 /*  COUNTERS  */
 .c-header_counters{
-  /*width: 32%;*/
   display: flex;
   margin: 0;
   @media (max-width: $tablet){
@@ -132,7 +115,6 @@ body{
 
 /*  NAVIGATION  */
 .c-header_nav{
-  /*width: 22%;*/
   display: flex;
   font-size: 1.1rem;
   font-weight: normal;

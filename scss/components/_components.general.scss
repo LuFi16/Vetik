@@ -1,0 +1,62 @@
+
+
+//screens
+$mobile:  650px;
+$tablet:  1024px;
+$desktop: 1320px;
+$wide:    1400px;
+
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Roboto:300,400,400i,500,700,900&subset=latin-ext');
+$font-main: "Roboto Black", sans-serif;
+$font-main-thick: "Roboto", sans-serif;
+$font-secondary: "Baloo Bhaijaan", cursive;
+
+$baloo-letter-spacing: 2px;
+
+//font sizes
+$inuit-font-size-h1:  36px !default;
+$inuit-font-size-h2:  28px !default;
+$inuit-font-size-h3:  24px !default;
+$inuit-font-size-h4:  20px !default;
+$inuit-font-size-h5:  18px !default;
+$inuit-font-size-h6:  16px !default;
+
+
+//colors
+$color-primary:        #5bb798;
+$color-primary-light:  rgb(219, 241, 233);
+$color-black:          #312b25;
+$color-gray:           rgb(141, 141, 141);
+$color-lightgray:      rgb(215, 215, 215);
+$color-light:          rgb(247, 247, 247);
+
+$color-doc-text: #8d8d8d;
+$color-doc-bcg: #f7f7f7;
+$color-footer-bcg: #312b25;
+/*$color-footer-line: #5d5853;*/
+$color-footer-line: #797571;
+$color-facebook: #4367af;
+$color-youtube: #e52320;
+$color-primary-hover: darken($color-primary, 20);
+
+
+
+//code
+body{
+  padding: 0;
+  margin: 0;
+  font-family: $font-secondary;
+}
+
+@media (max-width: $tablet){
+  .c-tablet-hide{
+    display: none !important;
+  }
+}
+@media (min-width: $tablet+1px){
+  .c-desktop-hide{
+    display: none !important;
+  }
+}

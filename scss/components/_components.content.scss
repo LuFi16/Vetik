@@ -1,4 +1,13 @@
-
+@media (max-width: $tablet){
+  .c-tablet-hide{
+    display: none !important;
+  }
+}
+@media (min-width: $tablet+1px){
+  .c-desktop-hide{
+    display: none !important;
+  }
+}
 .c-content{
   display: flex;
   flex-direction: column;
@@ -58,7 +67,7 @@
 }
 
 .c-desc-btn{
-  font-family: "Baloo Bhaijaan", cursive;
+  font-family: $font-secondary;
   font-size: 1.6rem;
   color: $color-light;
   background-color: $color-primary;

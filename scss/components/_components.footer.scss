@@ -4,18 +4,14 @@
   color: $color-light;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  /*position: absolute;
-  bottom: 0;*/
+  font-family: $font-main-thick;
   padding: 0 1rem;
-  line-height: 2;/*
-  vertical-align: top;*/
+  line-height: 2;
   h3{
-    font-family: "Baloo Bhaijaan", cursive;
+    font-family: $font-secondary;
     font-weight: normal;
     letter-spacing: 1px;
     margin-top: 0;
-    /*line-height: 0;*/
     margin-bottom: 0.5rem;
   }
   @media (max-width: $tablet){
@@ -122,13 +118,11 @@
     padding: 1rem 0;
   }
   @media (min-width: $tablet+1px){
-    padding: 2rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
 }
 
 .c-ftr_links-out_img{
-  /*width: 2rem;
-  height: auto;*/
   padding: 0 1rem;
   margin: 0;
   font-size: 2rem;
@@ -141,11 +135,4 @@
 
 #c-logo-yt:hover{
   color: $color-youtube;
-}
-
-@media (max-width: $tablet){
-
-}
-@media (min-width: $tablet+1px){
-
 }
