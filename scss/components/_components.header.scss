@@ -102,6 +102,12 @@
   letter-spacing: 2px;
 }
 
+#c-count-li_help{
+  @media (min-width: $tablet+1px) and (max-width: 1241px){
+    padding-top: 0.5rem;
+  }
+}
+
 .c-counter_name{    //li
   color: $color-primary;
   font-size: 0.8rem;
