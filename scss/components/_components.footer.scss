@@ -7,7 +7,6 @@
   font-family: "Roboto", sans-serif;
   /*position: absolute;
   bottom: 0;*/
-  margin-top: 4rem;
   padding: 0 1rem;
   line-height: 2;/*
   vertical-align: top;*/
@@ -19,20 +18,41 @@
     /*line-height: 0;*/
     margin-bottom: 0.5rem;
   }
+  @media (max-width: $tablet){
+    margin-top: 2rem;
+  }
+  @media (min-width: $tablet+1px){
+    margin-top: 4rem;
+  }
 }
+
 .c-footer_in{
   display: flex;
-  flex-direction: row;
   width: 100%;
   justify-content: center;
   border-bottom: 1px solid $color-footer-line;
-  padding-top: 2rem;
+
+  @media (max-width: $tablet){
+    flex-direction: column;
+  }
+  @media (min-width: $tablet+1px){
+    flex-direction: row;
+    padding-top: 2rem;
+  }
 }
+
 
 .c-footer_desc{
   box-sizing: border-box;
-  padding: 0 3rem 1rem 3rem;
-  max-width: 24rem;
+  @media (max-width: $tablet){
+    text-align: center;
+    border-bottom: 1px solid $color-footer-line;
+    padding: 1rem 0;
+  }
+  @media (min-width: $tablet+1px){
+    padding: 0 3rem 1rem 3rem;
+    max-width: 24rem;
+  }
 }
 
 .c-ftr-desc_text{
@@ -41,10 +61,17 @@
 
 .c-footer_insta{
   box-sizing: border-box;
-  padding: 0 3rem 1rem 3rem;
-  border-left: 1px solid $color-footer-line;
-  border-right: 1px solid $color-footer-line;
-  max-width: 24.4rem;
+  @media (max-width: $tablet){
+    text-align: center;
+    border-bottom: 1px solid $color-footer-line;
+    padding: 1rem 0;
+  }
+  @media (min-width: $tablet+1px){
+    border-left: 1px solid $color-footer-line;
+    border-right: 1px solid $color-footer-line;
+    padding: 0 3rem 1rem 3rem;
+    max-width: 24.4rem;
+  }
 }
 
 .c-ftr_line-height-padding{
@@ -55,7 +82,13 @@
 
 .c-footer_links-in{
   box-sizing: border-box;
-  padding: 0 3rem 1rem 3rem;
+  @media (max-width: $tablet){
+    text-align: center;
+    padding: 1rem 0;
+  }
+  @media (min-width: $tablet+1px){
+    padding: 0 3rem 1rem 3rem;
+  }
 }
 
 .c-ftr_ul{
@@ -80,11 +113,16 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding: 2rem;
   align-items: center;
   a{
     margin: 0;
     padding: 0;
+  }
+  @media (max-width: $tablet){
+    padding: 1rem 0;
+  }
+  @media (min-width: $tablet+1px){
+    padding: 2rem;
   }
 }
 
@@ -105,3 +143,9 @@
   color: $color-youtube;
 }
 
+@media (max-width: $tablet){
+
+}
+@media (min-width: $tablet+1px){
+
+}
