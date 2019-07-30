@@ -19,7 +19,8 @@
     margin: 0 1rem;
   }
   @media (min-width: $tablet+1px){
-    margin-left: 4rem;    //dodělat, aby nebyl široký přes celou obrazovku
+    margin-left: 4%;
+    margin-right: auto;
   }
 }
 

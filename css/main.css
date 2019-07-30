@@ -152,7 +152,8 @@ body {
       margin: 0 1rem; } }
   @media (min-width: 1025px) {
     .c-content_doctor {
-      margin-left: 4rem; } }
+      margin-left: 4%;
+      margin-right: auto; } }
 
 .c-content_intro {
   display: flex;
