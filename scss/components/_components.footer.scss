@@ -81,12 +81,18 @@
   justify-content: center;
   width: 100%;
   padding: 2rem;
+  align-items: center;
+  a{
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .c-ftr_links-out_img{
   /*width: 2rem;
   height: auto;*/
   padding: 0 1rem;
+  margin: 0;
   font-size: 2rem;
   color: $color-footer-line;
 }

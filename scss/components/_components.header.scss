@@ -4,6 +4,7 @@ body{
   margin: 0;
 }
 
+
 .c-header{
   ul{
     list-style-type: none;
@@ -11,15 +12,51 @@ body{
       text-decoration: none;
     }
   }
- /* box-sizing: border-box;*/
-  width: calc(100% - (1.5rem * 2));
-  margin: 0 1.5rem;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
+  box-sizing: border-box;
   border-bottom: 1px solid $color-lightgray;
 }
 
+@media (max-width: $tablet){
+  .c-tablet-hide{
+    display: none !important;
+  }
+  .c-mobile-hide{
+    display: none !important;
+  }
+  .c-header{
+    margin: 0 1rem;
+  }
+
+  .c-nav_mob{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .c-dropdown_a{}
+
+  .c-dropdown-a_arrow{
+    color: $color-black;
+    text-decoration: none;
+  }
+
+}
+@media (min-width: $tablet+1px){
+  .c-desktop-hide{
+    display: none !important;
+  }
+  .c-header{
+    width: calc(100% - (1.5rem * 2));
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 /*  LOGO and NAME  */
 .c-header_brand{
@@ -38,9 +75,18 @@ body{
   font-size: 2.4rem;
   font-weight: normal;
   letter-spacing: 2px;
-  padding: 0 1.5rem;
 }
 
+@media (max-width: $tablet){
+  .c-brand_name{
+    padding: 0;
+  }
+}
+@media (min-width: $tablet+1px){
+  .c-brand_name{
+    padding: 0 1.5rem;
+  }
+}
 
 
 /*  COUNTERS  */
@@ -76,6 +122,8 @@ body{
   font-size: 1.65rem;
 }
 
+@media (max-width: $tablet){}
+@media (min-width: $tablet+1px){}
 
 
 /*  NAVIGATION  */
@@ -104,3 +152,6 @@ body{
 .c-nav_item:hover{
   color: $color-primary-hover;
 }
+
+@media (max-width: $tablet){}
+@media (min-width: $tablet+1px){}
