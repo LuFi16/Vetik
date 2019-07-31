@@ -1,0 +1,19 @@
+
+.c-content_bcg{}
+
+
+#c-bcg-left, #c-bcg-right{
+  position: absolute;
+  z-index: 1;
+  width: 35%;
+}
+
+#c-bcg-left{
+  left: 0;
+  top: 50%;
+}
+
+#c-bcg-right{
+  right: 0;
+  top: 35%;
+}

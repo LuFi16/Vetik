@@ -17,7 +17,11 @@
   font-size: 1.1rem;
   padding: 0.5rem 2rem;
   border: 1px solid $color-primary;
+  cursor: pointer;
+}
 
+.c-buygift_buy:hover{
+  background-color: $color-primary-hover;
 }
 
 .c-buygift_buy{
@@ -35,8 +39,9 @@
   color: $color-primary;
   border-left: none;
 }
-
-
+.c-buygift_gift:hover{
+  background-color: darken($color-btn-gift-bcg, 5)
+}
 
 .c-form{
   display: flex;
@@ -46,6 +51,7 @@
   width: auto;
   font-family: $font-main-thick;
   box-shadow: 0 0 15px $color-shadow;
+  background-color: $color-light;
 }
 
 .c-form_container{

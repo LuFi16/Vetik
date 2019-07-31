@@ -2,6 +2,8 @@
 .c-content{
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 999;
 }
 
 .c-content_doctor{
