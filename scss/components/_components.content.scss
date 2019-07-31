@@ -206,4 +206,11 @@
 
 .c-desc-btn:hover{
   background-color: $color-primary-hover;
+  outline: none;
+}
+.c-desc-btn:active{
+   outline: none;
+ }
+.c-desc-btn:focus{
+  outline: none;
 }

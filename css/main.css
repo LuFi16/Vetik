@@ -325,7 +325,14 @@ body {
       padding: 1rem 1.5rem; } }
 
 .c-desc-btn:hover {
-  background-color: #347861; }
+  background-color: #347861;
+  outline: none; }
+
+.c-desc-btn:active {
+  outline: none; }
+
+.c-desc-btn:focus {
+  outline: none; }
 
 .c-footer {
   background-color: #312b25;
@@ -442,5 +449,108 @@ body {
 
 #c-logo-yt:hover {
   color: #e52320; }
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 0 15px #cecece; }
+
+.c-form_container {
+  padding: 4rem 2rem 2rem 2rem; }
+
+.c-form_user {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center; }
+
+.c-form-user_label-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 1rem 1rem 1rem; }
+
+.c-form_label {
+  padding-bottom: 0.5rem;
+  color: #757575; }
+
+.c-form_input {
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  padding: 0.5rem; }
+
+.c-form_input:hover {
+  border-color: #5bb798;
+  outline: none; }
+
+.c-form_input:active {
+  border-color: #5bb798;
+  outline: none; }
+
+.c-form_input:focus {
+  border-color: #5bb798;
+  outline: none; }
+
+.c-form_animal {
+  padding: 2rem 0 1rem 0; }
+
+.c-form_icon-dog {
+  color: #5bb798; }
+
+.c-form-label_zvire {
+  padding: 0 0.5rem; }
+
+.c-form_price {
+  padding: 2rem 1rem 0 1rem;
+  margin: 0;
+  font-family: "Baloo Bhaijaan", cursive; }
+
+#zvire {
+  border: none;
+  border-bottom: 2px solid #bababa;
+  border-radius: 0;
+  padding: 0.2rem; }
+
+.c-form-price_nmbr {
+  color: #5bb798;
+  background-image: url("../img/ticket.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.1rem 1rem; }
+
+.c-form_end {
+  border-top: 1px dotted #bababa;
+  padding: 1.5rem 2rem 1.5rem 2rem; }
+
+.c-form-end_donate {
+  background-color: #5bb798;
+  color: #f7f7f7;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-family: "Baloo Bhaijaan", cursive;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  /*border-top-left-radius: 10% 50%;   //same as in content
+  border-top-right-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;*/ }
+
+.c-form-end_donate:hover {
+  background-color: #347861;
+  outline: none; }
+
+.c-form-end_info1, .c-form-end_info2 {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #8d8d8d; }
+
+.c-form-end_info1 {
+  padding: 1.5rem 1rem 0.2rem 1rem; }
 
 /*# sourceMappingURL=main.css.map */

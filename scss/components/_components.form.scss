@@ -1,1 +1,132 @@
 
+.c-buygift{}
+
+.c-buygift_buy{}
+
+.c-buygift_gift{}
+
+
+
+.c-form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: auto;
+  font-family: $font-main-thick;
+  box-shadow: 0 0 15px $color-shadow;
+}
+
+.c-form_container{
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.c-form_user{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.c-form-user_label-input{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.c-form_label{
+  padding-bottom: 0.5rem;
+  color: $color-form-text;
+}
+
+.c-form_input{
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  padding: 0.5rem;
+}
+.c-form_input:hover{
+  border-color: $color-primary;
+  outline: none;
+}
+.c-form_input:active{
+  border-color: $color-primary;
+  outline: none;
+}
+.c-form_input:focus{
+  border-color: $color-primary;
+  outline: none;
+}
+
+.c-form_animal{
+  padding: 2rem 0 1rem 0;
+}
+
+.c-form_icon-dog{
+  color: $color-primary;
+}
+
+.c-form-label_zvire{
+  padding: 0 0.5rem;
+}
+
+.c-form_price{
+  padding: 2rem 1rem 0 1rem;
+  margin: 0;
+  font-family: $font-secondary;
+}
+
+#zvire{
+  border: none;
+  border-bottom: 2px solid $color-form-line;
+  border-radius: 0;
+  padding: 0.2rem;
+}
+
+.c-form-price_nmbr{
+  color: $color-primary;
+  //background-color: $color-black;
+  background-image: url("../img/ticket.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.1rem 1rem;
+}
+
+
+.c-form_end{
+  border-top: 1px dotted $color-form-line;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.c-form-end_donate{
+  background-color: $color-primary;
+  color: $color-light;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-family: $font-secondary;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  /*border-top-left-radius: 10% 50%;   //same as in content
+  border-top-right-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;*/
+}
+.c-form-end_donate:hover{
+  background-color: $color-primary-hover;
+  outline: none;
+}
+
+.c-form-end_info1, .c-form-end_info2{
+  margin: 0;
+  font-size: 0.75rem;
+  color: $color-gray;
+}
+
+.c-form-end_info1{
+  padding: 1.5rem 1rem 0.2rem 1rem;
+}
+
+.c-form-end_info2{}
+
