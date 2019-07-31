@@ -1,9 +1,40 @@
 
-.c-buygift{}
+.c-buygift{
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+ /* border: 1px solid $color-primary;
+  border-top-left-radius: 10% 50%;   //same as in content
+  border-top-right-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;*/
+}
 
-.c-buygift_buy{}
+.c-buygift_buy, .c-buygift_gift{
+  display: block;
+  font-family: $font-secondary;
+  letter-spacing: $baloo-letter-spacing;
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  border: 1px solid $color-primary;
 
-.c-buygift_gift{}
+}
+
+.c-buygift_buy{
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  background-color: $color-primary;
+  color: $color-light;
+  border-right: none;
+}
+
+.c-buygift_gift{
+  border-top-right-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  background-color: $color-btn-gift-bcg;
+  color: $color-primary;
+  border-left: none;
+}
 
 
 
@@ -106,7 +137,7 @@
   padding: 0.5rem 2rem;
   font-family: $font-secondary;
   font-size: 1.1rem;
-  letter-spacing: 1px;
+  letter-spacing: $baloo-letter-spacing;
   border-radius: 5px;
   /*border-top-left-radius: 10% 50%;   //same as in content
   border-top-right-radius: 10% 50%;

@@ -450,6 +450,38 @@ body {
 #c-logo-yt:hover {
   color: #e52320; }
 
+.c-buygift {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  /* border: 1px solid $color-primary;
+   border-top-left-radius: 10% 50%;   //same as in content
+   border-top-right-radius: 10% 50%;
+   border-bottom-right-radius: 10% 50%;
+   border-bottom-left-radius: 10% 50%;*/ }
+
+.c-buygift_buy, .c-buygift_gift {
+  display: block;
+  font-family: "Baloo Bhaijaan", cursive;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  border: 1px solid #5bb798; }
+
+.c-buygift_buy {
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  background-color: #5bb798;
+  color: #f7f7f7;
+  border-right: none; }
+
+.c-buygift_gift {
+  border-top-right-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  background-color: #f1f1f1;
+  color: #5bb798;
+  border-left: none; }
+
 .c-form {
   display: flex;
   flex-direction: column;
@@ -534,7 +566,7 @@ body {
   padding: 0.5rem 2rem;
   font-family: "Baloo Bhaijaan", cursive;
   font-size: 1.1rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   border-radius: 5px;
   /*border-top-left-radius: 10% 50%;   //same as in content
   border-top-right-radius: 10% 50%;
