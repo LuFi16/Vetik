@@ -15,14 +15,17 @@ body {
   position: absolute;
   z-index: 1;
   width: 35%; }
+  @media (max-width: 650px) {
+    #c-bcg-left, #c-bcg-right {
+      display: none; } }
 
 #c-bcg-left {
   left: 0;
-  top: 50%; }
+  top: 27rem; }
 
 #c-bcg-right {
   right: 0;
-  top: 35%; }
+  top: 18rem; }
 
 .c-header {
   position: relative;
@@ -471,61 +474,113 @@ body {
 
 .c-buygift {
   display: flex;
-  flex-direction: row;
-  margin: 2rem auto;
   /* border: 1px solid $color-primary;
    border-top-left-radius: 10% 50%;   //same as in content
    border-top-right-radius: 10% 50%;
    border-bottom-right-radius: 10% 50%;
    border-bottom-left-radius: 10% 50%;*/ }
+  @media (max-width: 475px) {
+    .c-buygift {
+      width: 100%;
+      margin: 2rem 0; } }
+  @media (min-width: 476px) {
+    .c-buygift {
+      margin: 2rem auto; } }
+  @media (max-width: 324px) {
+    .c-buygift {
+      flex-direction: column; } }
+  @media (min-width: 325px) {
+    .c-buygift {
+      flex-direction: row; } }
 
 .c-buygift_buy, .c-buygift_gift {
   display: block;
   font-family: "Baloo Bhaijaan", cursive;
-  letter-spacing: 2px;
-  font-size: 1.1rem;
-  padding: 0.5rem 2rem;
   border: 1px solid #5bb798;
   cursor: pointer; }
+  @media (max-width: 475px) {
+    .c-buygift_buy, .c-buygift_gift {
+      width: 100%;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      padding: 0.5rem 1rem; } }
+  @media (min-width: 476px) {
+    .c-buygift_buy, .c-buygift_gift {
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      padding: 0.5rem 2rem; } }
 
 .c-buygift_buy:hover {
-  background-color: #347861; }
+  background-color: #347861;
+  outline: none; }
+
+.c-buygift_buy:active, .c-buygift_gift:active {
+  outline: none; }
+
+.c-buygift_buy:focus, .c-buygift_gift:focus {
+  outline: none; }
 
 .c-buygift_buy {
-  border-top-left-radius: 10% 50%;
-  border-bottom-left-radius: 10% 50%;
   background-color: #5bb798;
   color: #f7f7f7;
   border-right: none; }
+  @media (min-width: 476px) {
+    .c-buygift_buy {
+      border-top-left-radius: 10% 50%;
+      border-bottom-left-radius: 10% 50%; } }
 
 .c-buygift_gift {
-  border-top-right-radius: 10% 50%;
-  border-bottom-right-radius: 10% 50%;
   background-color: #f1f1f1;
   color: #5bb798;
   border-left: none; }
+  @media (max-width: 475px) {
+    .c-buygift_gift {
+      border-right: none; } }
+  @media (min-width: 476px) {
+    .c-buygift_gift {
+      border-top-right-radius: 10% 50%;
+      border-bottom-right-radius: 10% 50%; } }
 
 .c-buygift_gift:hover {
-  background-color: #e4e4e4; }
+  background-color: #e4e4e4;
+  outline: none; }
 
 .c-form {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: auto;
-  width: auto;
   font-family: "Roboto", sans-serif;
-  box-shadow: 0 0 15px #cecece;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  box-shadow: 0 0 15px #cecece; }
+  @media (max-width: 650px) {
+    .c-form {
+      width: 100%;
+      margin: 0; } }
+  @media (min-width: 651px) {
+    .c-form {
+      margin: auto;
+      width: auto; } }
 
-.c-form_container {
-  padding: 4rem 2rem 2rem 2rem; }
+@media (min-width: 424px) and (max-width: 650px) {
+  .c-form_container {
+    padding: 2rem 2rem 2rem 2rem; } }
+@media (max-width: 423px) {
+  .c-form_container {
+    padding: 2rem 1rem 2rem 1rem; } }
+@media (min-width: 651px) {
+  .c-form_container {
+    padding: 4rem 2rem 2rem 2rem; } }
 
 .c-form_user {
   display: flex;
-  flex-direction: row;
   width: 100%;
   justify-content: center; }
+  @media (max-width: 475px) {
+    .c-form_user {
+      flex-direction: column; } }
+  @media (min-width: 476px) {
+    .c-form_user {
+      flex-direction: row; } }
 
 .c-form-user_label-input {
   display: flex;
@@ -540,7 +595,8 @@ body {
 .c-form_input {
   border-radius: 3px;
   border: 1px solid #d6d6d6;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif; }
 
 .c-form_input:hover {
   border-color: #5bb798;
@@ -572,7 +628,11 @@ body {
   border: none;
   border-bottom: 2px solid #bababa;
   border-radius: 0;
-  padding: 0.2rem; }
+  padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+  background-color: transparent; }
+  @media (max-width: 340px) {
+    #zvire {
+      text-align: center; } }
 
 .c-form-price_nmbr {
   color: #5bb798;
@@ -604,12 +664,19 @@ body {
   background-color: #347861;
   outline: none; }
 
+.c-form-end_donate:active {
+  outline: none; }
+
 .c-form-end_info1, .c-form-end_info2 {
   margin: 0;
   font-size: 0.75rem;
   color: #8d8d8d; }
 
-.c-form-end_info1 {
-  padding: 1.5rem 1rem 0.2rem 1rem; }
+@media (min-width: 308px) {
+  .c-form-end_info1 {
+    padding: 1.5rem 1rem 0.2rem 1rem; } }
+@media (max-width: 307px) {
+  .c-form-end_info1 {
+    padding: 1.5rem 0 0.2rem 0; } }
 
 /*# sourceMappingURL=main.css.map */

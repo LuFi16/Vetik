@@ -6,14 +6,17 @@
   position: absolute;
   z-index: 1;
   width: 35%;
+  @media (max-width: $mobile){
+    display: none;
+  }
 }
 
 #c-bcg-left{
   left: 0;
-  top: 50%;
+  top: 27rem;
 }
 
 #c-bcg-right{
   right: 0;
-  top: 35%;
+  top: 18rem;
 }

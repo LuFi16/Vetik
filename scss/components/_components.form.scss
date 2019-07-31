@@ -1,68 +1,122 @@
 
 .c-buygift{
   display: flex;
-  flex-direction: row;
-  margin: 2rem auto;
  /* border: 1px solid $color-primary;
   border-top-left-radius: 10% 50%;   //same as in content
   border-top-right-radius: 10% 50%;
   border-bottom-right-radius: 10% 50%;
   border-bottom-left-radius: 10% 50%;*/
+
+  @media (max-width: 475px){
+    width: 100%;
+    margin: 2rem 0;
+  }
+  @media (min-width: 476px){
+    margin: 2rem auto;
+  }
+  @media (max-width: 324px){
+    flex-direction: column;
+  }
+  @media (min-width: 325px){
+    flex-direction: row;
+  }
 }
 
 .c-buygift_buy, .c-buygift_gift{
   display: block;
   font-family: $font-secondary;
-  letter-spacing: $baloo-letter-spacing;
-  font-size: 1.1rem;
-  padding: 0.5rem 2rem;
   border: 1px solid $color-primary;
   cursor: pointer;
+  @media (max-width: 475px){
+    width: 100%;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+  }
+  @media (min-width: 476px){
+    font-size: 1.1rem;
+    letter-spacing: $baloo-letter-spacing;
+    padding: 0.5rem 2rem;
+  }
 }
 
 .c-buygift_buy:hover{
   background-color: $color-primary-hover;
+  outline: none;
+}
+.c-buygift_buy:active, .c-buygift_gift:active{
+  outline: none;
+}
+.c-buygift_buy:focus, .c-buygift_gift:focus{
+  outline: none;
 }
 
 .c-buygift_buy{
-  border-top-left-radius: 10% 50%;
-  border-bottom-left-radius: 10% 50%;
   background-color: $color-primary;
   color: $color-light;
   border-right: none;
+  @media (min-width: 476px){
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+  }
 }
 
 .c-buygift_gift{
-  border-top-right-radius: 10% 50%;
-  border-bottom-right-radius: 10% 50%;
   background-color: $color-btn-gift-bcg;
   color: $color-primary;
   border-left: none;
+  @media (max-width: 475px){
+    border-right: none;
+  }
+  @media (min-width: 476px){
+    border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+  }
 }
 .c-buygift_gift:hover{
-  background-color: darken($color-btn-gift-bcg, 5)
+  background-color: darken($color-btn-gift-bcg, 5);
+  outline: none;
 }
 
 .c-form{
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: auto;
-  width: auto;
   font-family: $font-main-thick;
-  box-shadow: 0 0 15px $color-shadow;
   background-color: $color-light;
+  box-shadow: 0 0 15px $color-shadow;
+  @media (max-width: $mobile){
+    width: 100%;
+    margin: 0;
+  }
+  @media (min-width: $mobile+1px){
+    margin: auto;
+    width: auto;
+  }
 }
 
 .c-form_container{
-  padding: 4rem 2rem 2rem 2rem;
+  @media (min-width: 424px) and (max-width: $mobile){
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  @media (max-width: 423px){
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  @media (min-width: $mobile+1px){
+    padding: 4rem 2rem 2rem 2rem;
+  }
 }
 
 .c-form_user{
   display: flex;
-  flex-direction: row;
   width: 100%;
   justify-content: center;
+  @media (max-width: 475px){
+    flex-direction: column;
+  }
+  @media (min-width: 476px){
+    flex-direction: row;
+  }
 }
 
 .c-form-user_label-input{
@@ -81,6 +135,7 @@
   border-radius: 3px;
   border: 1px solid #d6d6d6;
   padding: 0.5rem;
+  font-family: $font-main-thick;
 }
 .c-form_input:hover{
   border-color: $color-primary;
@@ -117,7 +172,11 @@
   border: none;
   border-bottom: 2px solid $color-form-line;
   border-radius: 0;
-  padding: 0.2rem;
+  padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+  background-color: transparent;
+  @media (max-width: 340px){
+    text-align: center;
+  }
 }
 
 .c-form-price_nmbr{
@@ -154,6 +213,9 @@
   background-color: $color-primary-hover;
   outline: none;
 }
+.c-form-end_donate:active{
+  outline: none;
+}
 
 .c-form-end_info1, .c-form-end_info2{
   margin: 0;
@@ -162,7 +224,12 @@
 }
 
 .c-form-end_info1{
-  padding: 1.5rem 1rem 0.2rem 1rem;
+  @media (min-width: 308px){
+    padding: 1.5rem 1rem 0.2rem 1rem;
+  }
+  @media (max-width: 307px){
+    padding: 1.5rem 0 0.2rem 0;
+  }
 }
 
 .c-form-end_info2{}
