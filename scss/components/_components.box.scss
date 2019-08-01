@@ -6,15 +6,13 @@
   font-family: $font-main-thick;
   background-color: $color-light;
   box-shadow: 0 0 15px $color-shadow;
-  margin: 7rem auto 4rem auto;
-  padding: 6rem 2rem 2rem 2rem;
   @media (max-width: $mobile){
-    //width: 100%;
-    //margin: 0;
+    margin: 5rem 0 0 0;
+    padding: 6rem 1rem 2rem 1rem;
   }
   @media (min-width: $mobile+1px){
-    //margin: auto;
-    //width: auto;
+    margin: 7rem auto 4rem auto;
+    padding: 6rem 2rem 2rem 2rem;
   }
 }
 
@@ -23,9 +21,14 @@
   height: auto;
   margin: auto;
   position: absolute;
-  top: 4rem;
   left: 0;
   right: 0;
+  @media (max-width: $mobile){
+    top: 2rem;
+  }
+  @media (min-width: $mobile+1px){
+    top: 4rem;
+  }
 }
 
 .c-box_heading{
@@ -46,13 +49,18 @@
   color: $color-light;
   border: none;
   text-transform: uppercase;
-  padding: 0.5rem 2rem;
   font-family: $font-secondary;
   font-size: 1.1rem;
   letter-spacing: $baloo-letter-spacing;
   border-radius: 5px;
   cursor: pointer;
   margin: 2rem auto 0 auto;
+  @media (max-width: 215px){
+    padding: 0.5rem 1rem;
+  }
+  @media (min-width: 216px){
+    padding: 0.5rem 2rem;
+  }
 }
 
 .c-box_button:hover{

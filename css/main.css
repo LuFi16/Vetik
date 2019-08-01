@@ -364,7 +364,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  padding: 0 1rem;
+  padding: 0;
   line-height: 2;
   width: 100%;
   position: relative;
@@ -409,6 +409,10 @@ body {
 
 .c-ftr-desc_text {
   margin: 0; }
+  @media (max-width: 1024px) {
+    .c-ftr-desc_text {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 .c-footer_insta {
   box-sizing: border-box; }
@@ -694,18 +698,29 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   background-color: #f7f7f7;
-  box-shadow: 0 0 15px #cecece;
-  margin: 7rem auto 4rem auto;
-  padding: 6rem 2rem 2rem 2rem; }
+  box-shadow: 0 0 15px #cecece; }
+  @media (max-width: 650px) {
+    .c-box {
+      margin: 5rem 0 0 0;
+      padding: 6rem 1rem 2rem 1rem; } }
+  @media (min-width: 651px) {
+    .c-box {
+      margin: 7rem auto 4rem auto;
+      padding: 6rem 2rem 2rem 2rem; } }
 
 .c-box_main-img {
   width: 10rem;
   height: auto;
   margin: auto;
   position: absolute;
-  top: 4rem;
   left: 0;
   right: 0; }
+  @media (max-width: 650px) {
+    .c-box_main-img {
+      top: 2rem; } }
+  @media (min-width: 651px) {
+    .c-box_main-img {
+      top: 4rem; } }
 
 .c-box_heading {
   font-family: "Baloo Bhaijaan", cursive;
@@ -723,13 +738,18 @@ body {
   color: #f7f7f7;
   border: none;
   text-transform: uppercase;
-  padding: 0.5rem 2rem;
   font-family: "Baloo Bhaijaan", cursive;
   font-size: 1.1rem;
   letter-spacing: 2px;
   border-radius: 5px;
   cursor: pointer;
   margin: 2rem auto 0 auto; }
+  @media (max-width: 215px) {
+    .c-box_button {
+      padding: 0.5rem 1rem; } }
+  @media (min-width: 216px) {
+    .c-box_button {
+      padding: 0.5rem 2rem; } }
 
 .c-box_button:hover {
   background-color: #347861;
