@@ -1,0 +1,121 @@
+
+.c-content_box-heading{
+  font-family: $font-secondary;
+  letter-spacing: $baloo-letter-spacing;
+  color: $color-primary;
+  margin: auto;
+  text-align: center;
+}
+
+.c-content-box-heading_icon{
+  font-weight: normal;
+  background-color: $color-primary-light;
+  border-radius: 50%;
+  //transform: rotate(-30deg);
+  width: 3rem;
+  height: 3rem;
+  //line-height: 500px;
+  //margin: auto;
+  //padding: 1rem;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.c-content-box-heading_text{
+  font-weight: normal;
+}
+
+.c-box2{
+  display: flex;
+  font-family: $font-main-thick;
+  background-color: $color-light;
+  box-shadow: 0 0 15px $color-shadow;
+  margin: auto;
+}
+
+.c-box2_heading{}
+
+.c-box2_show{}
+
+.c-box2_validity{}
+
+.c-box2_buy{}
+
+
+
+
+.c-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: $font-main-thick;
+  background-color: $color-light;
+  box-shadow: 0 0 15px $color-shadow;
+  @media (max-width: $mobile){
+    margin: 5rem 0 0 0;
+    padding: 6rem 1rem 2rem 1rem;
+  }
+  @media (min-width: $mobile+1px){
+    margin: 7rem auto 4rem auto;
+    padding: 6rem 2rem 2rem 2rem;
+  }
+}
+
+.c-box_main-img{
+  width: 10rem;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  @media (max-width: $mobile){
+    top: 2rem;
+  }
+  @media (min-width: $mobile+1px){
+    top: 4rem;
+  }
+}
+
+.c-box_heading{
+  font-family: $font-secondary;
+  font-weight: normal;
+  margin-top: 3rem;
+}
+
+.c-box_text{
+  margin: 0 auto;
+  font-size: 1rem;
+  color: $color-gray;
+  width: 80%;
+}
+
+.c-box_button{
+  background-color: $color-primary;
+  color: $color-light;
+  border: none;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  font-size: 1.1rem;
+  letter-spacing: $baloo-letter-spacing;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2rem auto 0 auto;
+  @media (max-width: 215px){
+    padding: 0.5rem 1rem;
+  }
+  @media (min-width: 216px){
+    padding: 0.5rem 2rem;
+  }
+}
+
+.c-box_button:hover{
+  background-color: $color-primary-hover;
+  outline: none;
+}
+.c-box_button:active{
+  outline: none;
+}
+.c-box_button:focus{
+  outline: none;
+}
