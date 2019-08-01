@@ -11,9 +11,11 @@ body {
 @media (min-width: 1025px) {
   .c-desktop-hide {
     display: none !important; } }
+.c-content_bcg {
+  z-index: 1; }
+
 #c-bcg-left, #c-bcg-right {
   position: absolute;
-  z-index: 1;
   width: 35%; }
   @media (max-width: 650px) {
     #c-bcg-left, #c-bcg-right {
@@ -364,6 +366,7 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 0 1rem;
   line-height: 2;
+  width: 100%;
   position: relative;
   z-index: 998; }
   .c-footer h3 {
@@ -657,6 +660,7 @@ body {
   font-size: 1.1rem;
   letter-spacing: 2px;
   border-radius: 5px;
+  cursor: pointer;
   /*border-top-left-radius: 10% 50%;   //same as in content
   border-top-right-radius: 10% 50%;
   border-bottom-right-radius: 10% 50%;
@@ -667,6 +671,9 @@ body {
   outline: none; }
 
 .c-form-end_donate:active {
+  outline: none; }
+
+.c-form-end_donate:focus {
   outline: none; }
 
 .c-form-end_info1, .c-form-end_info2 {
@@ -680,5 +687,58 @@ body {
 @media (max-width: 307px) {
   .c-form-end_info1 {
     padding: 1.5rem 0 0.2rem 0; } }
+
+.c-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 15px #cecece;
+  margin: 7rem auto 4rem auto;
+  padding: 6rem 2rem 2rem 2rem; }
+
+.c-box_main-img {
+  width: 10rem;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0; }
+
+.c-box_heading {
+  font-family: "Baloo Bhaijaan", cursive;
+  font-weight: normal;
+  margin-top: 3rem; }
+
+.c-box_text {
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #8d8d8d;
+  width: 80%; }
+
+.c-box_button {
+  background-color: #5bb798;
+  color: #f7f7f7;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-family: "Baloo Bhaijaan", cursive;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2rem auto 0 auto; }
+
+.c-box_button:hover {
+  background-color: #347861;
+  outline: none; }
+
+.c-box_button:active {
+  outline: none; }
+
+.c-box_button:focus {
+  outline: none; }
 
 /*# sourceMappingURL=main.css.map */

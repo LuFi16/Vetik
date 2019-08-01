@@ -1,0 +1,67 @@
+
+.c-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: $font-main-thick;
+  background-color: $color-light;
+  box-shadow: 0 0 15px $color-shadow;
+  margin: 7rem auto 4rem auto;
+  padding: 6rem 2rem 2rem 2rem;
+  @media (max-width: $mobile){
+    //width: 100%;
+    //margin: 0;
+  }
+  @media (min-width: $mobile+1px){
+    //margin: auto;
+    //width: auto;
+  }
+}
+
+.c-box_main-img{
+  width: 10rem;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+}
+
+.c-box_heading{
+  font-family: $font-secondary;
+  font-weight: normal;
+  margin-top: 3rem;
+}
+
+.c-box_text{
+  margin: 0 auto;
+  font-size: 1rem;
+  color: $color-gray;
+  width: 80%;
+}
+
+.c-box_button{
+  background-color: $color-primary;
+  color: $color-light;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-family: $font-secondary;
+  font-size: 1.1rem;
+  letter-spacing: $baloo-letter-spacing;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2rem auto 0 auto;
+}
+
+.c-box_button:hover{
+  background-color: $color-primary-hover;
+  outline: none;
+}
+.c-box_button:active{
+  outline: none;
+}
+.c-box_button:focus{
+  outline: none;
+}

@@ -1,10 +1,11 @@
 
-.c-content_bcg{}
+.c-content_bcg{
+  z-index: 1;
+}
 
 
 #c-bcg-left, #c-bcg-right{
   position: absolute;
-  z-index: 1;
   width: 35%;
   @media (max-width: $mobile){
     display: none;

@@ -204,6 +204,7 @@
   font-size: 1.1rem;
   letter-spacing: $baloo-letter-spacing;
   border-radius: 5px;
+  cursor: pointer;
   /*border-top-left-radius: 10% 50%;   //same as in content
   border-top-right-radius: 10% 50%;
   border-bottom-right-radius: 10% 50%;
@@ -214,6 +215,9 @@
   outline: none;
 }
 .c-form-end_donate:active{
+  outline: none;
+}
+.c-form-end_donate:focus{
   outline: none;
 }
 
