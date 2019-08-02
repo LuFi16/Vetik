@@ -905,4 +905,67 @@ body {
 .c-box_button:focus {
   outline: none; }
 
+/*  --- BREADCRUMBS NAVIGATION ---  */
+.c-breadcrumbs_nav {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto 0 auto;
+  align-items: baseline; }
+
+.c-breadcrumbs-nav_1st {
+  font-size: 1rem; }
+
+.c-breadcrumbs-nav_separator {
+  margin: 0 0.5rem;
+  font-size: 0.6rem; }
+
+.c-breadcrumbs-nav_lower {
+  font-size: 0.8rem;
+  color: #696969; }
+
+/*  --- ARTICLE HEADER ---  */
+.c-article_header {
+  box-sizing: border-box;
+  background-image: url("../img/dog-on-leash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 3rem auto 2rem auto;
+  max-width: 44rem;
+  padding: 1rem;
+  height: 15.5rem; }
+
+.c-article-header_date {
+  font-family: "Roboto", sans-serif;
+  color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 5px black; }
+
+.c-article-header_heading {
+  font-weight: normal;
+  padding: 0.2rem 1rem;
+  margin: 0;
+  background: rgba(247, 247, 247, 0.7);
+  width: auto;
+  border-radius: 0.5rem; }
+
+/*  --- ARTICLE CONTENT (TEXT) ---  */
+.c-content_article {
+  max-width: 40rem;
+  margin: auto; }
+
+.c-article_text {
+  font-family: "Roboto", sans-serif;
+  text-align: justify; }
+
+.c-article-text_in-heading {
+  font-family: "Baloo Bhaijaan", cursive;
+  font-weight: normal; }
+
 /*# sourceMappingURL=main.css.map */

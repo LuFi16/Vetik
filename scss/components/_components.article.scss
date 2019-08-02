@@ -1,0 +1,85 @@
+
+
+
+/*  --- BREADCRUMBS NAVIGATION ---  */
+
+.c-breadcrumbs_nav{
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto 0 auto;
+  align-items: baseline;
+}
+
+.c-breadcrumbs-nav_1st{
+  font-size: 1rem;
+}
+
+.c-breadcrumbs-nav_separator{
+  margin: 0 0.5rem;
+  font-size: 0.6rem;
+}
+
+.c-breadcrumbs-nav_lower{
+  font-size: 0.8rem;
+  color: $color-bread-gray;
+}
+
+
+
+/*  --- ARTICLE HEADER ---  */
+
+.c-article_header{
+  box-sizing: border-box;
+  //height: 14.8rem; //237px      //if change you have to change also max-width in c-content_article
+  background-image: url("../img/dog-on-leash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  //vertical (because of column)
+  align-items: flex-start;    //horizontal (because of column)
+  width: 100%;
+  margin: 3rem auto 2rem auto;
+  max-width: 44rem;
+  padding: 1rem;
+  height: 15.5rem;
+}
+
+.c-article-header_date{
+  font-family: $font-main-thick;
+  color: $color-light;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 5px black;
+}
+
+.c-article-header_heading{
+  font-weight: normal;
+  padding: 0.2rem 1rem;
+  margin: 0;
+  //background: $color-light;
+  background: transparentize($color-light, 0.3);
+  width: auto;
+  border-radius: 0.5rem;
+}
+
+
+
+
+/*  --- ARTICLE CONTENT (TEXT) ---  */
+
+.c-content_article{
+  max-width: 40rem;     //if change you have to change also height in c--article_header
+  margin: auto;
+}
+
+.c-article_text{
+  font-family: $font-main-thick;
+  text-align: justify;
+}
+
+.c-article-text_in-heading{
+  font-family: $font-secondary;
+  font-weight: normal;
+}
