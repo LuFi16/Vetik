@@ -765,28 +765,76 @@ body {
   font-family: "Baloo Bhaijaan", cursive;
   letter-spacing: 2px;
   color: #5bb798;
-  margin: auto;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto; }
 
 .c-content-box-heading_icon {
   font-weight: normal;
   background-color: #dbf1e9;
   border-radius: 50%;
+  transform: rotate(-30deg);
   width: 3rem;
   height: 3rem;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle; }
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .c-content-box-heading_text {
-  font-weight: normal; }
+  font-weight: normal;
+  margin: 1rem 0 0 0; }
 
 .c-box2 {
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
   font-family: "Roboto", sans-serif;
   background-color: #f7f7f7;
   box-shadow: 0 0 15px #cecece;
-  margin: auto; }
+  margin: 1rem auto;
+  padding: 1rem 2rem; }
+
+.c-box2_heading {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  font-family: "Baloo Bhaijaan", cursive;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 28px;
+  padding: 0;
+  margin: 0 0 1rem 0; }
+
+.c-box2_show {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-family: "Baloo Bhaijaan", cursive;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #5bb798;
+  padding: 0;
+  margin: 0 2rem 0 0;
+  text-decoration: none; }
+
+.c-box2_show:hover {
+  color: #347861; }
+
+.c-box2_validity {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-family: "Roboto Black", sans-serif;
+  font-size: 0.9rem;
+  background-color: #d7d7d7;
+  padding: 0.3rem 0.6rem;
+  margin: 0 2rem 0 0; }
+
+.c-box2_buy {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0; }
 
 .c-box {
   display: flex;
