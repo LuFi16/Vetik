@@ -68,3 +68,8 @@ body{
     display: none !important;
   }
 }
+@media (max-width: 300px){
+  .c-tiny-hide{
+    display: none !important;
+  }
+}

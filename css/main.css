@@ -11,6 +11,9 @@ body {
 @media (min-width: 1025px) {
   .c-desktop-hide {
     display: none !important; } }
+@media (max-width: 300px) {
+  .c-tiny-hide {
+    display: none !important; } }
 .c-content_bcg {
   z-index: 1; }
 
@@ -929,36 +932,62 @@ body {
   background-image: url("../img/dog-on-leash.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 100%;
-  margin: 3rem auto 2rem auto;
-  max-width: 44rem;
   padding: 1rem;
   height: 15.5rem; }
+  @media (max-width: 710px) {
+    .c-article_header {
+      margin: 2rem 0 1rem 0;
+      border-radius: 0;
+      background-position: center center; } }
+  @media (min-width: 711px) {
+    .c-article_header {
+      max-width: 44rem;
+      margin: 3rem auto 2rem auto;
+      border-radius: 0.5rem; } }
+  @media (max-width: 423px) {
+    .c-article_header {
+      justify-content: flex-end;
+      align-items: center; } }
+  @media (min-width: 424px) {
+    .c-article_header {
+      justify-content: space-between;
+      align-items: flex-start; } }
 
 .c-article-header_date {
   font-family: "Roboto", sans-serif;
   color: #f7f7f7;
-  margin: 0;
   padding: 0;
   text-shadow: 1px 1px 5px black; }
+  @media (max-width: 423px) {
+    .c-article-header_date {
+      margin: 0 0 1rem 0; } }
+  @media (min-width: 424px) {
+    .c-article-header_date {
+      margin: 0; } }
 
 .c-article-header_heading {
   font-weight: normal;
   padding: 0.2rem 1rem;
   margin: 0;
-  background: rgba(247, 247, 247, 0.7);
-  width: auto;
-  border-radius: 0.5rem; }
+  background: rgba(247, 247, 247, 0.7); }
+  @media (max-width: 423px) {
+    .c-article-header_heading {
+      width: 100%;
+      border-radius: 0;
+      text-align: center; } }
+  @media (min-width: 424px) {
+    .c-article-header_heading {
+      width: auto;
+      border-radius: 0.5rem; } }
 
 /*  --- ARTICLE CONTENT (TEXT) ---  */
 .c-content_article {
   max-width: 40rem;
-  margin: auto; }
+  margin: auto;
+  padding: 0 2rem; }
 
 .c-article_text {
   font-family: "Roboto", sans-serif;
