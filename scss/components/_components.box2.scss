@@ -24,18 +24,27 @@
 .c-content-box-heading_text{
   font-weight: normal;
   margin: 1rem 0 0 0;
+  text-align: center;
 }
 
 .c-box2{
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  grid-template-columns: repeat(3, auto);
-  align-items: center;
   font-family: $font-main-thick;
   background-color: $color-light;
   box-shadow: 0 0 15px $color-shadow;
-  margin: 1rem auto;
-  padding: 1rem 2rem;
+  @media (max-width: $mobile){
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  @media (min-width: $mobile+1px){
+    margin: 1rem auto;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    padding: 1rem 2rem;
+  }
 }
 
 .c-box2_heading{
@@ -46,7 +55,15 @@
   font-weight: normal;
   font-size: $inuit-font-size-h2;
   padding: 0;
-  margin: 0 0 1rem 0;
+  @media (max-width: $mobile){
+    margin: 0 0 0.5rem 0;
+  }
+  @media (min-width: $mobile+1px){
+    margin: 0 0 1rem 0;
+  }
+  @media (max-width: 400px){
+    font-size: 1.4rem;
+  }
 }
 
 .c-box2_show{
@@ -56,9 +73,15 @@
   letter-spacing: $baloo-letter-spacing;
   font-weight: normal;
   color: $color-primary;
-  padding: 0;
-  margin: 0 2rem 0 0;
   text-decoration: none;
+  @media (max-width: $mobile){
+    margin: 0;
+    padding: 0 0 0 0.6rem;
+  }
+  @media (min-width: $mobile+1px){
+    margin: 0 2rem 0 0;
+    padding: 0;
+  }
 }
 .c-box2_show:hover{
   color: $color-primary-hover;
@@ -71,15 +94,25 @@
   font-size: 0.9rem;
   background-color: $color-lightgray;
   padding: 0.3rem 0.6rem;
-  margin: 0 2rem 0 0;
+  @media (max-width: $mobile){
+    margin: 0.5rem 0;
+  }
+  @media (min-width: $mobile+1px){
+    margin: 0 2rem 0 0;
+  }
 }
 
 .c-box2_buy{
   grid-row: 2/3;
   grid-column: 3/4;
   font-size: 0.9rem;
-  padding: 0;
   margin: 0;
+  @media (max-width: $mobile){
+    padding: 0 0 0 0.6rem;
+  }
+  @media (min-width: $mobile+1px){
+    padding: 0;
+  }
 }
 
 
