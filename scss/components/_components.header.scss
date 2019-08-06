@@ -105,7 +105,7 @@
 }
 
 #c-count-li_help{
-  @media (min-width: $tablet+1px) and (max-width: 1241px){
+  @media (min-width: $tablet+1px) and (max-width: 1361px){
     padding-top: 0.5rem;
   }
 }
@@ -132,6 +132,7 @@
   display: inline-flex;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .c-nav_li{}
@@ -140,9 +141,34 @@
   color: $color-primary;
   letter-spacing: 2px;
   line-height: 1.5;
-  padding: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .c-nav_item:hover{
   color: $color-primary-hover;
+}
+
+
+/*  -- LANGUAGE --  */
+.c-nav_language{
+  width: 1.5rem;
+  height: auto;
+  padding: 0;
+  margin: 0 2rem 0 0;
+}
+.c-nav_language:hover{}
+
+.c-nav-item_user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.c-nav-item-user_img{
+  border-radius: 50%;
+  width: 2rem;
+  height: auto;
+  margin-right: 0.7rem;
 }
