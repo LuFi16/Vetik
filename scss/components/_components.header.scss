@@ -156,7 +156,7 @@
   width: 1.5rem;
   height: auto;
   padding: 0;
-  margin: 0 2rem 0 0;
+  margin: 0 0;
 }
 .c-nav_language:hover{}
 
@@ -171,4 +171,49 @@
   width: 2rem;
   height: auto;
   margin-right: 0.7rem;
+}
+
+
+/* -- Submenu -- */
+.c-nav_submenu{
+  background: $color-primary-light;
+  position: absolute;
+  padding: 0;
+  margin: 0.3rem 0 0 2rem;
+  z-index: 20;
+}
+
+.c-nav-submenu_li{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  a{
+    display: block;
+    color: $color-primary;
+    background: $color-primary-light;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-left: 1px solid lighten($color-primary, 30);
+    border-right: 1px solid lighten($color-primary, 30);
+  }
+  a:hover{
+    color: $color-primary-hover;
+  }
+}
+
+.c-nav-submenu_first a{
+  padding-top: 1rem;
+  border-top: 1px solid lighten($color-primary, 30);
+}
+.c-nav-submenu_last a{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lighten($color-primary, 30);
+}
+
+.c-nav_ul ul{
+  display: none;
+}
+.c-nav_ul li:hover ul{
+  display: block;
 }
