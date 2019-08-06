@@ -19,23 +19,45 @@
   font-size: 1.1rem;
 }
 
-.c-msg_close{
-  padding-left: 1.5rem;
+.c-success{
+  background-color: $color-success-bcg;
+  color: $color-success-text;
+  border: 1px solid $color-success-line;
 }
 
-.c-msg-success{
-  background-color: $color-primary;
-  color: $color-light;
+.c-danger{
+  background-color: $color-danger-bcg;
+  color: $color-danger-text;
+  border: 1px solid $color-danger-line;
 }
 
-.c-msg-error{
-  background-color: #e31317;
-  color: $color-light;
-
+.c-warning{
+  background-color: $color-warning-bcg;
+  color: $color-warning-text;
+  border: 1px solid $color-warning-line;
+}
+.c-info{
+  background-color: $color-info-bcg;
+  color: $color-info-text;
+  border: 1px solid $color-info-line;
 }
 
-.c-msg-info{
-  background-color: #ffe78d;
-  color: $color-black;
+.c-succes-close,
+.c-danger-close,
+.c-warning-close,
+.c-info-close{
+  padding-left: 2rem;
+}
 
+.c-succes-close{
+  color: lighten($color-success-text, 20);
+}
+.c-danger-close{
+  color: lighten($color-danger-text, 20);
+}
+.c-warning-close{
+  color: lighten($color-warning-text, 20);
+}
+.c-info-close{
+  color: lighten($color-info-text, 20);
 }

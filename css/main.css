@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Roboto:300,400,400i,500,700,900&subset=latin-ext");
 /*$color-footer-line: #5d5853;*/
+/* alerts */
 body {
   padding: 0;
   margin: 0;
@@ -31,20 +32,43 @@ body {
   padding-right: 0.5rem;
   font-size: 1.1rem; }
 
-.c-msg_close {
-  padding-left: 1.5rem; }
+.c-success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6; }
 
-.c-msg-success {
-  background-color: #5bb798;
-  color: #f7f7f7; }
+.c-danger {
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #f2dede; }
 
-.c-msg-error {
-  background-color: #e31317;
-  color: #f7f7f7; }
+.c-warning {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+  border: 1px solid #faebcc; }
 
-.c-msg-info {
-  background-color: #ffe78d;
-  color: #312b25; }
+.c-info {
+  background-color: #d9edf7;
+  color: #31708f;
+  border: 1px solid #bce8f1; }
+
+.c-succes-close,
+.c-danger-close,
+.c-warning-close,
+.c-info-close {
+  padding-left: 2rem; }
+
+.c-succes-close {
+  color: #67b168; }
+
+.c-danger-close {
+  color: #ce8483; }
+
+.c-warning-close {
+  color: #c0a16b; }
+
+.c-info-close {
+  color: #5ea5c8; }
 
 .c-content_bcg {
   z-index: 1; }
