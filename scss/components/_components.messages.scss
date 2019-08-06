@@ -1,0 +1,41 @@
+
+.c-message{
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: $font-main-thick;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 0.5rem;
+  p{
+    margin: 0.5rem 0;
+  }
+}
+
+.c-msg_icon{
+  padding-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.c-msg_close{
+  padding-left: 1.5rem;
+}
+
+.c-msg-success{
+  background-color: $color-primary;
+  color: $color-light;
+}
+
+.c-msg-error{
+  background-color: #e31317;
+  color: $color-light;
+
+}
+
+.c-msg-info{
+  background-color: #ffe78d;
+  color: $color-black;
+
+}

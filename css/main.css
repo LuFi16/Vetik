@@ -14,6 +14,38 @@ body {
 @media (max-width: 300px) {
   .c-tiny-hide {
     display: none !important; } }
+.c-message {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 0.5rem; }
+  .c-message p {
+    margin: 0.5rem 0; }
+
+.c-msg_icon {
+  padding-right: 0.5rem;
+  font-size: 1.1rem; }
+
+.c-msg_close {
+  padding-left: 1.5rem; }
+
+.c-msg-success {
+  background-color: #5bb798;
+  color: #f7f7f7; }
+
+.c-msg-error {
+  background-color: #e31317;
+  color: #f7f7f7; }
+
+.c-msg-info {
+  background-color: #ffe78d;
+  color: #312b25; }
+
 .c-content_bcg {
   z-index: 1; }
 
