@@ -149,7 +149,10 @@ body {
 /*  COUNTERS  */
 .c-header_counters {
   display: flex;
-  margin: 0; }
+  margin: 0;
+  /*@media (max-width: 423px){
+    display: none;
+  }*/ }
   @media (max-width: 1100px) {
     .c-header_counters {
       justify-content: center;
@@ -160,9 +163,6 @@ body {
       padding: 1.5rem;
       border-left: 1px solid #d7d7d7;
       border-right: 1px solid #d7d7d7; } }
-  @media (max-width: 423px) {
-    .c-header_counters {
-      display: none; } }
 
 .c-counters_ul {
   margin: 0; }
@@ -179,10 +179,11 @@ body {
   line-height: 1.1;
   letter-spacing: 2px; }
 
-@media (min-width: 1101px) and (max-width: 1361px) {
-  #c-count-li_help {
-    padding-top: 0.5rem; } }
-
+/*#c-count-li_help{
+  @media (min-width: $tablet+1px) and (max-width: 1361px){
+    padding-top: 0.5rem;
+  }
+}*/
 .c-counter_name {
   color: #5bb798;
   font-size: 0.8rem; }
@@ -269,6 +270,129 @@ body {
 
 .c-nav_ul li:hover ul {
   display: block; }
+
+/* --- MAIN STORY --- */
+.c-content_mainstory {
+  box-sizing: border-box;
+  margin: 8rem 0 2rem 0;
+  background-color: #5bb798;
+  background-image: url("../img/dog-on-leash2.png");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  width: 70rem;
+  height: 30rem;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2rem; }
+
+.c-mainstory_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 35rem; }
+
+.c-content-stories_heading {
+  background-color: #ffffff;
+  font-family: "Baloo Bhaijaan", cursive;
+  color: #312b25;
+  border-radius: 0 0 2% 2% / 0 0 2% 2%;
+  font-weight: normal;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 auto; }
+
+.c-mainstory_heading {
+  background: #ffffff;
+  color: #312b25;
+  padding: 0.25rem 0.5rem;
+  font-family: "Baloo Bhaijaan", cursive;
+  font-weight: normal;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 0 auto; }
+
+.c-mainstory_text {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto 2rem auto; }
+
+.c-mainstory-text_p {
+  margin-bottom: 4rem;
+  line-height: 1.5; }
+
+.c-mainstory-arrow_a {
+  font-size: 3rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+  align-self: center; }
+
+.c-mainstory-arrow_a:hover {
+  color: #ffffff; }
+
+.c-mainstory_more {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif; }
+
+.c-mainstory_more:hover {
+  text-decoration: underline; }
+
+/* --- STORIES --- */
+.c-stories {
+  width: 70rem;
+  margin: 3rem auto 0 auto;
+  column-count: 3;
+  column-gap: 3.6rem; }
+
+ /*
+.c-stories{
+  width: $content-width;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  column-count: 3;
+  column-gap: 2.5rem;
+}*/
+.c-content_story {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #312b25;
+  box-shadow: 0 0 15px #cecece;
+  width: 21rem;
+  text-align: center;
+  margin: 1rem 0 2.6rem 0;
+  padding-bottom: 2rem; }
+  .c-content_story img {
+    width: 21rem;
+    height: 14rem;
+    object-fit: cover;
+    position: center; }
+  .c-content_story p {
+    padding: 1rem 2rem;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4; }
+
+.c-story_heading {
+  font-family: "Baloo Bhaijaan", cursive;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 1rem 2rem; }
+
+.c-story_more {
+  color: #5bb798;
+  text-decoration: none; }
+
+.c-story_more:hover {
+  text-decoration: underline; }
 
 .c-content {
   display: flex;
