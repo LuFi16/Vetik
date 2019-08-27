@@ -378,6 +378,8 @@ $story-width: 21rem;
   justify-content: space-between;
   margin: 4rem auto;
   padding: 2rem 3rem;
+  text-decoration: none;
+  color: $color-black;
   img{
     width: 3rem;
     height: auto;
@@ -401,5 +403,123 @@ $story-width: 21rem;
     font-family: $font-main-thick;
     margin: 0;
     padding: 0;
+  }
+}
+.c-box_firstaid:hover{
+  box-shadow: 0 0 15px transparentize($color-help-red, 0.5);
+}
+
+/*  SRAZY  */
+
+.c-meet{
+  margin: 2rem auto;
+  padding: 0;
+  h2{
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+.c-meet_meetings{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.c-meet_meeting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: $font-main-thick;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.c-meeting_date{
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem 0 0;
+}
+
+.c-meeting-date-day{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.c-meeting-date-year{
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.c-meeting_info{
+  margin: 0;
+  padding: 0;
+}
+
+.c-meeting-info_name{
+  font-family: $font-secondary;
+  letter-spacing: 1px;
+  color: $color-black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.c-meeting-info_place{
+  color: $color-primary;
+  font-size: 1rem;
+  margin: 1.3rem 0 1rem 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.c-meeting-info_detail{
+  color: $color-doc-text;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-family: $font-main;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+
+
+/* PARTNEŘI */
+
+.c-partners{
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background-color: $color-light;
+  width: 100%;
+  h2{
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+.c-partners_logos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: $content-width;
+  img{
+    margin: 2rem;
   }
 }
