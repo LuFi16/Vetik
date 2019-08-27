@@ -225,7 +225,7 @@ $content-width: 70rem;
 
 .c-content_mainstory{
   box-sizing: border-box;
-  margin: 8rem 0 2rem 0;
+  margin: 8rem 0 3rem 0;
   background-color: $color-primary;
   background-image: url("../img/dog-on-leash2.png");
   background-position: center;
@@ -311,20 +311,18 @@ $content-width: 70rem;
 
 .c-stories{
   width: $content-width;
-  margin: 3rem auto 0 auto;
+  margin: 3rem auto 2rem auto;
+
+  /* different heights */
   column-count: 3;
   column-gap: 3.6rem;
-}/*
-.c-stories{
-  width: $content-width;
-  display: flex;
+
+  /* same heights */
+  /*display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: auto;
-  justify-content: space-between;
-  column-count: 3;
-  column-gap: 2.5rem;
-}*/
+  justify-content: space-between;*/
+}
 
 $story-width: 21rem;
 
@@ -336,7 +334,7 @@ $story-width: 21rem;
   width: $story-width;
   text-align: center;
   margin: 1rem 0 2.6rem 0;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   img{
     width: $story-width;    //aspect ratio is 3:2 (normal photo size)
     height: 14rem;
@@ -362,9 +360,46 @@ $story-width: 21rem;
 .c-story_more{
   color: $color-primary;
   text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 0;
 }
 .c-story_more:hover{
   text-decoration: underline;
+  background-color: transparentize($color-primary, 0.9);
 }
 
-
+/* FIRST AID */
+.c-box_firstaid{
+  box-shadow: 0 0 15px $color-shadow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem auto;
+  padding: 2rem 3rem;
+  img{
+    width: 3rem;
+    height: auto;
+  }
+  div{
+    margin: 0 3rem;
+  }
+  h3{
+    color: $color-help-red;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    letter-spacing: 1.5px;
+  }
+  i{
+    color: $color-help-red;
+    font-size: 1.5rem;
+  }
+  p{
+    font-family: $font-main-thick;
+    margin: 0;
+    padding: 0;
+  }
+}

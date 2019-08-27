@@ -67,6 +67,7 @@ $color-danger-line: #f2dede;
 $color-warning-line: #faebcc;
 $color-info-line: #bce8f1;
 
+$color-help-red: #e31317;
 
 
 
@@ -91,4 +92,37 @@ body{
   .c-tiny-hide{
     display: none !important;
   }
+}
+
+.c-btn-primary{
+  display: inline-block;
+  font-family: $font-secondary;
+  color: $color-light;
+  background-color: $color-primary;
+  border: none;
+  border-radius: 10rem;
+  //border-radius: 12% 12% 12% 12% / 50% 50% 50% 50%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: normal;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+  /*
+  @media (max-width: $tablet){
+}
+  @media (min-width: $tablet+1px){
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+  }
+  @media (max-width: 318px){
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }*/
+}
+
+.c-btn-primary:hover{
+  background-color: $color-primary-hover;
 }
