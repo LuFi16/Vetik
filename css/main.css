@@ -505,6 +505,9 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 0; }
+  @media (max-width: 800px) {
+    .c-meet_meetings {
+      justify-content: left; } }
 
 .c-meet_meeting {
   display: flex;
@@ -1079,10 +1082,10 @@ body {
 
 .c-form-price_nmbr {
   color: #5bb798;
+  /*//background-color: $color-black;
   background-image: url("../img/ticket.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 0.1rem 1rem; }
+  background-position: center;*/ }
 
 .c-form_end {
   border-top: 1px dotted #bababa;
@@ -1214,6 +1217,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .c-content-box-heading_icon img {
+    width: 1.5rem;
+    height: auto; }
 
 .c-content-box-heading_text {
   font-weight: normal;

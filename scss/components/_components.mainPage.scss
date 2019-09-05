@@ -251,6 +251,9 @@ $story-width: 21rem;
   justify-content: center;
   margin: 0 auto;
   padding: 0;
+  @media (max-width: 800px){
+    justify-content: left;
+  }
 }
 
 .c-meet_meeting{
