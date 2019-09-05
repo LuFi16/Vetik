@@ -1467,4 +1467,65 @@ body {
   font-family: "Baloo Bhaijaan", cursive;
   font-weight: normal; }
 
+/* --- ABOUT HEADER ---*/
+.c-article_box {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 15px #cecece;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  display: flex; }
+  @media (min-width: 770px) {
+    .c-article_box {
+      width: 44rem;
+      flex-direction: row; } }
+  @media (max-width: 769px) {
+    .c-article_box {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      background-image: url("../img/photos/7.jpg");
+      background-size: cover; } }
+
+.c-article-box_text {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem; }
+  @media (min-width: 770px) {
+    .c-article-box_text {
+      width: 65%; } }
+  @media (max-width: 769px) {
+    .c-article-box_text {
+      width: 100%; } }
+
+.c-article-box_heading {
+  font-family: "Baloo Bhaijaan", cursive;
+  font-weight: normal;
+  color: #5bb798;
+  padding: 0;
+  margin: 0; }
+
+.c-article-box_p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify; }
+
+.c-article-box_img {
+  box-sizing: border-box;
+  object-fit: cover;
+  height: auto; }
+  @media (min-width: 770px) {
+    .c-article-box_img {
+      width: 35%;
+      border-radius: 0 0.5rem 0.5rem 0; } }
+  @media (max-width: 769px) {
+    .c-article-box_img {
+      display: none;
+      width: 100%;
+      max-height: 15rem;
+      margin: auto; } }
+  @media (max-width: 330px) {
+    .c-article-box_img {
+      max-height: 10rem; } }
+
 /*# sourceMappingURL=main.css.map */
