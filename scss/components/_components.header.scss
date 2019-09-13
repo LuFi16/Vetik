@@ -228,12 +228,33 @@
 .c-dropdown_input{  //hide chechbox
   display: none;
 }
+
 .c-dropdown_input:checked ~ .c-dropdown_submenu{  //show submenu
   max-height: 100rem;
 }
-.c-dropdown_input:checked ~ .c-dropdown-submenu_submenu{  //show submenu
+
+.c-dropdown_input:checked ~ .c-dropdown-submenu_submenu{  //show submenu of submenu
   max-height: 100rem;
 }
+
+.c-dropdown_input:checked ~ .c-dropdown_label{
+  .fa-chevron-down{
+    display: none;
+  }
+  .fa-chevron-up{
+    display: block;
+  }
+}
+
+.c-dropdown_label{
+  .fa-chevron-down{
+    display: block;
+  }
+  .fa-chevron-up{
+    display: none;
+  }
+}
+
 
 .c-dropdown_submenu{
   box-sizing: border-box;
@@ -277,4 +298,22 @@
 .c-dropdown-submenu_arrow{
   padding: 0 0 0 1rem;
   font-size: 1rem;
+}
+
+.c-dropdown_input:checked ~ label.c-dropdown-submenu_submenu-label{
+  .fa-chevron-down{
+    display: none;
+  }
+  .fa-chevron-up{
+    display: block;
+  }
+}
+
+.c-dropdown-submenu_submenu-label{
+  .fa-chevron-down{
+    display: block;
+  }
+  .fa-chevron-up{
+    display: none;
+  }
 }
