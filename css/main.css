@@ -296,10 +296,14 @@ body {
   border-bottom: 1px solid #c5e6db; }
 
 .c-nav_ul ul {
-  display: none; }
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1.5s; }
 
 .c-nav_ul li:hover ul {
-  display: block; }
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s; }
 
 /* --- DROPDOWN MENU --- */
 .c-no-border {
