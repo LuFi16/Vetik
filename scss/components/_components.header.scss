@@ -255,6 +255,19 @@
   }
 }
 
+.c-no-margpadd{
+  margin: 0;
+  padding: 0;
+}
+
+.c-dropdown_arrow{
+  padding: 1rem 0 1rem 3rem;
+  height: 100%;
+}
+
+.c-dropdown_arrow:hover{
+  color: transparentize($color-black, 0.5);
+}
 
 .c-dropdown_submenu{
   box-sizing: border-box;

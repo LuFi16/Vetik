@@ -26,8 +26,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="321">
-                  <caret line="35" column="59" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="59" />
+                <state relative-caret-position="117">
+                  <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
                   <folding>
                     <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="e#1867#1873#0" expanded="true" />
@@ -110,8 +110,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/components/_components.header.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="248" column="18" lean-forward="true" selection-start-line="248" selection-start-column="18" selection-end-line="248" selection-end-column="18" />
+                <state relative-caret-position="320">
+                  <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
                 </state>
               </provider>
             </entry>
@@ -165,6 +165,7 @@
       <find>c-nav_dr</find>
       <find>shadow</find>
       <find>d7d7d7</find>
+      <find>c-dropdown_arrow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -283,15 +284,16 @@
       <workItem from="1565867744135" duration="6000" />
       <workItem from="1566897746908" duration="23602000" />
       <workItem from="1567689700878" duration="4789000" />
-      <workItem from="1568363320179" duration="7671000" />
+      <workItem from="1568363320179" duration="8370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141507000" />
+    <option name="totallyTimeSpent" value="142206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.074498564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -476,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="35" column="59" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="59" />
+        <state relative-caret-position="117">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#1867#1873#0" expanded="true" />
@@ -497,8 +499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_components.header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="248" column="18" lean-forward="true" selection-start-line="248" selection-start-column="18" selection-end-line="248" selection-end-column="18" />
+        <state relative-caret-position="320">
+          <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
         </state>
       </provider>
     </entry>
