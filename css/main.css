@@ -1215,7 +1215,6 @@ body {
 
 .c-form_price {
   padding: 2rem 1rem 0 1rem;
-  margin: 0;
   font-family: "Baloo Bhaijaan", cursive; }
 
 #zvire {
@@ -1230,10 +1229,21 @@ body {
 
 .c-form-price_nmbr {
   color: #5bb798;
+  font-family: "Baloo Bhaijaan", cursive;
+  font-size: 1rem;
   /*//background-color: $color-black;
   background-image: url("../img/ticket.svg");
   background-repeat: no-repeat;
-  background-position: center;*/ }
+  background-position: center;*/
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #312b25;
+  border-left: none;
+  margin: 0 1rem;
+  padding: 0;
+  text-align: center;
+  width: 5rem; }
 
 .c-form_end {
   border-top: 1px dotted #bababa;

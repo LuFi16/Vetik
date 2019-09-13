@@ -170,7 +170,7 @@
 
 .c-form_price{
   padding: 2rem 1rem 0 1rem;
-  margin: 0;
+  //margin: 0;
   font-family: $font-secondary;
 }
 
@@ -187,11 +187,22 @@
 
 .c-form-price_nmbr{
   color: $color-primary;
+  font-family: $font-secondary;
+  font-size: 1rem;
   /*//background-color: $color-black;
   background-image: url("../img/ticket.svg");
   background-repeat: no-repeat;
   background-position: center;*/
   //padding: 0.1rem 1rem;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid $color-black;
+  border-left: none;
+  margin: 0 1rem;
+  padding: 0;
+  text-align: center;
+  width: 5rem;
 }
 
 
