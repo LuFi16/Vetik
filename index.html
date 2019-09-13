@@ -25,10 +25,33 @@
             <h1 class="c-brand_name">VETÍK</h1>
         </a>
 
-        <nav class="c-nav_dropdown">
+        <!--<nav class="">
             <a href="#"><i class="fas fa-chevron-down c-dropdown_arrow"></i></a>
-        </nav>
+        </nav>-->
         <!-- add effect (change the arrow to another) -->
+
+        <ul>
+            <li>
+                <input id="c-dropdown_input1" type="checkbox" name="menu" class="c-dropdown_input"/>
+                <label for="c-dropdown_input1">
+                    <i class="fas fa-chevron-down c-dropdown_arrow"></i>
+                </label>
+                <ul class="c-dropdown_submenu">
+                    <li>
+                        <a href="#">O projektu</a>
+                    </li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">
+                        <img src="img/user-man.jpg" alt="jméno uživatele" class=" c-nav-item-user_img">
+                        Honza
+                    </a></li>
+                    <li><a href="#" class="c-no-border">
+                        <img src="img/cz_icon.svg" alt="česky" class="c-nav_language" title="switch to english">
+                    </a></li>
+                </ul>
+            </li>
+        </ul>
+
     </div>
     <!-- ↑ ONLY FOR MOBILE ↑ -->
 
@@ -93,7 +116,7 @@
             <!-- Czech flag -->
             <li class="c-nav_li">
                 <a href="#" class="c-nav_item">
-                <img src="img/cz_icon.svg" alt="česky" class="c-nav_language" title="switch to english">
+                    <img src="img/cz_icon.svg" alt="česky" class="c-nav_language" title="switch to english">
                 </a>
             </li>
 
