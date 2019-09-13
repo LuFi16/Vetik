@@ -52,8 +52,8 @@
 }
 
 .c-buygift_buy{
-  background-color: $color-primary;
-  color: $color-light;
+  background-color: $color-btn-gift-bcg;
+  color: $color-primary;
   border-right: none;
   @media (min-width: 476px){
     border-top-left-radius: 10% 50%;
@@ -77,6 +77,12 @@
   background-color: darken($color-btn-gift-bcg, 5);
   outline: none;
 }
+
+.c-buygift-active{
+  background-color: $color-primary;
+  color: $color-light;
+}
+
 
 .c-form{
   display: flex;

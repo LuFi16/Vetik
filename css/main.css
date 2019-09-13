@@ -1111,8 +1111,8 @@ body {
   outline: none; }
 
 .c-buygift_buy {
-  background-color: #5bb798;
-  color: #f7f7f7;
+  background-color: #f1f1f1;
+  color: #5bb798;
   border-right: none; }
   @media (min-width: 476px) {
     .c-buygift_buy {
@@ -1134,6 +1134,10 @@ body {
 .c-buygift_gift:hover {
   background-color: #e4e4e4;
   outline: none; }
+
+.c-buygift-active {
+  background-color: #5bb798;
+  color: #f7f7f7; }
 
 .c-form {
   display: flex;
