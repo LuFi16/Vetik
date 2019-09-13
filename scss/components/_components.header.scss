@@ -231,6 +231,9 @@
 .c-dropdown_input:checked ~ .c-dropdown_submenu{  //show submenu
   max-height: 100rem;
 }
+.c-dropdown_input:checked ~ .c-dropdown-submenu_submenu{  //show submenu
+  max-height: 100rem;
+}
 
 .c-dropdown_submenu{
   box-sizing: border-box;
@@ -244,7 +247,7 @@
   box-shadow: 0 0 15px 0 $color-shadow;
   margin: 1.5rem 0 0 0;
   text-align: center;
-  li a{
+  li a, .c-dropdown-submenu_submenu-label{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -259,7 +262,19 @@
     padding: 1rem;
     border-bottom: 1px solid $color-separator-line;
   }
-  li a:hover{
+  li a:hover, .c-dropdown-submenu_submenu-label:hover{
     background-color: $color-primary-light;
   }
+}
+
+.c-dropdown-submenu_submenu{
+  box-sizing: border-box;
+  max-height: 0;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.c-dropdown-submenu_arrow{
+  padding: 0 0 0 1rem;
+  font-size: 1rem;
 }
