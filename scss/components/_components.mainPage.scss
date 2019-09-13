@@ -231,6 +231,77 @@ $story-width: 21rem;
   box-shadow: 0 0 15px transparentize($color-help-red, 0.5);
 }
 
+/* FIRST AID BOX */
+
+.c-fa-box{
+  position: fixed;
+  left: 0;
+  top: 25%;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.c-fa-box_small{
+  background-color: $color-white;
+  color: transparentize($color-help-red, 0.5);
+  box-shadow: 0 0 15px $color-shadow;
+  font-size: 1.2rem;
+  padding: 3rem 1rem;
+  line-height: 0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.c-fa-box_big{
+  box-shadow: 0 0 15px $color-shadow;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: $color-white;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  //margin-left: -3rem;
+  text-decoration: none;
+  color: $color-black;
+  img{
+    width: 3rem;
+    height: auto;
+  }
+  div{
+    margin: 0 3rem;
+  }
+  h3{
+    color: $color-help-red;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    letter-spacing: 1.5px;
+  }
+  i{
+    color: $color-help-red;
+    font-size: 1.5rem;
+  }
+  p{
+    font-family: $font-main-thick;
+    margin: 0;
+    padding: 0;
+  }
+  display: none;
+}
+
+.c-fa-box:hover{
+  .c-fa-box_small{
+    display: none;
+  }
+  .c-fa-box_big{
+    display: flex;
+  }
+}
 
 
 /*  MEETINGS  */

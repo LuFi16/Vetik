@@ -573,6 +573,63 @@ body {
 .c-box_firstaid:hover {
   box-shadow: 0 0 15px rgba(227, 19, 23, 0.5); }
 
+/* FIRST AID BOX */
+.c-fa-box {
+  position: fixed;
+  left: 0;
+  top: 25%;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none; }
+
+.c-fa-box_small {
+  background-color: #ffffff;
+  color: rgba(227, 19, 23, 0.5);
+  box-shadow: 0 0 15px #cecece;
+  font-size: 1.2rem;
+  padding: 3rem 1rem;
+  line-height: 0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.c-fa-box_big {
+  box-shadow: 0 0 15px #cecece;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ffffff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  text-decoration: none;
+  color: #312b25;
+  display: none; }
+  .c-fa-box_big img {
+    width: 3rem;
+    height: auto; }
+  .c-fa-box_big div {
+    margin: 0 3rem; }
+  .c-fa-box_big h3 {
+    color: #e31317;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "Baloo Bhaijaan", cursive;
+    letter-spacing: 1.5px; }
+  .c-fa-box_big i {
+    color: #e31317;
+    font-size: 1.5rem; }
+  .c-fa-box_big p {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0; }
+
+.c-fa-box:hover .c-fa-box_small {
+  display: none; }
+.c-fa-box:hover .c-fa-box_big {
+  display: flex; }
+
 /*  MEETINGS  */
 .c-meet {
   margin: 2rem auto;
