@@ -217,3 +217,70 @@
 .c-desc-btn:focus{
   outline: none;
 }
+
+/* --- CONTACT --- */
+
+.c-contact_contain{
+  display: flex;
+  @media(min-width: $tablet+1px){
+    justify-content: center;
+    margin: 2rem 0 0 0;
+  }
+  @media(max-width: $tablet){
+    justify-content: space-between;
+    margin: 2rem 4rem 0 4rem;
+  }
+  @media (max-width: 960px) {
+    flex-direction: column;
+    margin: auto;
+  }
+  @media (min-width: 961px) {
+    flex-direction: row;
+  }
+}
+
+.c-contact{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  @media(min-width: $tablet+1px){
+    margin: 0 10rem 0 0;
+  }
+  @media(max-width: $tablet){
+    margin: 0;
+  }
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+  h2{
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-family: $font-secondary;
+    color: $color-primary;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  h3{
+    margin: 0 0 0.3rem 0;
+    padding: 0;
+    font-family: $font-main-thick;
+  }
+  a, address{
+    font-family: $font-main-thick;
+    font-weight: 200;
+    text-decoration: none;
+    color: $color-black;
+    font-style: normal;
+    margin: 0 0 1rem 0;
+  }
+  a:hover{
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
+
+.c-contact_form {
+  margin: 0 !important;
+}
+
+

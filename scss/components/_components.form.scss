@@ -266,3 +266,125 @@
 
 .c-form-end_info2{}
 
+
+/* --- FORM general ---*/
+.c-form-gen{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-main-thick;
+  background-color: $color-light;
+  box-shadow: 0 0 15px $color-shadow;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  width: 30rem;
+  @media (max-width: $mobile){
+    width: 100%;
+    //margin: 0;
+  }
+  /*@media (min-width: $mobile+1px){
+    margin: auto;
+    width: auto;
+  }*/
+  label{
+    font-family: $font-main-thick;
+    padding-bottom: 0.5rem;
+    color: $color-form-text;
+  }
+  input, textarea{
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    font-family: $font-main-thick;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+  input:hover, input:active, input:focus,
+  textarea:hover, textarea:active, textarea:focus{
+    border-color: $color-primary;
+    outline: none;
+  }
+}
+
+.c-form-gen_btn{
+  background-color: $color-primary;
+  color: $color-light;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-family: $font-secondary;
+  font-size: 1.1rem;
+  letter-spacing: $baloo-letter-spacing;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  margin: 1rem auto 0 auto;
+}
+
+.c-form-gen_btn:hover{
+  background-color: $color-primary-hover;
+  outline: none;
+}
+
+.c-form-gen_btn:active, .c-form-gen_btn:focus{
+  outline: none;
+}
+
+
+.c-form-gen_heading{
+  margin: 0 0 2rem 0;
+  padding: 0;
+  font-family: $font-secondary;
+  color: $color-primary;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.c-form-gen-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.c-form-gen-inputs_row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .c-form-gen-input{
+    min-width: 10rem;
+    @media (max-width: 450px){
+      width: 100%;
+      margin: 0;
+    }
+    @media (min-width: 451px){
+      margin: 0 2rem 0 0;
+      width: calc(50% - 1rem);
+    }
+  }
+
+  .c-form-gen-input:nth-child(even){
+    margin: 0;
+  }
+}
+
+.c-form-gen-input_short{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 451px){
+    align-self: flex-start;
+  }
+  @media (min-width: 451px) and (max-width: $mobile){
+    width: calc(50% - 1rem);
+  }
+  @media (max-width: 450px){
+  width: 100%;
+}
+}
+
+.c-form-gen-textarea{
+  display: flex;
+  flex-direction: column;
+  textarea{
+    height: 5rem;
+    resize: vertical;
+  }
+}

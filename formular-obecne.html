@@ -147,50 +147,49 @@
 
 <main class="c-content">
 
-    <div class="c-contact_contain">
-        <div class="c-contact">
-            <h2>Kontaktní údaje</h2>
+    <form class="c-form-gen">
+        <h2 class="c-form-gen_heading">Napište nám</h2>
 
-            <h3>Email</h3>
-            <a href="mailto: user@page.com">user@page.com</a>
+        <div class="c-form-gen-inputs_row">
+            <div class="c-form-gen-input">
+                <label for="jmeno">Jméno</label>
+                <input id="jmeno" type="text">
+            </div>
 
-            <h3>Telefon</h3>
-            <a href="tel: 123456789">123 456 789</a>
+            <div class="c-form-gen-input">
+                <label for="pes">Pes</label>
+                <input id="pes" type="text">
+            </div>
 
-            <h3>Adresa</h3>
-            <address>
-                Ulice 123 , Město, 222 22
-            </address>
+            <div class="c-form-gen-input">
+                <label for="prijmeni">Příjmení</label>
+                <input id="prijmeni" type="text">
+            </div>
+
+            <div class="c-form-gen-input">
+                <label for="email">Email</label>
+                <input id="email" type="email">
+            </div>
         </div>
 
-        <form class="c-form-gen c-contact_form">
-            <h2 class="c-form-gen_heading">Napište nám</h2>
 
-            <div class="c-form-gen-inputs_row">
-                <div class="c-form-gen-input">
-                    <label for="jmeno">Jméno</label>
-                    <input id="jmeno" type="text">
-                </div>
+        <div class="c-form-gen-input_short">
+            <label for="zprava">Vaše zpráva</label>
+            <input id="zprava" type="text">
+        </div>
 
-                <div class="c-form-gen-input">
-                    <label for="email">Email</label>
-                    <input id="email" type="email">
-                </div>
-            </div>
+        <div class="c-form-gen-input">
+            <label for="dalsi">Další</label>
+            <input id="dalsi" type="text">
+        </div>
 
-            <div class="c-form-gen-textarea">
-                <label for="zprava">Vaše zpráva</label>
-                <textarea id="zprava"></textarea>
-            </div>
+        <div class="c-form-gen-textarea">
+            <label for="dalsii">Dalšíí</label>
+            <textarea id="dalsii"></textarea>
+        </div>
 
-            <button class="c-form-gen_btn">Odeslat zprávu</button>
-        </form>
-    </div>
-
-
-
-
-
+        <button class="c-form-gen_btn">Odeslat</button>
+    </form>
 
 </main>
 
