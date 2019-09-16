@@ -176,11 +176,15 @@
 
 /* -- Submenu -- */
 .c-nav_submenu{
-  background: $color-primary-light;
+  //background: $color-primary-light;
+  //background: $color-white;
   position: absolute;
   padding: 0;
-  margin: 0.3rem 0 0 2rem;
   z-index: 20;
+}
+
+.c-nav-submenu_container{
+  padding: 0.6rem 0 0 2rem;
 }
 
 .c-nav-submenu_li{
@@ -192,7 +196,8 @@
   a{
     display: block;
     color: $color-primary;
-    background: $color-primary-light;
+    //background: $color-primary-light;
+    background: $color-white;
     padding: 0.5rem 1rem;
     width: 100%;
     border-left: 1px solid lighten($color-primary, 30);
@@ -201,6 +206,7 @@
 
   a:hover{
     color: $color-primary-hover;
+    background: $color-primary-light;
   }
 }
 
@@ -216,12 +222,12 @@
 .c-nav_ul ul{
   visibility: hidden;
   opacity: 0;
-  transition: all 1.5s;
+  //transition: all 1.5s;
 }
 .c-nav_ul li:hover ul{
   visibility: visible;
   opacity: 1;
-  transition: all 0.3s;
+  //transition: all 0.3s;
 }
 
 

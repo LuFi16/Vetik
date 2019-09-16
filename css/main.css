@@ -265,11 +265,12 @@ body {
 
 /* -- Submenu -- */
 .c-nav_submenu {
-  background: #dbf1e9;
   position: absolute;
   padding: 0;
-  margin: 0.3rem 0 0 2rem;
   z-index: 20; }
+
+.c-nav-submenu_container {
+  padding: 0.6rem 0 0 2rem; }
 
 .c-nav-submenu_li {
   display: block;
@@ -279,13 +280,14 @@ body {
   .c-nav-submenu_li a {
     display: block;
     color: #5bb798;
-    background: #dbf1e9;
+    background: #ffffff;
     padding: 0.5rem 1rem;
     width: 100%;
     border-left: 1px solid #c5e6db;
     border-right: 1px solid #c5e6db; }
   .c-nav-submenu_li a:hover {
-    color: #347861; }
+    color: #347861;
+    background: #dbf1e9; }
 
 .c-nav-submenu_first a {
   padding-top: 1rem;
@@ -297,13 +299,11 @@ body {
 
 .c-nav_ul ul {
   visibility: hidden;
-  opacity: 0;
-  transition: all 1.5s; }
+  opacity: 0; }
 
 .c-nav_ul li:hover ul {
   visibility: visible;
-  opacity: 1;
-  transition: all 0.3s; }
+  opacity: 1; }
 
 /* --- DROPDOWN MENU --- */
 .c-no-border {
