@@ -181,7 +181,6 @@
 
 .c-form_price{
   padding: 2rem 1rem 0 1rem;
-  //margin: 0;
   font-family: $font-secondary;
 }
 
@@ -280,12 +279,7 @@
   width: 30rem;
   @media (max-width: $mobile){
     width: 100%;
-    //margin: 0;
   }
-  /*@media (min-width: $mobile+1px){
-    margin: auto;
-    width: auto;
-  }*/
   label{
     font-family: $font-main-thick;
     padding-bottom: 0.5rem;
