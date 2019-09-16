@@ -276,7 +276,7 @@ body {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  text-align: center; }
+  text-align: left; }
   .c-nav-submenu_li a {
     display: block;
     color: #5bb798;
@@ -1062,6 +1062,15 @@ body {
 #c-logo-yt:hover {
   color: #e52320; }
 
+.c-form_warning {
+  margin: 0 0 3rem 1rem;
+  padding: 0;
+  text-align: left;
+  color: #a94442;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 25rem; }
+
 .c-buygift {
   display: flex;
   /* border: 1px solid $color-primary;
@@ -1583,33 +1592,31 @@ body {
     .c-article_header {
       justify-content: space-between;
       align-items: flex-start; } }
-
-.c-article-header_date {
-  font-family: "Roboto", sans-serif;
-  color: #f7f7f7;
-  padding: 0;
-  text-shadow: 1px 1px 5px black; }
-  @media (max-width: 423px) {
-    .c-article-header_date {
-      margin: 0 0 1rem 0; } }
-  @media (min-width: 424px) {
-    .c-article-header_date {
-      margin: 0; } }
-
-.c-article-header_heading {
-  font-weight: normal;
-  padding: 0.2rem 1rem;
-  margin: 0;
-  background: rgba(247, 247, 247, 0.7); }
-  @media (max-width: 423px) {
-    .c-article-header_heading {
-      width: 100%;
-      border-radius: 0;
-      text-align: center; } }
-  @media (min-width: 424px) {
-    .c-article-header_heading {
-      width: auto;
-      border-radius: 0.5rem; } }
+  .c-article_header p {
+    font-family: "Roboto", sans-serif;
+    color: #f7f7f7;
+    padding: 0;
+    text-shadow: 1px 1px 5px black; }
+    @media (max-width: 423px) {
+      .c-article_header p {
+        margin: 0 0 1rem 0; } }
+    @media (min-width: 424px) {
+      .c-article_header p {
+        margin: 0; } }
+  .c-article_header h2 {
+    font-weight: normal;
+    padding: 0.2rem 1rem;
+    margin: 0;
+    background: rgba(247, 247, 247, 0.7); }
+    @media (max-width: 423px) {
+      .c-article_header h2 {
+        width: 100%;
+        border-radius: 0;
+        text-align: center; } }
+    @media (min-width: 424px) {
+      .c-article_header h2 {
+        width: auto;
+        border-radius: 0.5rem; } }
 
 /*  --- ARTICLE CONTENT (TEXT) ---  */
 .c-content_article {
@@ -1620,10 +1627,9 @@ body {
 .c-article_text {
   font-family: "Roboto", sans-serif;
   text-align: justify; }
-
-.c-article-text_in-heading {
-  font-family: "Baloo Bhaijaan", cursive;
-  font-weight: normal; }
+  .c-article_text h3 {
+    font-family: "Baloo Bhaijaan", cursive;
+    font-weight: normal; }
 
 /* --- ABOUT HEADER ---*/
 .c-article_box {
@@ -1644,46 +1650,42 @@ body {
       text-align: center;
       background-image: url("../img/photos/7.jpg");
       background-size: cover; } }
-
-.c-article-box_text {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem; }
-  @media (min-width: 770px) {
-    .c-article-box_text {
-      width: 65%; } }
-  @media (max-width: 769px) {
-    .c-article-box_text {
-      width: 100%; } }
-
-.c-article-box_heading {
-  font-family: "Baloo Bhaijaan", cursive;
-  font-weight: normal;
-  color: #5bb798;
-  padding: 0;
-  margin: 0; }
-
-.c-article-box_p {
-  font-family: "Roboto", sans-serif;
-  text-align: justify; }
-
-.c-article-box_img {
-  box-sizing: border-box;
-  object-fit: cover;
-  height: auto; }
-  @media (min-width: 770px) {
-    .c-article-box_img {
-      width: 35%;
-      border-radius: 0 0.5rem 0.5rem 0; } }
-  @media (max-width: 769px) {
-    .c-article-box_img {
-      display: none;
-      width: 100%;
-      max-height: 15rem;
-      margin: auto; } }
-  @media (max-width: 330px) {
-    .c-article-box_img {
-      max-height: 10rem; } }
+  .c-article_box div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; }
+    @media (min-width: 770px) {
+      .c-article_box div {
+        width: 65%; } }
+    @media (max-width: 769px) {
+      .c-article_box div {
+        width: 100%; } }
+  .c-article_box h2 {
+    font-family: "Baloo Bhaijaan", cursive;
+    font-weight: normal;
+    color: #5bb798;
+    padding: 0;
+    margin: 0; }
+  .c-article_box p {
+    font-family: "Roboto", sans-serif;
+    text-align: justify; }
+  .c-article_box img {
+    box-sizing: border-box;
+    object-fit: cover;
+    height: auto; }
+    @media (min-width: 770px) {
+      .c-article_box img {
+        width: 35%;
+        border-radius: 0 0.5rem 0.5rem 0; } }
+    @media (max-width: 769px) {
+      .c-article_box img {
+        display: none;
+        width: 100%;
+        max-height: 15rem;
+        margin: auto; } }
+    @media (max-width: 330px) {
+      .c-article_box img {
+        max-height: 10rem; } }
 
 /*# sourceMappingURL=main.css.map */

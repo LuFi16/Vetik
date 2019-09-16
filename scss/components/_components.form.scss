@@ -1,4 +1,15 @@
 
+.c-form_warning{
+  margin: 0 0 3rem 1rem;
+  padding: 0;
+  text-align: left;
+  color: $color-danger-text;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 25rem;
+}
+
+
 .c-buygift{
   display: flex;
  /* border: 1px solid $color-primary;
