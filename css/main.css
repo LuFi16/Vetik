@@ -85,6 +85,7 @@ body {
   text-align: center;
   cursor: pointer;
   align-self: center;
+  text-decoration: none;
   /*
   @media (max-width: $tablet){
 }
@@ -943,6 +944,7 @@ body {
   text-align: center;
   cursor: pointer;
   border: none;
+  text-decoration: none;
   /*border-radius: 50px;*/
   border-top-left-radius: 10% 50%;
   border-top-right-radius: 10% 50%;
@@ -1426,7 +1428,8 @@ body {
   border-radius: 5px;
   cursor: pointer;
   display: flex;
-  margin: 1rem auto 0 auto; }
+  margin: 1rem auto 0 auto;
+  text-decoration: none; }
 
 .c-form-gen_btn:hover {
   background-color: #347861;
