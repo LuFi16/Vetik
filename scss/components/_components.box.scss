@@ -392,3 +392,92 @@
     }
   }
 }
+
+
+/* --- USER --- */
+
+.c-box-user{
+  font-family: $font-main-thick;
+  box-sizing: border-box;
+  background-color: $color-lightlightgray;
+  //box-shadow: 0 0 15px $color-shadow;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  padding: 0;
+  //width: 50rem;
+  h3, p{
+    padding: 0;
+    margin: 0;
+  }
+  > div{                // 1st section
+    padding: 1.5rem;
+    border-right: 1px solid $color-lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > img{              //user image
+      border-radius: 50%;
+      width: 6rem;
+      height: 6rem;
+      object-fit: cover;
+      margin-right: 1.5rem;
+    }
+    > div{              //info
+      h3{               //name
+        font-family: $font-secondary;
+        font-weight: 200;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+      }
+      > div{            //email + city
+        color: $color-gray;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0.5rem 0 1rem 0;
+        p:first-child{  //email
+          padding-right: 0.5rem;
+        }
+        p:last-child{   //city
+          padding-left: 0.5rem;
+          border-left: 1px solid $color-gray;
+        }
+      }
+      > p{              //registration
+        color: $color-primary;
+        text-transform: uppercase;
+        background-color: $color-lightgray;
+        padding: 0.3rem 0.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+  > a{                  // 2nd section
+    text-decoration: none;
+    color: $color-primary;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > img{              //syringe
+      width: 2rem;
+      height: auto;
+    }
+    > p:nth-child(2){   //reminder
+      margin: 0 1rem;
+      padding: 2rem 0;
+    }
+    > p:last-child{     //notification
+      color: $color-white;
+      background-color: $color-help-red;
+      padding: 0.1rem 0.5rem;
+      border-radius: 9px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      position: relative;
+      right: 1.2rem;
+      top: -0.8rem;
+    }
+  }
+}
