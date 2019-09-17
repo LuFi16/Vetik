@@ -73,3 +73,322 @@
 .c-box_button:focus{
   outline: none;
 }
+
+
+/* ---  CARDS ---*/
+
+
+.c-content_boxes{
+  display: flex;
+  @media (min-width: 1181px) {
+    flex-direction: row;
+    width: 70rem;
+    justify-content: space-between;
+  }
+  @media (max-width: 1180px) {
+    flex-direction: column;
+  }
+  @media (min-width: $mobile+1px){
+    margin: auto;
+  }
+  @media (max-width: $mobile){
+    margin: 0;
+  }
+}
+
+.c-card{
+  box-sizing: border-box;
+  font-family: $font-main-thick;
+  background-color: $color-white;
+  box-shadow: 0 0 15px $color-shadow;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 1rem 2rem 2rem;
+  p, h3{
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: $mobile+1px){
+    width: 25rem;
+  }
+  @media (max-width: $mobile){
+    width: 100%;
+  }
+}
+
+.c-card_close{
+  text-transform: uppercase;
+  color: $color-gray;
+  font-size: 0.7rem;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  img{
+    margin: 0;
+    padding: 0 0 0 0.5rem;
+    width: 0.7rem;
+    height: auto;
+  }
+}
+
+.c-card-1section{
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1rem 0;
+  margin: 0 1rem 0 0;
+  border-bottom: 1px solid $color-lightgray;
+  div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //justify-content: space-between;
+    @media (min-width: $mobile+1px){
+
+    }
+    @media (max-width: $mobile){
+      flex-wrap: wrap;
+    }
+  }
+  div:first-child h3{             //name
+    font-family: $font-secondary;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin: 0 2rem 0 0;
+    max-width: 16rem;
+    letter-spacing: 1px;
+    @media (min-width: $mobile+1px){}
+    @media (max-width: $mobile){
+      margin-bottom: 0.5rem;
+    }
+  }
+  div:first-child p{              //birth
+    color: $color-gray;
+    font-size: 0.9rem;
+    font-weight: 600;
+    @media (min-width: $mobile+1px){}
+    @media (max-width: $mobile){
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  div:last-child p:first-child{    //breed
+    color: $color-primary;
+    font-weight: 600;
+    margin: 0 2rem 0 0;
+    max-width: 16rem; //depends on the length of dog chip
+    @media (min-width: $mobile+1px){}
+    @media (max-width: $mobile){
+      margin-bottom: 0.5rem;
+    }
+  }
+  div:last-child p:last-child{     //chip
+    font-size: 0.9rem;
+    background-color: $color-lightgray;
+    border-radius: 3px;
+    padding: 0.3rem 0.6rem;
+    font-weight: 600;
+    @media (min-width: $mobile+1px){}
+    @media (max-width: $mobile){
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.c-card-2section{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 0 0;
+}
+
+.c-card-2section_event{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: $mobile+1px){
+  }
+  @media (max-width: $mobile){
+    flex-wrap: wrap;
+  }
+  > div{                      //syringe + event name
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media (min-width: $mobile+1px){}
+    @media (max-width: $mobile){
+      margin-bottom: 1rem;
+    }
+  }
+  div div{                   //syringe circle
+    background-color: $color-lightlightgray;
+    border-radius: 50%;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{                      //syringe
+      width: 0.9rem;
+      height: auto
+    }
+  }
+  div p{                      //event name
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    max-width: 7rem;
+  }
+  > p:nth-child(2) {          //date
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: $color-gray;
+    background-color: $color-lightlightgray;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    @media (min-width: $mobile+1px){}
+    @media (max-width: $mobile){
+      margin: 0 0 1rem 1rem;
+    }
+  }
+  > p:last-child{            //period
+    color: $color-primary;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    @media (min-width: $mobile+1px){}
+    @media (max-width: $mobile){
+      margin: 0 0 1rem 1rem;
+    }
+  }
+}
+
+.c-card-2section_add{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  text-decoration: none;
+  > div{                      //plus circle
+    background-color: $color-lightlightgray;
+    border-radius: 50%;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{                      //plus
+      width: 0.9rem;
+      height: auto
+    }
+  }
+  > p{
+    color: $color-gray;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 0.5rem;
+  }
+}
+.c-card-2section_add:hover{
+  > div{
+    background-color: $color-primary-light;
+  }
+  > p{
+    color: $color-primary;
+  }
+}
+
+
+/* --- DISCOUNTS --- */
+
+.c-box-voucher{
+  box-sizing: border-box;
+  font-family: $font-main-thick;
+  background-color: $color-white;
+  box-shadow: 0 0 15px $color-shadow;
+  padding: 1rem 2rem;
+  @media (min-width: $mobile+1px){
+    max-width: 35rem;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    margin: 1rem auto;
+  }
+  @media (max-width: $mobile){
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  > h3{           //voucher name
+    grid-row: 1/2;
+    grid-column: 1/4;
+    font-family: $font-secondary;
+    font-weight: normal;
+    padding: 0;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    max-width: 16rem;
+    letter-spacing: 1px;
+    /*@media (max-width: $mobile){
+      margin: 0 0 0.5rem 0;
+    }*/
+    @media (min-width: $mobile+1px){
+
+    }
+    /*@media (max-width: 400px){
+      font-size: 1.4rem;
+    }*/
+  }
+  > a{            //show
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-family: $font-secondary;
+    letter-spacing: $baloo-letter-spacing;
+    font-weight: normal;
+    color: $color-primary;
+    text-decoration: none;
+    margin: 0 2rem 0 0;
+    padding: 0;
+    /*@media (max-width: $mobile){
+      margin: 0;
+      padding: 0 0 0 0.6rem;
+    }*/
+    @media (min-width: $mobile+1px){
+    }
+  }
+  > a:hover{
+    color: $color-primary-hover;
+  }
+  > p:nth-child(3){     //validity
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-family: $font-main;
+    font-size: 0.9rem;
+    background-color: $color-lightgray;
+    border-radius: 3px;
+    padding: 0.3rem 0.6rem;
+    font-weight: 600;
+    @media (max-width: $mobile){
+      margin: 0.5rem 0;
+    }
+    @media (min-width: $mobile+1px){
+      margin: 0 2rem 0 0;
+    }
+  }
+  > p:last-child{         //bought
+    grid-row: 2/3;
+    grid-column: 3/4;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    /*@media (max-width: $mobile){
+      padding: 0 0 0 0.6rem;
+    }*/
+    @media (min-width: $mobile+1px){
+    }
+  }
+}
