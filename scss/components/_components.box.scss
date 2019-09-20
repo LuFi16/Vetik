@@ -55,6 +55,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin: 2rem auto 0 auto;
+  text-decoration: none;
   @media (max-width: 215px){
     padding: 0.5rem 1rem;
   }
@@ -402,20 +403,35 @@
   background-color: $color-lightlightgray;
   //box-shadow: 0 0 15px $color-shadow;
   display: flex;
-  flex-direction: row;
   margin: 2rem auto;
   padding: 0;
   //width: 50rem;
+  @media (max-width: 700px){
+    flex-direction: column;
+  }
+  @media (min-width: 701px){
+    flex-direction: row;
+  }
+  @media (max-width: 400px){
+    width: 100%;
+  }
   h3, p{
     padding: 0;
     margin: 0;
   }
   > div{                // 1st section
     padding: 1.5rem;
-    border-right: 1px solid $color-lightgray;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    @media (min-width: 401px){
+      flex-direction: row;
+    }
+    @media (min-width: 701px){
+      border-right: 1px solid $color-lightgray;
+    }
+    @media (max-width: 400px){
+      flex-direction: column;
+    }
     > img{              //user image
       border-radius: 50%;
       width: 6rem;
@@ -429,19 +445,30 @@
         font-weight: 200;
         letter-spacing: 2px;
         font-size: 1.5rem;
+        @media (max-width: 400px){
+          text-align: center;
+        }
       }
       > div{            //email + city
         color: $color-gray;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        margin: 0.5rem 0 1rem 0;
+        margin: 0.1rem 0 0.6rem 0;
+        @media (min-width: 401px){
+          flex-direction: row;
+        }
+        @media (max-width: 400px){
+          text-align: center;
+          flex-direction: column;
+        }
         p:first-child{  //email
           padding-right: 0.5rem;
         }
         p:last-child{   //city
-          padding-left: 0.5rem;
-          border-left: 1px solid $color-gray;
+          @media (min-width: 401px){
+            padding-left: 0.5rem;
+            border-left: 1px solid $color-gray;
+          }
         }
       }
       > p{              //registration
@@ -450,23 +477,40 @@
         background-color: $color-lightgray;
         padding: 0.3rem 0.5rem;
         font-weight: 600;
+        @media (max-width: 400px){
+          text-align: center;
+        }
       }
     }
   }
   > a{                  // 2nd section
     text-decoration: none;
     color: $color-primary;
-    padding: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media (max-width: 700px){
+      justify-content: center;
+      border-top: 1px solid $color-lightgray;
+    }
+    @media (min-width: 701px){
+      padding: 1.5rem;
+    }
     > img{              //syringe
-      width: 2rem;
+      width: 1.5rem;
       height: auto;
     }
     > p:nth-child(2){   //reminder
       margin: 0 1rem;
       padding: 2rem 0;
+      @media (max-width: 400px){
+      }
+      @media (min-width: 401px){
+        font-size: 1.2rem;
+      }
+    }
+    > p:nth-child(2):hover{   //reminder
+      text-decoration: underline;
     }
     > p:last-child{     //notification
       color: $color-white;
