@@ -1741,6 +1741,43 @@ body {
 .c-card-2section_add:hover > p {
   color: #5bb798; }
 
+/* add card*/
+.c-card-add {
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan", cursive;
+  text-transform: uppercase;
+  color: #d7d7d7;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  border: 1px dashed #d7d7d7;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer; }
+  .c-card-add p {
+    margin: 0;
+    padding: 0; }
+  .c-card-add img {
+    width: 1.5rem;
+    height: auto;
+    margin-bottom: 0.5rem; }
+  @media (min-width: 651px) {
+    .c-card-add {
+      width: 25rem;
+      border-radius: 15px; } }
+  @media (max-width: 650px) {
+    .c-card-add {
+      width: 100%; } }
+
+.c-card-add:hover {
+  background-color: rgba(49, 43, 37, 0.1);
+  color: #8d8d8d;
+  border-color: #8d8d8d; }
+
 /* --- DISCOUNTS --- */
 .c-box-voucher {
   box-sizing: border-box;
