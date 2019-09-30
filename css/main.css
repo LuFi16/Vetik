@@ -2291,4 +2291,30 @@ body {
       .c-article_box img {
         max-height: 10rem; } }
 
+.c-ads {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  z-index: 600;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px #cecece;
+  padding: 0;
+  margin: 0; }
+  .c-ads a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    height: 8rem;
+    width: auto; }
+    .c-ads a img {
+      height: 8rem;
+      width: auto;
+      padding: 0;
+      margin: 0; }
+
 /*# sourceMappingURL=main.css.map */
