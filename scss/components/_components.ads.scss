@@ -1,4 +1,4 @@
-.c-ads{
+.c-ads-bottom{
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -28,4 +28,25 @@
       opacity: 0.5;
     }
   }
+}
+
+.c-ads-right{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  float: right;
+  margin-top: 6.5rem;
+  a{
+    img{
+      width: 10rem;
+      height: 30rem;
+      object-fit: cover;
+    }
+    img:hover{
+      opacity: 0.5;
+    }
+  }
+
 }
