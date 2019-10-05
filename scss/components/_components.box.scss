@@ -576,9 +576,10 @@
     > p:nth-child(2):hover{   //reminder
       text-decoration: underline;
     }
-    > p:last-child{     //notification
+    .c-box-user_notification{
       color: $color-white;
       background-color: $color-help-red;
+      display: block;
       padding: 0.1rem 0.5rem;
       border-radius: 9px;
       font-size: 0.7rem;

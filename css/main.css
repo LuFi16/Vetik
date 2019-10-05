@@ -261,8 +261,9 @@ body {
 .c-nav-item-user_img {
   border-radius: 50%;
   width: 2rem;
-  height: auto;
-  margin-right: 0.7rem; }
+  height: 2rem;
+  margin-right: 0.7rem;
+  object-fit: cover; }
 
 /* -- Submenu -- */
 .c-nav_submenu {
@@ -1973,9 +1974,10 @@ body {
           font-size: 1.2rem; } }
     .c-box-user > a > p:nth-child(2):hover {
       text-decoration: underline; }
-    .c-box-user > a > p:last-child {
+    .c-box-user > a .c-box-user_notification {
       color: #ffffff;
       background-color: #e31317;
+      display: block;
       padding: 0.1rem 0.5rem;
       border-radius: 9px;
       font-size: 0.7rem;
