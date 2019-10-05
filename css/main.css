@@ -1165,6 +1165,7 @@ body {
 
 .c-buygift {
   display: flex;
+  text-decoration: none;
   /* border: 1px solid $color-primary;
    border-top-left-radius: 10% 50%;   //same as in content
    border-top-right-radius: 10% 50%;
@@ -1188,7 +1189,8 @@ body {
   display: block;
   font-family: "Baloo Bhaijaan", cursive;
   border: 1px solid #5bb798;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
   @media (max-width: 475px) {
     .c-buygift_buy, .c-buygift_gift {
       width: 100%;
@@ -1238,7 +1240,8 @@ body {
 
 .c-buygift-active {
   background-color: #5bb798;
-  color: #f7f7f7; }
+  color: #f7f7f7;
+  text-decoration: none; }
 
 .c-form {
   display: flex;

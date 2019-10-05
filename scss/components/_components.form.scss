@@ -12,6 +12,7 @@
 
 .c-buygift{
   display: flex;
+  text-decoration: none;
  /* border: 1px solid $color-primary;
   border-top-left-radius: 10% 50%;   //same as in content
   border-top-right-radius: 10% 50%;
@@ -38,6 +39,7 @@
   font-family: $font-secondary;
   border: 1px solid $color-primary;
   cursor: pointer;
+  text-decoration: none;
   @media (max-width: 475px){
     width: 100%;
     font-size: 0.9rem;
@@ -92,6 +94,7 @@
 .c-buygift-active{
   background-color: $color-primary;
   color: $color-light;
+  text-decoration: none;
 }
 
 
