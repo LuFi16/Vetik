@@ -1204,7 +1204,7 @@ body {
       padding: 0.5rem 2rem; } }
 
 .c-buygift_buy:hover {
-  background-color: #347861;
+  background-color: #e4e4e4;
   outline: none; }
 
 .c-buygift_buy:active, .c-buygift_gift:active {
@@ -1242,6 +1242,9 @@ body {
   background-color: #5bb798;
   color: #f7f7f7;
   text-decoration: none; }
+
+.c-buygift-active:hover {
+  background-color: #347861; }
 
 .c-form {
   display: flex;
