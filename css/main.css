@@ -1856,6 +1856,25 @@ body {
       padding: 0 0 0 0.6rem;
     }*/ }
 
+.c-voucher-another {
+  text-decoration: none;
+  color: #5bb798;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  display: block; }
+  @media (min-width: 651px) {
+    .c-voucher-another {
+      width: 35rem; } }
+  @media (max-width: 650px) {
+    .c-voucher-another {
+      width: 100%; } }
+
+.c-voucher-another:hover {
+  text-decoration: underline; }
+  .c-voucher-another:hover i {
+    text-decoration: underline; }
+
 /* --- USER --- */
 .c-box-user {
   font-family: "Roboto", sans-serif;
@@ -2229,8 +2248,12 @@ body {
 
 .c-article_text {
   font-family: "Roboto", sans-serif;
-  text-align: justify; }
-  .c-article_text h3 {
+  text-align: center; }
+  .c-article_text p, .c-article_text h1, .c-article_text h2, .c-article_text h3, .c-article_text h4, .c-article_text h5 {
+    text-align: justify; }
+  .c-article_text img {
+    max-width: 100%; }
+  .c-article_text h3, .c-article_text h4 {
     font-family: "Baloo Bhaijaan", cursive;
     font-weight: normal; }
 

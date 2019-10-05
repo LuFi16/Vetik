@@ -438,6 +438,26 @@
   }
 }
 
+.c-voucher-another{
+  text-decoration: none;
+  color: $color-primary;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  display: block;
+  @media (min-width: $mobile+1px){
+    width: 35rem;
+  }
+  @media (max-width: $mobile){
+    width: 100%;
+  }
+}
+.c-voucher-another:hover{
+  text-decoration: underline;
+  i{
+    text-decoration: underline;
+  }
+}
 
 /* --- USER --- */
 

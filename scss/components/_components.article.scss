@@ -97,8 +97,14 @@
 
 .c-article_text{
   font-family: $font-main-thick;
-  text-align: justify;
-  h3{
+  text-align: center;
+  p, h1, h2, h3, h4, h5{
+    text-align: justify;
+  }
+  img{
+    max-width: 100%;
+  }
+  h3, h4{
     font-family: $font-secondary;
     font-weight: normal;
   }
