@@ -2006,7 +2006,8 @@ body {
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transform: rotate(-30deg); }
   .c-content-box-heading_icon img {
     width: 1.5rem;
     height: auto; }
@@ -2103,6 +2104,129 @@ body {
     .c-box2_buy {
       padding: 0; } }
 
+.c-coupon {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #312b25;
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  /*display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);*/
+  /*@media (max-width: $mobile){
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1rem 0;
+  }*/ }
+  @media (min-width: 651px) {
+    .c-coupon {
+      margin: 1rem auto; } }
+  .c-coupon > a {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem; }
+    .c-coupon > a > img {
+      box-sizing: border-box;
+      max-width: 16rem;
+      max-height: 100%;
+      object-fit: contain; }
+  .c-coupon div:nth-child(2) {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    width: 18rem;
+    justify-content: space-between; }
+    .c-coupon div:nth-child(2) h2 {
+      font-family: "Baloo Bhaijaan", cursive;
+      font-weight: 200;
+      letter-spacing: 1px;
+      margin: 0;
+      text-transform: uppercase; }
+    .c-coupon div:nth-child(2) p {
+      margin: 0.5rem 0 0.5rem 0;
+      font-size: 1rem; }
+    .c-coupon div:nth-child(2) a {
+      margin: 0;
+      text-decoration: none;
+      color: #5bb798; }
+    .c-coupon div:nth-child(2) a:hover {
+      text-decoration: underline;
+      font-weight: bold; }
+  .c-coupon div:last-child {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px dashed #312b25;
+    margin: 0;
+    text-align: center;
+    padding: 1rem 2rem 1rem 1rem;
+    width: 15rem;
+    justify-content: space-between; }
+    .c-coupon div:last-child p:first-child {
+      color: #8d8d8d;
+      margin: 0;
+      font-size: 0.9rem; }
+    .c-coupon div:last-child p:nth-child(2) {
+      font-family: "Baloo Bhaijaan", cursive;
+      font-size: 3rem;
+      margin: 0; }
+    .c-coupon div:last-child p:nth-child(3) {
+      color: #8d8d8d;
+      margin: 0;
+      font-size: 0.9rem; }
+    .c-coupon div:last-child p:last-child {
+      color: #8d8d8d;
+      margin: 0.5rem 0 0 0;
+      font-size: 0.9rem; }
+
+.c-coupon:before,
+.c-coupon:after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  height: 3rem;
+  width: 1.7rem;
+  border: 1px solid #312b25; }
+
+.c-coupon:before {
+  left: -1px;
+  border-radius: 0 20rem 20rem 0;
+  border-left-color: #ffffff; }
+
+.c-coupon:after {
+  right: -1px;
+  border-radius: 20rem 0 0 20rem;
+  border-right-color: #ffffff; }
+
+/*
+.c-coupon::before, .c-coupon::after{
+  position: relative;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: red;
+  //bottom: -1em;
+  //z-index: 100;
+}
+
+.c-coupon::before{
+  right: 0;
+  transform: skew(0, 20deg)
+}
+
+.c-coupon::after{
+  left: 0;
+  transform: skew(0, -20deg)
+}*/
 .c-box {
   display: flex;
   flex-direction: column;
