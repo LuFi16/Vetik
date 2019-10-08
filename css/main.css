@@ -2107,6 +2107,14 @@ body {
     .c-box2_buy {
       padding: 0; } }
 
+/* --- COUPONS --- */
+.c-coupon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+
 .c-coupon {
   box-sizing: border-box;
   background-color: #ffffff;
@@ -2123,9 +2131,6 @@ body {
     width: 100%;
     margin: 1rem 0;
   }*/ }
-  @media (min-width: 651px) {
-    .c-coupon {
-      margin: 1rem auto; } }
   .c-coupon > a {
     box-sizing: border-box;
     margin: 0;
@@ -2230,6 +2235,10 @@ body {
   left: 0;
   transform: skew(0, -20deg)
 }*/
+.c-coupon-choose {
+  margin-left: 3rem;
+  padding: 0.5rem 1.5rem; }
+
 .c-box {
   display: flex;
   flex-direction: column;
