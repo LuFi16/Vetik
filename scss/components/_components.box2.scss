@@ -159,13 +159,15 @@
     box-sizing: border-box;
     //max-width: 15rem;
     margin: 0;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 2rem 2rem 2rem 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20rem;
-    > img{
+    img{
       box-sizing: border-box;
+      width: 100%;
+      height: 100%;
       max-width: 16rem;
       max-height: 100%;
       object-fit: contain;
@@ -252,7 +254,6 @@
   right: -1px;
   border-radius: 20rem 0 0 20rem;
   border-right-color: $color-white;
-
 }
 
 /*
@@ -281,7 +282,49 @@
   padding: 0.5rem 1.5rem;
 }
 
+.c-coupon-chosen{
+  //margin-left: 6.6rem;
+  margin: 0 3.6rem 0 3rem;
+  padding: 0.8rem 1.5rem;
+  line-height: 0;
+}
+.c-coupon-chosen:hover{
+  background-color: $color-primary;
+  cursor: auto;
+}
 
+.c-coupon-inactive{
+  .c-coupon{
+    background-color: $color-lightgray;
+    color: $color-gray;
+    > div > a{
+      color: $color-gray;
+    }
+    /*.test{    //image overlay
+      position: relative;
+    }
+    .test:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-gray;
+      opacity: .35;
+      padding: 0;
+      margin: 0;
+    }*/
+  }
+  .c-coupon:before {
+    border-left-color: $color-white;
+    background-color: $color-white;
+  }
+  .c-coupon:after {
+    border-right-color: $color-white;
+    background-color: $color-white;
+  }
+}
 
 
 .c-box{

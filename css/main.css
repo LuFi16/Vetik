@@ -2141,13 +2141,15 @@ body {
   .c-coupon > a {
     box-sizing: border-box;
     margin: 0;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 2rem 2rem 2rem 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20rem; }
-    .c-coupon > a > img {
+    .c-coupon > a img {
       box-sizing: border-box;
+      width: 100%;
+      height: 100%;
       max-width: 16rem;
       max-height: 100%;
       object-fit: contain; }
@@ -2245,6 +2247,42 @@ body {
 .c-coupon-choose {
   margin-left: 3rem;
   padding: 0.5rem 1.5rem; }
+
+.c-coupon-chosen {
+  margin: 0 3.6rem 0 3rem;
+  padding: 0.8rem 1.5rem;
+  line-height: 0; }
+
+.c-coupon-chosen:hover {
+  background-color: #5bb798;
+  cursor: auto; }
+
+.c-coupon-inactive .c-coupon {
+  background-color: #d7d7d7;
+  color: #8d8d8d;
+  /*.test{    //image overlay
+    position: relative;
+  }
+  .test:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-gray;
+    opacity: .35;
+    padding: 0;
+    margin: 0;
+  }*/ }
+  .c-coupon-inactive .c-coupon > div > a {
+    color: #8d8d8d; }
+.c-coupon-inactive .c-coupon:before {
+  border-left-color: #ffffff;
+  background-color: #ffffff; }
+.c-coupon-inactive .c-coupon:after {
+  border-right-color: #ffffff;
+  background-color: #ffffff; }
 
 .c-box {
   display: flex;
