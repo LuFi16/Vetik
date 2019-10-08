@@ -142,6 +142,14 @@
   }
 }
 
+.c-form_money{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: left;
+  margin-top: 0.5rem;
+}
+
 .c-form-user_label-input{
   display: flex;
   flex-direction: column;
@@ -227,6 +235,18 @@
   padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
+.c-form_info{
+  box-sizing: border-box;
+  padding: 0 1rem;
+  max-width: 26rem;
+  p{
+    margin: 0;
+    font-size: 0.75rem;
+    color: $color-gray;
+  }
+}
+
+
 .c-form-end_donate{
   background-color: $color-primary;
   color: $color-light;
@@ -269,7 +289,6 @@
   }
 }
 
-.c-form-end_info2{}
 
 
 /* --- FORM general ---*/

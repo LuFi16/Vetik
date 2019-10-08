@@ -1283,6 +1283,13 @@ body {
     .c-form_user {
       flex-direction: row; } }
 
+.c-form_money {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: left;
+  margin-top: 0.5rem; }
+
 .c-form-user_label-input {
   display: flex;
   flex-direction: column;
@@ -1355,6 +1362,15 @@ body {
 .c-form_end {
   border-top: 1px dotted #bababa;
   padding: 1.5rem 2rem 1.5rem 2rem; }
+
+.c-form_info {
+  box-sizing: border-box;
+  padding: 0 1rem;
+  max-width: 26rem; }
+  .c-form_info p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #8d8d8d; }
 
 .c-form-end_donate {
   background-color: #5bb798;

@@ -81,8 +81,8 @@
             <div class="c-form_user">
 
                 <div class="c-form-user_label-input">
-                    <label for="jmeno" class="c-form_label">Jméno</label>
-                    <input type="text" id="jmeno" class="c-form_input">
+                    <label for="firstname" class="c-form_label">Jméno</label>
+                    <input type="text" id="firstname" class="c-form_input">
                 </div>
 
                 <div class="c-form-user_label-input">
@@ -97,6 +97,11 @@
                 <div class="c-form-user_label-input">
                     <label for="email" class="c-form_label">Email</label>
                     <input type="email" id="email" class="c-form_input">
+                </div>
+
+                <div class="c-form-user_label-input">
+                    <label for="mesto" class="c-form_label">Město</label>
+                    <input type="text" id="mesto" class="c-form_input">
                 </div>
 
                 <!--<div class="c-form-user_label-input">
@@ -114,11 +119,67 @@
 
             <!--<p class="c-form_price">Cena voucheru<span class="c-form-price_nmbr">1000&nbsp;Kč</span></p>-->
 
-            <p class="c-form_price">
+            <!--<p class="c-form_price">
                 <label for="cena">Cena voucheru </label>
-                <input type="number" id="cena" min="1" value="1000" class="c-form-price_nmbr">  <!-- write minimum number (now 1) -->
+                <input type="number" id="cena" min="1" value="1000" class="c-form-price_nmbr">  &lt;!&ndash; write minimum number (now 1) &ndash;&gt;
                 Kč
-            </p>
+            </p>-->
+
+            <div class="c-form_money">
+
+                <div class="c-form-user_label-input">
+
+                    <label class="c-form_label">Částka</label>
+                    <label class="c-form_label">
+                        <input class="c-form_input" value="500" type="radio" name="amount" min="500"
+                               placeholder="donation.form.amount.placeholder" id="frm-donation-form-amount-500"
+                               data-nette-rules='[{"op":":min","msg":"Zadejte prosím částku větší než 500","arg":500}]'
+                               checked>
+                        500&nbsp;Kč
+                    </label>
+                    <label class="c-form_label">
+                        <input class="c-form_input" type="radio" id="other-radio" name="amount" min="500"
+                               placeholder="donation.form.amount.placeholder"
+                               data-nette-rules='[{"op":":min","msg":"Zadejte prosím částku větší než 500","arg":500}]'
+                               value="other">
+                        <input class="c-form_input c-form-input_nmbrbox" type="number" value="" id="other-text" min="500"
+                               placeholder="Jiná částka (nad 500)">
+                        &nbsp;Kč
+                    </label>
+
+                </div>
+                <!--<div class="c-form-user_label-input">
+                    <label class="c-form_label">Částka
+                        <input class="c-form_input" type="radio" name="castka" value="500">500 Kč<br>
+                        <input class="c-form_input" type="radio" name="" value="">
+                        <input class="c-form_input" type="number" name="other-text" min="500" placeholder="Jiná částka (nad 500)"/> Kč
+                    </label>
+                </div>-->
+                <!--<div class="c-form-user_label-input">
+                    <label>Částka</label>
+                    <label class="c-form_label" for="castka">
+                        <input class="c-form_input" id="castka" value="500" type="radio" min="500">500&nbsp;Kč
+                    </label>
+
+                    <label class="c-form_label" for="other-radio">
+                        <input class="c-form_input" id="other-radio" type="radio" name="amount" min="500" value="other">
+                        <input type="number" value="" id="other-text" min="500" placeholder="Jiná částka (nad 500)">&nbsp;Kč
+                    </label>
+
+                    <label class="c-form_label" for="other-text">
+                    </label>
+                </div>-->
+
+                <div class="c-form_info">
+                    <p>
+                        Pokud byste rádi podpořili projekt více, zadejte jinou částku.
+                    </p>
+                    <p>
+                        Všechny peníze budou použity na&nbsp;placení veterinárních účtů a&nbsp;provoz projektu.
+                    </p>
+                </div>
+
+            </div>
 
         </div>
 
