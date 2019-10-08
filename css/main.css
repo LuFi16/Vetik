@@ -2249,17 +2249,25 @@ body {
   padding: 0.5rem 1.5rem; }
 
 .c-coupon-chosen {
+  background-color: #dbf1e9;
   margin: 0 3.6rem 0 3rem;
   padding: 0.8rem 1.5rem;
   line-height: 0; }
 
 .c-coupon-chosen:hover {
-  background-color: #5bb798;
+  background-color: #dbf1e9;
   cursor: auto; }
 
+.c-coupon-img_active {
+  display: block; }
+
+.c-coupon-img_inactive {
+  display: none; }
+
 .c-coupon-inactive .c-coupon {
-  background-color: #d7d7d7;
-  color: #8d8d8d;
+  background-color: #f0f0f0;
+  color: #d7d7d7;
+  border-color: #d7d7d7;
   /*.test{    //image overlay
     position: relative;
   }
@@ -2276,13 +2284,21 @@ body {
     margin: 0;
   }*/ }
   .c-coupon-inactive .c-coupon > div > a {
-    color: #8d8d8d; }
+    color: #d7d7d7; }
+  .c-coupon-inactive .c-coupon .c-coupon-img_active {
+    display: none; }
+  .c-coupon-inactive .c-coupon .c-coupon-img_inactive {
+    display: block; }
+  .c-coupon-inactive .c-coupon div:last-child {
+    border-color: #d7d7d7; }
+    .c-coupon-inactive .c-coupon div:last-child p {
+      color: #d7d7d7; }
 .c-coupon-inactive .c-coupon:before {
-  border-left-color: #ffffff;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-color: #d7d7d7 #d7d7d7 #d7d7d7 #ffffff; }
 .c-coupon-inactive .c-coupon:after {
-  border-right-color: #ffffff;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-color: #d7d7d7 #ffffff #d7d7d7 #d7d7d7; }
 
 .c-box {
   display: flex;

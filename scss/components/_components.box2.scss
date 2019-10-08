@@ -283,22 +283,44 @@
 }
 
 .c-coupon-chosen{
-  //margin-left: 6.6rem;
+  background-color: $color-primary-light;
   margin: 0 3.6rem 0 3rem;
   padding: 0.8rem 1.5rem;
   line-height: 0;
 }
 .c-coupon-chosen:hover{
-  background-color: $color-primary;
+  background-color: $color-primary-light;
   cursor: auto;
+}
+
+.c-coupon-img_active{
+  display: block;
+}
+.c-coupon-img_inactive{
+  display: none;
 }
 
 .c-coupon-inactive{
   .c-coupon{
-    background-color: $color-lightgray;
-    color: $color-gray;
+    background-color: $color-lightlightgray;
+    color: $color-lightgray;
+    border-color: $color-lightgray;
     > div > a{
-      color: $color-gray;
+      color: $color-lightgray;
+
+    }
+    .c-coupon-img_active{
+      display: none;
+    }
+    .c-coupon-img_inactive{
+      display: block;
+    }
+    div:last-child{
+      border-color: $color-lightgray;
+      p{
+        color: $color-lightgray;
+
+      }
     }
     /*.test{    //image overlay
       position: relative;
@@ -317,14 +339,17 @@
     }*/
   }
   .c-coupon:before {
-    border-left-color: $color-white;
     background-color: $color-white;
+    border-color: $color-lightgray $color-lightgray $color-lightgray $color-white;
   }
   .c-coupon:after {
-    border-right-color: $color-white;
     background-color: $color-white;
+    border-color: $color-lightgray $color-white $color-lightgray $color-lightgray;
   }
 }
+
+
+
 
 
 .c-box{
