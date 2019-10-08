@@ -423,6 +423,11 @@ body {
     z-index: 400;
     width: 100%; }
 
+.c-mainstory-content_wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; }
+
 .c-mainstory_content {
   box-sizing: border-box;
   display: flex;
@@ -1329,6 +1334,9 @@ body {
 .c-form_input:focus {
   border-color: #5bb798;
   outline: none; }
+
+.c-form-input_nmbrbox {
+  width: calc(100% - 4.4rem); }
 
 .c-form_animal {
   padding: 2rem 0 1rem 0; }

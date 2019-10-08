@@ -41,6 +41,12 @@ $content-width: 70rem;      //if changed, change also c-mainstory-arrow_right
   }
 }
 
+.c-mainstory-content_wrapper{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
 .c-mainstory_content{
   box-sizing: border-box;
   display: flex;
