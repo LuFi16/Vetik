@@ -420,13 +420,14 @@ body {
     object-fit: cover;
     position: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-    z-index: 400;
+    z-index: 100;
     width: 100%; }
 
 .c-mainstory-content_wrapper {
   box-sizing: border-box;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 100; }
 
 .c-mainstory_content {
   box-sizing: border-box;
@@ -435,7 +436,7 @@ body {
   justify-content: space-between;
   padding: 0 3rem;
   position: absolute;
-  z-index: 500;
+  z-index: 110;
   left: 50%;
   transform: translate(-50%); }
   @media (min-width: 1101px) {
