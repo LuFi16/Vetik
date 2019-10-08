@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Vetik</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/dog/icon-kriz.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js"></script>
+</head>
+
+<body>
+
+<header class="c-header">
+
+    <!-- ↓ ONLY FOR MOBILE ↓ -->
+    <div class="c-nav_mob c-desktop-hide">
+        <a href="index.html" class="c-header_brand">
+            <h1 class="c-brand_name">VETÍK</h1>
+        </a>
+
+        <nav class="c-nav_dropdown">
+            <a href="#"><i class="fas fa-chevron-down c-dropdown_arrow"></i></a>
+        </nav>
+        <!-- add effect (change the arrow to another) -->
+    </div>
+    <!-- ↑ ONLY FOR MOBILE ↑ -->
+
+    <!-- ↓ ONLY FOR DESKTOP ↓ -->
+    <a href="index.html" class="c-header_brand c-tablet-hide">
+        <img class="c-brand_logo" src="img/dog/vetik-logo.svg" alt="Vetík" longdesc="Vetíkovo logo">
+        <h1 class="c-brand_name">VETÍK</h1>
+    </a>
+    <!-- ↑ ONLY FOR DESKTOP ↑ -->
+
+    <div class="c-header_counters">
+        <ul class="c-counters_ul">
+            <li class="c-counter_li c-counter_name">Vybráno</li>
+            <li class="c-counter_li c-counter_value">112&nbsp;000&nbsp;Kč</li>
+        </ul>
+        <ul class="c-counters_ul">
+            <li class="c-counter_li c-counter_name" id="c-count-li_help">Pomohlo</li>
+            <li class="c-counter_li c-counter_value">359&nbsp;Pejskům</li>
+        </ul>
+    </div>
+
+    <nav class="c-header_nav c-tablet-hide">
+        <ul class="c-nav_ul">
+            <li class="c-nav_li"><a class="c-nav_item" href="">O&nbsp;projektu</a></li>
+            <li class="c-nav_li"><a class="c-nav_item" href="">Kontakt</a></li>
+            <li class="c-nav_li"><a class="c-nav_item" href="">Příhlášení</a></li>
+        </ul>
+    </nav>
+
+
+
+
+</header>
+
+<div class="c-content_bcg">
+    <img src="img/hp-green.svg" alt="pozadí-levé" id="c-bcg-left">
+    <img src="img/hp-green-mirror.svg" alt="pozadí-pravé" id="c-bcg-right">
+</div>
+
+
+<main class="c-content">
+
+    <div class="c-buygift">
+        <a class="c-buygift_buy">Koupit voucher</a>
+        <a class="c-buygift_gift c-buygift-active">Poslat jako dárek</a>
+    </div>
+
+    <form class="c-form">
+
+        <div class="c-form_container">
+
+            <h3 class="c-form_heading c-form_heading-first">Dárce</h3>
+            <div class="c-form_user">
+
+                <div class="c-form-user_label-input">
+                    <label for="firstname" class="c-form_label">Jméno</label>
+                    <input type="text" id="firstname" class="c-form_input">
+                </div>
+
+                <div class="c-form-user_label-input">
+                    <label for="prijmeni" class="c-form_label">Příjmení</label>
+                    <input type="text" id="prijmeni" class="c-form_input">
+                </div>
+
+            </div>
+
+            <div class="c-form_user">
+
+                <div class="c-form-user_label-input">
+                    <label for="email" class="c-form_label">Email</label>
+                    <input type="email" id="email" class="c-form_input">
+                </div>
+
+                <div class="c-form-user_label-input">
+                    <label for="mesto" class="c-form_label">Město</label>
+                    <input type="text" id="mesto" class="c-form_input">
+                </div>
+
+            </div>
+
+            <h3 class="c-form_heading">Obdarovaný</h3>
+            <div class="c-form_user">
+
+                <div class="c-form-user_label-input">
+                    <label for="firstname2" class="c-form_label">Jméno</label>
+                    <input type="text" id="firstname2" class="c-form_input">
+                </div>
+
+                <div class="c-form-user_label-input">
+                    <label for="prijmeni2" class="c-form_label">Příjmení</label>
+                    <input type="text" id="prijmeni2" class="c-form_input">
+                </div>
+
+            </div>
+
+            <div class="c-form_user">
+
+                <div class="c-form-user_label-input">
+                    <label for="email2" class="c-form_label">Email</label>
+                    <input type="email" id="email2" class="c-form_input">
+                </div>
+
+                <div class="c-form-user_label-input">
+                    <label for="mesto2" class="c-form_label">Město</label>
+                    <input type="text" id="mesto2" class="c-form_input">
+                </div>
+
+            </div>
+
+            <div class="c-form_money">
+
+                <div class="c-form-user_label-input">
+
+                    <label class="c-form_label">Částka</label>
+                    <label class="c-form_label">
+                        <input class="c-form_input" value="500" type="radio" name="amount" min="500"
+                               placeholder="donation.form.amount.placeholder" id="frm-donation-form-amount-500"
+                               data-nette-rules='[{"op":":min","msg":"Zadejte prosím částku větší než 500","arg":500}]'
+                               checked>
+                        500&nbsp;Kč
+                    </label>
+                    <label class="c-form_label">
+                        <input class="c-form_input" type="radio" id="other-radio" name="amount" min="500"
+                               placeholder="donation.form.amount.placeholder"
+                               data-nette-rules='[{"op":":min","msg":"Zadejte prosím částku větší než 500","arg":500}]'
+                               value="other">
+                        <input class="c-form_input c-form-input_nmbrbox" type="number" value="" id="other-text" min="500"
+                               placeholder="Jiná částka (nad 500)">
+                        &nbsp;Kč
+                    </label>
+
+                </div>
+
+                <div class="c-form_info">
+                    <p>
+                        Pokud byste rádi podpořili projekt více, zadejte jinou částku.
+                    </p>
+                    <p>
+                        Všechny peníze budou použity na&nbsp;placení veterinárních účtů a&nbsp;provoz projektu.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="c-form_end">
+            <button class="c-form-end_donate">přispět</button>
+            <p class="c-form-end_info1">Platební údaje budou odeslány na&nbsp;email</p>
+            <p class="c-form-end_info2">Platba jen na&nbsp;účet</p>
+        </div>
+
+    </form>
+
+
+</main>
+
+</body>
+
+<footer class="c-footer">
+
+    <div class="c-footer_in">
+
+        <div class="c-footer_desc">
+            <h3>Vetík</h3>
+            <p class="c-ftr-desc_text">
+                První projekt svého druhu pomáhající s&nbsp;placením účtů
+                za&nbsp;veterinární zákroky a&nbsp;péči týraným a&nbsp;opuštěným psům
+            </p>
+        </div>
+
+        <div class="c-footer_insta">
+            <h3 class="c-ftr_line-height-padding">Instagram</h3>
+            <img src="img/insta-img-small.png" alt="obrazek1" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek2" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek3" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek4" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek5" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek6" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek7" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek8" class="c-ftr-insta_img">
+        </div>
+
+        <div class="c-footer_links-in">
+            <h3>Odkazy</h3>
+            <ul class="c-ftr_ul">
+                <li class="c-ftr_li"><a href="#">O&nbsp;projektu</a></li>
+                <li class="c-ftr_li"><a href="#">Aktuality</a></li>
+                <li class="c-ftr_li"><a href="#">Akce</a></li>
+                <li class="c-ftr_li"><a href="#">Přispět</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="c-footer_links-out">
+        <a href="#"><i class="fab fa-facebook c-ftr_links-out_img" id="c-logo-fb"></i></a>
+        <a href="#"><i class="fab fa-youtube c-ftr_links-out_img" id="c-logo-yt"></i></a>
+
+
+        <!--<img src="img/FB-logo.svg" alt="Facebook" longdesc="Facebook logo" class="c-ftr_links-out_img" id="c-logo-fb">
+        <img src="img/YT-logo.svg" alt="YouTube" longdesc="YouTube logo" class="c-ftr_links-out_img" id="c-logo-yt">-->
+    </div>
+
+</footer>
+
+</html>

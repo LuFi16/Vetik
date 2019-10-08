@@ -130,6 +130,20 @@
   }
 }
 
+.c-form_heading{
+  text-align: left;
+  font-family: $font-secondary;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 1rem 0 1rem 0.5rem;
+}
+
+.c-form_heading-first{
+  margin-top: 0;
+}
+
 .c-form_user{
   display: flex;
   width: 100%;
