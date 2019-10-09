@@ -1,9 +1,10 @@
 
-.c-btn-primary{
+.c-btn-primary,
+.c-btn-danger,
+.c-btn-disabled,
+.c-btn-light{
   display: inline-block;
   font-family: $font-secondary;
-  color: $color-light;
-  background-color: $color-primary;
   border: none;
   border-radius: 10rem;
   //border-radius: 12% 12% 12% 12% / 50% 50% 50% 50%;
@@ -31,4 +32,24 @@
 
 .c-btn-primary:hover{
   background-color: $color-primary-hover;
+}
+
+.c-btn-primary{
+  color: $color-light;
+  background-color: $color-primary;
+}
+
+.c-btn-danger{
+  color: $color-light;
+  background-color: $color-help-red;
+}
+
+.c-btn-disabled{
+  color: $color-light;
+  background-color: $color-lightgray;
+}
+
+.c-btn-light{
+  color: $color-light;
+  background-color: $color-primary-light;
 }

@@ -70,11 +70,12 @@ body {
 .c-info-close {
   color: #5ea5c8; }
 
-.c-btn-primary {
+.c-btn-primary,
+.c-btn-danger,
+.c-btn-disabled,
+.c-btn-light {
   display: inline-block;
   font-family: "Baloo Bhaijaan", cursive;
-  color: #f7f7f7;
-  background-color: #5bb798;
   border: none;
   border-radius: 10rem;
   text-transform: uppercase;
@@ -100,6 +101,22 @@ body {
 
 .c-btn-primary:hover {
   background-color: #347861; }
+
+.c-btn-primary {
+  color: #f7f7f7;
+  background-color: #5bb798; }
+
+.c-btn-danger {
+  color: #f7f7f7;
+  background-color: #e31317; }
+
+.c-btn-disabled {
+  color: #f7f7f7;
+  background-color: #d7d7d7; }
+
+.c-btn-light {
+  color: #f7f7f7;
+  background-color: #dbf1e9; }
 
 .c-content_bcg {
   z-index: 1; }
