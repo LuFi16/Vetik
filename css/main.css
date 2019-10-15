@@ -1897,7 +1897,8 @@ body {
 
 .c-card-form_section-note {
   box-sizing: border-box;
-  padding: 0 0 0.5rem 0; }
+  padding: 0 0 0.5rem 0;
+  margin-bottom: 0.5rem; }
   .c-card-form_section-note input {
     box-sizing: border-box;
     width: 100%;
