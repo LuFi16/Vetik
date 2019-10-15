@@ -303,13 +303,18 @@ $story-width: 21rem;
 
 .c-fa-box_small{
   background-color: $color-white;
-  color: transparentize($color-help-red, 0.5);
+  //color: transparentize($color-help-red, 0.5);
   box-shadow: 0 0 15px $color-shadow;
-  font-size: 1.2rem;
-  padding: 3rem 1rem;
+  //font-size: 1.2rem;
+  //padding: 3rem 1rem;
+  padding: 1.5rem;
   line-height: 0;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+  img{
+    width: 3rem;
+    height: auto;
+  }
 }
 
 .c-fa-box_big{

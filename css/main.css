@@ -656,13 +656,14 @@ body {
 
 .c-fa-box_small {
   background-color: #ffffff;
-  color: rgba(227, 19, 23, 0.5);
   box-shadow: 0 0 15px #cecece;
-  font-size: 1.2rem;
-  padding: 3rem 1rem;
+  padding: 1.5rem;
   line-height: 0;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px; }
+  .c-fa-box_small img {
+    width: 3rem;
+    height: auto; }
 
 .c-fa-box_big {
   box-shadow: 0 0 15px #cecece;
@@ -1061,9 +1062,10 @@ body {
     color: #5bb798;
     text-decoration: underline; }
 
-.c-contact_form {
-  margin: 0 !important; }
+.c-content-contact {
+  margin-top: 3rem; }
 
+/* --- ERROR PAGE --- */
 .c-footer {
   background-color: #312b25;
   color: #f7f7f7;
@@ -1285,15 +1287,22 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   background-color: #f7f7f7;
-  box-shadow: 0 0 15px #cecece; }
+  box-shadow: 0 0 15px #cecece;
+  margin-top: 20rem; }
   @media (max-width: 650px) {
     .c-form {
       width: 100%;
-      margin: 0; } }
+      margin: 5rem 0 0 0; } }
   @media (min-width: 651px) {
     .c-form {
-      margin: auto;
-      width: auto; } }
+      width: auto;
+      margin: 5rem auto 0 auto; } }
+
+.c-form-img {
+  width: 13rem;
+  height: auto;
+  align-self: center;
+  margin: -5rem 0 0 0; }
 
 @media (min-width: 424px) and (max-width: 650px) {
   .c-form_container {
@@ -1303,7 +1312,7 @@ body {
     padding: 2rem 1rem 2rem 1rem; } }
 @media (min-width: 651px) {
   .c-form_container {
-    padding: 4rem 2rem 2rem 2rem; } }
+    padding: 3rem 2rem 2rem 2rem; } }
 
 .c-form_heading {
   text-align: left;
@@ -1466,7 +1475,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f7f7f7;
   box-shadow: 0 0 15px #cecece;
-  margin: 2rem auto;
+  margin: 7rem auto 2rem auto;
   padding: 2rem 3rem;
   width: 30rem; }
   @media (max-width: 650px) {
@@ -1558,6 +1567,33 @@ body {
   .c-form-gen-textarea textarea {
     height: 5rem;
     resize: vertical; }
+
+.c-write-img {
+  width: 10rem;
+  height: auto; }
+  @media (max-width: 650px) {
+    .c-write-img {
+      align-self: center;
+      margin: -7rem 0 0 0; } }
+  @media (min-width: 651px) {
+    .c-write-img {
+      align-self: flex-end;
+      margin: -5.5rem -6.5rem -4rem 0; } }
+
+.c-write-heading {
+  margin-top: 1rem; }
+
+.c-contact_form {
+  margin: 0 1rem 0 0; }
+  @media (max-width: 650px) {
+    .c-contact_form {
+      margin-top: 5rem; } }
+
+.c-form-gen_img {
+  max-height: 10rem;
+  max-width: 13rem;
+  margin: -7rem 0 1.5rem 0;
+  align-self: center; }
 
 .c-box {
   display: flex;
@@ -2571,7 +2607,8 @@ body {
     text-align: justify; }
   .c-article_text img {
     display: block;
-    max-width: 100%; }
+    max-width: 100%;
+    margin: auto; }
   .c-article_text h3, .c-article_text h4 {
     font-family: "Baloo Bhaijaan", cursive;
     font-weight: normal; }

@@ -108,15 +108,25 @@
   font-family: $font-main-thick;
   background-color: $color-light;
   box-shadow: 0 0 15px $color-shadow;
+  margin-top: 20rem;
   @media (max-width: $mobile){
     width: 100%;
-    margin: 0;
+    margin: 5rem 0 0 0;
   }
   @media (min-width: $mobile+1px){
-    margin: auto;
     width: auto;
+    margin: 5rem auto 0 auto;
   }
 }
+
+
+.c-form-img{
+  width: 13rem;
+  height: auto;
+  align-self: center;
+  margin: -5rem 0 0 0;
+}
+
 
 .c-form_container{
   @media (min-width: 424px) and (max-width: $mobile){
@@ -126,7 +136,7 @@
     padding: 2rem 1rem 2rem 1rem;
   }
   @media (min-width: $mobile+1px){
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
   }
 }
 
@@ -318,7 +328,7 @@
   font-family: $font-main-thick;
   background-color: $color-light;
   box-shadow: 0 0 15px $color-shadow;
-  margin: 2rem auto;
+  margin: 7rem auto 2rem auto;
   padding: 2rem 3rem;
   width: 30rem;
   @media (max-width: $mobile){
@@ -426,4 +436,35 @@
     height: 5rem;
     resize: vertical;
   }
+}
+
+.c-write-img{
+  width: 10rem;
+  height: auto;
+  @media (max-width: $mobile){
+    align-self: center;
+    margin: -7rem 0 0 0;
+  }
+  @media (min-width: $mobile+1px){
+    align-self: flex-end;
+    margin: -5.5rem -6.5rem -4rem 0;
+  }
+}
+
+.c-write-heading{
+  margin-top: 1rem;
+}
+
+.c-contact_form {
+  margin: 0 1rem 0 0;
+  @media (max-width: $mobile){
+    margin-top: 5rem;
+  }
+}
+
+.c-form-gen_img{
+  max-height: 10rem;
+  max-width: 13rem;
+  margin: -7rem 0 1.5rem 0;
+  align-self: center;
 }
