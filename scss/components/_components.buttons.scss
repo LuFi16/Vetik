@@ -53,3 +53,25 @@
   color: $color-light;
   background-color: $color-primary-light;
 }
+
+
+.c-btn-prim-small{
+  display: inline-block;
+  font-family: $font-secondary;
+  border: none;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: normal;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+  text-decoration: none;
+  color: $color-light;
+  background-color: $color-primary;
+}
+.c-btn-prim-small:hover{
+  background-color: $color-primary-hover;
+}

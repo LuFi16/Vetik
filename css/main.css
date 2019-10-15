@@ -118,6 +118,26 @@ body {
   color: #f7f7f7;
   background-color: #dbf1e9; }
 
+.c-btn-prim-small {
+  display: inline-block;
+  font-family: "Baloo Bhaijaan", cursive;
+  border: none;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: normal;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+  text-decoration: none;
+  color: #f7f7f7;
+  background-color: #5bb798; }
+
+.c-btn-prim-small:hover {
+  background-color: #347861; }
+
 .c-content_bcg {
   z-index: 1; }
 
@@ -1854,6 +1874,38 @@ body {
   background-color: #dbf1e9; }
 .c-card-2section_add:hover > p {
   color: #5bb798; }
+
+.c-card_form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  width: 100%; }
+
+.c-card-form_section {
+  padding: 0 0 0.5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .c-card-form_section label {
+    padding-right: 0.5rem; }
+  .c-card-form_section input, .c-card-form_section select {
+    box-sizing: border-box;
+    width: 17.3rem;
+    padding: 0.2rem; }
+
+.c-card-form_section-note {
+  box-sizing: border-box;
+  padding: 0 0 0.5rem 0; }
+  .c-card-form_section-note input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.2rem; }
+
+.c-card-form-bold {
+  color: #5bb798;
+  font-weight: 600; }
 
 /* add card*/
 .c-card-add {
