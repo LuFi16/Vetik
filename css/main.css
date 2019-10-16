@@ -2661,7 +2661,8 @@ body {
   .c-article_text img {
     display: block;
     max-width: 100%;
-    margin: auto; }
+    margin: auto;
+    object-fit: contain; }
   .c-article_text h3, .c-article_text h4 {
     font-family: "Baloo Bhaijaan", cursive;
     font-weight: normal; }
@@ -2758,7 +2759,10 @@ body {
   align-items: center;
   text-decoration: none;
   float: right;
-  margin-top: 6.5rem; }
+  margin-top: 6.5rem;
+  position: fixed;
+  right: 0;
+  top: 5rem; }
   .c-ads-right a img {
     width: 10rem;
     height: 30rem;
