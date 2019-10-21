@@ -1,3 +1,12 @@
+.c-footer, .c-header {
+  z-index: auto;
+}
+
+.spinner {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #5bb798;
+}
 
 .cookie-consent {
   position: fixed;
@@ -12,11 +21,6 @@
 
 .help-block {
   margin-bottom: 1rem;
-}
-
-.required::before {
-  content: '*';
-  color: red;
 }
 
 .c-message_close:hover {

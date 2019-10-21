@@ -307,13 +307,9 @@
     border-color: $color-lightgray;
     > div > a{
       color: $color-lightgray;
-
     }
-    .c-coupon-img_active{
-      display: none;
-    }
-    .c-coupon-img_inactive{
-      display: block;
+    img{
+      opacity: 0.2;
     }
     div:last-child{
       border-color: $color-lightgray;

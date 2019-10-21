@@ -2501,10 +2501,8 @@ body {
   }*/ }
   .c-coupon-inactive .c-coupon > div > a {
     color: #d7d7d7; }
-  .c-coupon-inactive .c-coupon .c-coupon-img_active {
-    display: none; }
-  .c-coupon-inactive .c-coupon .c-coupon-img_inactive {
-    display: block; }
+  .c-coupon-inactive .c-coupon img {
+    opacity: 0.2; }
   .c-coupon-inactive .c-coupon div:last-child {
     border-color: #d7d7d7; }
     .c-coupon-inactive .c-coupon div:last-child p {
@@ -2872,6 +2870,14 @@ body {
     .c-ads-right {
       display: none; } }
 
+.c-footer, .c-header {
+  z-index: auto; }
+
+.spinner {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #5bb798; }
+
 .cookie-consent {
   position: fixed;
   left: 0;
@@ -2884,10 +2890,6 @@ body {
 
 .help-block {
   margin-bottom: 1rem; }
-
-.required::before {
-  content: '*';
-  color: red; }
 
 .c-message_close:hover {
   cursor: pointer; }
