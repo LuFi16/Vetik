@@ -5,6 +5,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Baloo Bhaijaan", cursive; }
+  body a {
+    color: #5bb798; }
 
 @media (max-width: 1100px) {
   .c-tablet-hide {
@@ -2537,9 +2539,15 @@ body {
   flex-direction: row;
   margin: 3rem auto 0 auto;
   align-items: baseline; }
+  .c-breadcrumbs_nav a {
+    text-decoration: none;
+    cursor: pointer; }
+  .c-breadcrumbs_nav a:hover {
+    text-decoration: underline; }
 
 .c-breadcrumbs-nav_1st {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #312b25; }
 
 .c-breadcrumbs-nav_separator {
   margin: 0 0.5rem;

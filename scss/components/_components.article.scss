@@ -8,10 +8,18 @@
   flex-direction: row;
   margin: 3rem auto 0 auto;
   align-items: baseline;
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
 }
 
 .c-breadcrumbs-nav_1st{
   font-size: 1rem;
+  color: $color-black;
 }
 
 .c-breadcrumbs-nav_separator{
