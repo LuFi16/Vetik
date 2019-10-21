@@ -200,8 +200,12 @@ body {
   text-decoration: none;
   color: #312b25; }
 
-.c-brand_logo {
-  height: 5rem; }
+@media (max-width: 1320px) {
+  .c-brand_logo {
+    display: none; } }
+@media (min-width: 1321px) {
+  .c-brand_logo {
+    height: 5rem; } }
 
 .c-brand_name {
   margin: 0;

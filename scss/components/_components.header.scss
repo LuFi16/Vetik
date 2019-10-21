@@ -51,7 +51,13 @@
 }
 
 .c-brand_logo{
-  height: 5rem;
+  @media (max-width: $desktop){
+    display: none;
+  }
+
+  @media (min-width: $desktop+1px){
+    height: 5rem;
+  }
 }
 
 .c-brand_name{
