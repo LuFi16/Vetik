@@ -1103,6 +1103,65 @@ body {
   margin-top: 3rem; }
 
 /* --- ERROR PAGE --- */
+@media (max-width: 1100px) {
+  .c-error-page img:first-child {
+    margin: 3rem auto 0 auto; } }
+@media (min-width: 1101px) {
+  .c-error-page img:first-child {
+    margin: 5rem 0 5rem 5rem; } }
+@media (max-width: 679px) {
+  .c-error-page img:first-child {
+    height: 12rem; } }
+@media (min-width: 680px) {
+  .c-error-page img:first-child {
+    height: 17rem; } }
+@media (max-width: 400px) {
+  .c-error-page img:first-child {
+    height: 8rem; } }
+@media (max-width: 679px) {
+  .c-error-page img:nth-child(2) {
+    display: none; } }
+@media (max-width: 1100px) {
+  .c-error-page .c-intro_desc {
+    margin-top: 2rem; } }
+@media (min-width: 1101px) {
+  .c-error-page .c-intro_desc {
+    margin-top: 5rem; } }
+.c-error-page .c-intro_desc p:first-child {
+  margin: 0; }
+  @media (max-width: 1100px) {
+    .c-error-page .c-intro_desc p:first-child {
+      padding: 0; } }
+  @media (max-width: 400px) {
+    .c-error-page .c-intro_desc p:first-child {
+      font-size: 2rem; } }
+  @media (min-width: 401px) {
+    .c-error-page .c-intro_desc p:first-child {
+      font-size: 2.5rem; } }
+.c-error-page .c-intro_desc p:nth-child(2) {
+  margin: 0; }
+  @media (max-width: 1100px) {
+    .c-error-page .c-intro_desc p:nth-child(2) {
+      margin: 0; } }
+  @media (min-width: 1101px) {
+    .c-error-page .c-intro_desc p:nth-child(2) {
+      margin: 1rem 0; } }
+  @media (max-width: 400px) {
+    .c-error-page .c-intro_desc p:nth-child(2) {
+      font-size: 1rem;
+      padding: 0.5rem; } }
+  @media (min-width: 401px) {
+    .c-error-page .c-intro_desc p:nth-child(2) {
+      font-size: 1.7rem; } }
+.c-error-page .c-intro_desc p:last-child {
+  margin: 0; }
+  @media (max-width: 400px) {
+    .c-error-page .c-intro_desc p:last-child {
+      font-size: 1rem; } }
+  @media (min-width: 401px) {
+    .c-error-page .c-intro_desc p:last-child {
+      font-size: 1.7rem; } }
+
 .c-footer {
   background-color: #312b25;
   color: #f7f7f7;
