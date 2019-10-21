@@ -522,9 +522,14 @@ body {
   font-size: 3rem;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.5);
-  align-self: center;
   z-index: 500;
   position: absolute; }
+  @media (min-width: 601px) {
+    .c-mainstory-arrow_a {
+      align-self: center; } }
+  @media (max-width: 600px) {
+    .c-mainstory-arrow_a {
+      top: 30%; } }
 
 .c-mainstory-arrow_a:hover {
   color: #ffffff; }
@@ -2843,6 +2848,10 @@ body {
   @media (max-width: 719px) {
     .c-slide_content {
       height: calc(100% - 4rem); } }
+  @media (max-width: 500px) {
+    .c-slide_content {
+      width: 100%;
+      margin: 2rem auto; } }
 
 .c-slide_h {
   box-sizing: border-box;
@@ -2868,5 +2877,8 @@ body {
   @media (max-width: 719px) {
     .c-slide_text {
       width: 80%; } }
+  @media (max-width: 500px) {
+    .c-slide_text {
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */

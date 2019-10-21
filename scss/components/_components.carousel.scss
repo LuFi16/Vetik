@@ -79,6 +79,10 @@
   @media (max-width: 719px){
     height: calc(100% - 4rem);
   }
+  @media (max-width: 500px){
+    width: 100%;
+    margin: 2rem auto;
+  }
 }
 
 .c-slide_h{
@@ -90,6 +94,8 @@
   letter-spacing: 1px;
   padding: 0.25rem 0.5rem;
   margin: 0 auto;
+  @media (max-width: 500px){
+  }
 }
 
 .c-slide_text{
@@ -105,5 +111,8 @@
   }
   @media (max-width: 719px){
     width: 80%;
+  }
+  @media (max-width: 500px){
+    display: none;
   }
 }
