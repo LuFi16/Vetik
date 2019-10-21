@@ -791,12 +791,12 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  line-height: 0; }
+  line-height: 1; }
 
 .c-meeting-info_place {
   color: #5bb798;
   font-size: 1rem;
-  margin: 1.3rem 0 1rem 0;
+  margin: 0.5rem 0 1rem 0;
   padding: 0;
   line-height: 0; }
 
