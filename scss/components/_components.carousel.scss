@@ -62,6 +62,9 @@
   }
   @media (max-width: 719px){
     height: auto;
+    img{
+      height: 20rem;
+    }
   }
 }
 
@@ -71,8 +74,9 @@
   top: 0;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 2rem auto;
   justify-content: space-between;
+  width: 100%;
   @media (min-width: 720px){
     height: 26rem;
   }
@@ -107,7 +111,7 @@
   padding: 1rem;
   margin: 0 auto;
   @media (min-width: 720px){
-    width: 70%;
+    max-width: 70%;
   }
   @media (max-width: 719px){
     width: 80%;
