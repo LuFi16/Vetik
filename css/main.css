@@ -2715,9 +2715,19 @@ body {
     color: #5bb798;
     padding: 0;
     margin: 0; }
+    @media (max-width: 769px) {
+      .c-article_box h2 {
+        background-color: #ffffff;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        border-radius: 10px; } }
   .c-article_box p {
     font-family: "Roboto", sans-serif;
     text-align: justify; }
+    @media (max-width: 769px) {
+      .c-article_box p {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1rem; } }
   .c-article_box img {
     box-sizing: border-box;
     object-fit: cover;

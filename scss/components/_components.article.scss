@@ -205,10 +205,20 @@
     color: $color-primary;
     padding: 0;
     margin: 0;
+    @media (max-width: 769px){
+      background-color: $color-white;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+    }
   }
   p{
     font-family: $font-main-thick;
     text-align: justify;
+    @media (max-width: 769px){
+      background-color: transparentize($color-white, 0.5);
+      padding: 1rem;
+    }
   }
   img{
     box-sizing: border-box;
