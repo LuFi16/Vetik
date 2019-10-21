@@ -181,33 +181,45 @@
                 <h2 class="c-content-box-heading_text">Moje kupony</h2>
             </div>
 
-            <div class="c-box-voucher">
-                <h3>Název voucheru</h3>
-                <a href="#">zobrazit <i class="fas fa-long-arrow-alt-right"></i></a>
-                <p>Platnost do 12. 4. 2019</p>
-                <p>Zakoupeno: 11. 1. 2019</p>
+            <div class="c-coupon c-coupon-smaller">
+                <a href="#">
+                    <img src="img/logos/logo-rupert.jpg" alt="rupert.cz">
+                </a>
+                <div>
+                    <p>Sleva</p>
+                    <p>20 %</p>
+                    <p>na celý nákup</p>
+                    <p>platnost do: 30. 12. 2019</p>
+                </div>
             </div>
 
-            <div class="c-box-voucher">
-                <h3>Název voucheru</h3>
-                <a href="#">zobrazit <i class="fas fa-long-arrow-alt-right"></i></a>
-                <p>Platnost do 12. 4. 2019</p>
-                <p>Zakoupeno: 11. 1. 2019</p>
+            <div class="c-coupon c-coupon-smaller">
+                <a href="#">
+                    <!--<span class="test">-->
+                    <img class="c-coupon-img_active" src="img/logos/logo-funkydog.svg" alt="funky dog">
+                    <img class="c-coupon-img_inactive" src="img/logos/logo-funkydog-lightgray.svg" alt="funky dog">
+                    <!--</span>-->
+                </a>
+                <div>
+                    <p>Sleva</p>
+                    <p>100 Kč</p>
+                    <p>na libovolný motýlek</p>
+                    <p>platnost do: 22. 12. 2020</p>
+                </div>
             </div>
 
-            <div class="c-box-voucher">
-                <h3>Název voucheru</h3>
-                <a href="#">zobrazit <i class="fas fa-long-arrow-alt-right"></i></a>
-                <p>Platnost do 12. 4. 2019</p>
-                <p>Zakoupeno: 11. 1. 2019</p>
+            <div class="c-coupon c-coupon-smaller">
+                <a href="#">
+                    <img src="img/logos/logo-fitmin.svg" alt="fitmin">
+                </a>
+                <div>
+                    <p>Sleva</p>
+                    <p>15 %</p>
+                    <p>na nákup vybraných krmiv v balení nad 5kg</p>
+                    <p>platnost do: 1. 5. 2020</p>
+                </div>
             </div>
 
-            <div class="c-box-voucher">
-                <h3>Název voucheru</h3>
-                <a href="#">zobrazit <i class="fas fa-long-arrow-alt-right"></i></a>
-                <p>Platnost do 12. 4. 2019</p>
-                <p>Zakoupeno: 11. 1. 2019</p>
-            </div>
 
             <a class="c-voucher-another" href="#">
                 Prohlédnout další slevy <i class="fas fa-long-arrow-alt-right"></i>
@@ -220,30 +232,31 @@
                 <div class="c-content-box-heading_icon">
                     <img src="img/icons/dog-green.svg" alt="pes">
                 </div>
-                <h2 class="c-content-box-heading_text">Zdravotní karty</h2>
+                <h2 class="c-content-box-heading_text">Moji pejsci</h2>
             </div>
 
             <div class="c-card">    <!-- CARD -->
                 <p class="c-card_close">
+                    <i class="far fa-edit"></i>
                     <i class="fas fa-times"></i>
                     <!--Zavřít kartu-->
                     <!--<img src="img/icons/maximize.svg" alt="maximalizovat">-->
                 </p>
 
-                <div class="c-card-1section">
-                    <div>
-                        <h3>Rex</h3>
-                        <p>14. 1. 2017</p>
-                    </div>
-
-                    <div>
-                        <p>Zlatý retrívr</p>
-                        <p>ČIP: AS124</p>
-                    </div>
+                <h3>Rexík</h3>
+                <div>
+                    <p>Zlatý retrívr</p>
+                    <p>14.&nbsp;1.&nbsp;2017</p>
+                </div>
+                <p>ČIP: 203097100431809</p>
+                <div>
+                    <button class="c-btn-prim-small">Zdravotní karta</button>
+                    <button class="c-btn-prim-small">Připomínky</button>
                 </div>
 
-                <div class="c-card-2section">
-                    <div class="c-card-2section_event">
+
+                <!--<div class="c-card-2section">-->
+                    <!--<div class="c-card-2section_event">
                         <div>
                             <div>
                                 <img src="img/icons/syringe-red.svg" alt="injekce">
@@ -253,17 +266,17 @@
 
                         <p>10. 5. 2019&nbsp;&nbsp;&nbsp;&nbsp;13:30</p>
                         <p>ročně</p>
-                    </div>
-                    <a class="c-card-2section_add" href="#">
+                    </div>-->
+                    <!--<a class="c-card-2section_add" href="#">
                         <div>
                             <img src="img/icons/add-gray.svg" alt="pridat">
                         </div>
                         <p>Přidat událost</p>
-                    </a>
+                    </a>-->
 
-                    <form class="c-card_form">
+                    <!--<form class="c-card_form">
 
-                        <span class="c-card-form_section">  <!-- option1 with only css other, but cant style options -->
+                        <span class="c-card-form_section">  &lt;!&ndash; option1 with only css other, but cant style options &ndash;&gt;
                             <label for="udalost">Událost:</label>
                             <input type="text" list="udalost">
                             <datalist id="udalost">
@@ -275,7 +288,7 @@
                             </datalist>
                         </span>
 
-                        <!--<span class="c-card-form_section"> &lt;!&ndash; option2 can style options (a little), other option must be done by jQuery &ndash;&gt;
+                        &lt;!&ndash;<span class="c-card-form_section"> &lt;!&ndash; option2 can style options (a little), other option must be done by jQuery &ndash;&gt;
                             <label for="udalost">Událost:</label>
                             <select id="udalost">
                                 <option value="Alergie">Alergie</option>
@@ -284,7 +297,7 @@
                                 <option value="Bolestivost">Bolestivost</option>
                                 <option value="Cizí těleso">Cizí těleso</option>
                             </select>
-                        </span>-->
+                        </span>&ndash;&gt;
 
                         <span class="c-card-form_section">
                             <label for="datum">Datum:</label>
@@ -298,15 +311,15 @@
 
                         <button class="c-btn-prim-small">přidat</button>
 
-                    </form>
+                    </form>-->
 
-                </div>
+                <!--</div>-->
             </div>
 
             <a class="c-card-add">
                 <!--<img src="img/icons/add-lightgray.svg" alt="pridat">-->
                 <i class="fas fa-plus"></i>
-                <p>Přidat novou kartu</p>
+                <p>Přidat nového pejska</p>
             </a>
 
         </div>

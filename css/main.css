@@ -1727,6 +1727,56 @@ body {
   .c-card p, .c-card h3 {
     margin: 0;
     padding: 0; }
+  .c-card h3 {
+    font-family: "Baloo Bhaijaan", cursive;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin: 0 2rem 0 0;
+    max-width: 16rem;
+    letter-spacing: 1px; }
+  .c-card div:nth-child(3) {
+    display: flex;
+    margin: 0.5rem 0;
+    padding-right: 2rem; }
+    @media (min-width: 380px) {
+      .c-card div:nth-child(3) {
+        flex-direction: row; }
+        .c-card div:nth-child(3) > p:first-child {
+          margin: 0 2rem 0 0; } }
+    @media (max-width: 379px) {
+      .c-card div:nth-child(3) {
+        flex-direction: column; } }
+    .c-card div:nth-child(3) p:first-child {
+      color: #5bb798;
+      font-weight: 600;
+      margin: 0 2rem 0 0;
+      max-width: 16rem; }
+    .c-card div:nth-child(3) p:last-child {
+      color: #8d8d8d;
+      font-size: 0.9rem;
+      font-weight: 600; }
+  .c-card > p:nth-child(4) {
+    font-size: 0.9rem;
+    background-color: #d7d7d7;
+    border-radius: 3px;
+    padding: 0.3rem 0.6rem;
+    font-weight: 600;
+    margin-right: auto; }
+    @media (max-width: 379px) {
+      .c-card > p:nth-child(4) {
+        margin-right: 2rem; } }
+  .c-card > div:nth-child(5) {
+    display: flex;
+    margin: 1rem 2rem 0 0; }
+    @media (min-width: 380px) {
+      .c-card > div:nth-child(5) {
+        flex-direction: row;
+        justify-content: space-between; } }
+    @media (max-width: 379px) {
+      .c-card > div:nth-child(5) {
+        flex-direction: column; }
+        .c-card > div:nth-child(5) button:first-child {
+          margin-bottom: 0.5rem; } }
   @media (min-width: 651px) {
     .c-card {
       width: 25rem; } }
@@ -1753,6 +1803,8 @@ body {
   .c-card_close i:hover {
     color: #312b25;
     cursor: pointer; }
+  .c-card_close i:first-child {
+    padding-right: 0; }
 
 .c-card-1section {
   display: flex;
@@ -2463,6 +2515,18 @@ body {
 .c-coupon-inactive .c-coupon:after {
   background-color: #ffffff;
   border-color: #d7d7d7 #ffffff #d7d7d7 #d7d7d7; }
+
+.c-coupon-smaller {
+  margin-bottom: 1rem; }
+  .c-coupon-smaller > a {
+    width: 20rem; }
+    .c-coupon-smaller > a img {
+      width: 100%;
+      height: 100%;
+      max-width: 15rem;
+      max-height: 10rem; }
+  .c-coupon-smaller div:nth-child(2), .c-coupon-smaller div:last-child {
+    width: 15rem; }
 
 .c-box {
   display: flex;
