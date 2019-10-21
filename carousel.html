@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Vetik</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="img/dog/icon-kriz.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js"></script>  <!-- odkaz pro mou registraci -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<!--[if lt IE 8]
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+[endif]-->
+
+
+<main class="c-content">
+    <div class="c-content_mainstory c-carousel">
+
+        <div class="slide">
+            <img class="" src="img/photos/1.jpg" alt="">
+            <div class="c-slide_content">
+                <h2 class="c-slide_h">Bišonek hledá domov</h2>
+                <p class="c-slide_text">
+                    U dveří psího salonu Veselé ocásky někdo nechal krabici se třemi štěňaty.
+                    Teta Jana požádá Katku, Máju a Ģábinu, aby jí s malými bišonky pomohly. Štěňátkům
+                    také musí najít nový domov. Děvčata se o roztomilé pejsky starala.
+                </p>
+                <a class="c-btn-primary" href="#">
+                    Číst dále <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img class="" src="img/photos/2.jpg" alt="">
+            <div class="c-slide_content">
+                <h2 class="c-slide_h">Velká psí láska - Příběhy, rady a úžasné fotografie psích bytostí</h2>
+                <p class="c-slide_text">
+                    Ahoj, jsem pes, narodil ses pro mě, pro mé potěšení, hry, ochranu a také
+                    jako můj soukromý kuchař, řidič, uklízeč a mazlič. Tím si získáš mé srdce.
+                    Nikdo tě nebude milovat víc, než já.
+                </p>
+                <a class="c-btn-primary" href="#">
+                    Číst dále <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img class="" src="img/photos/3.jpg" alt="">
+            <div class="c-slide_content">
+                <h2 class="c-slide_h">Vlčák Kazan / Barí, syn Kazanův</h2>
+                <p class="c-slide_text">
+                    Kazan napůl pes a napůl vlk má spletitou psí dráhu během ní nabývá vrchu
+                    jeho přirozenost vlčí a jindy zase psí. Barí, syn Kazanův se jako štěně zatoulá
+                    od své matky a je nucen se uprostřed divočiny starat sám o sebe.
+                </p>
+                <a class="c-btn-primary" href="#">
+                    Číst dále <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    ;$(document).ready(() => {
+        $('.c-carousel').slick({
+            accessibility: true,
+            autoplay: true,
+            adaptiveHeight: false,
+            autoplaySpeed: 5000,
+            prevArrow: '<a href="#" class="c-mainstory-arrow_a c-mainstory-arrow_left"><i class="fas fa-chevron-left"></i></a>',
+            nextArrow: '<a href="#" class="c-mainstory-arrow_a c-mainstory-arrow_right"><i class="fas fa-chevron-right"></i></a>'
+        });
+    });
+
+</script>
+
+</body>
+</html>

@@ -51,14 +51,17 @@ $content-width: 70rem;      //if changed, change also c-mainstory-arrow_right
 
 .c-mainstory_content{
   box-sizing: border-box;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0 3rem;
   position: absolute;
   z-index: 110;
+  bottom: 0;
   left: 50%;                  //centering the text
   transform: translate(-50%); //centering the text
+  -webkit-transform: translate(-50%, -50%);
   @media (min-width: $tablet+1px) {
     max-width: 35rem;
   }
@@ -97,8 +100,10 @@ $content-width: 70rem;      //if changed, change also c-mainstory-arrow_right
 }
 
 .c-mainstory-text_p{
-  margin-bottom: 4rem;
+  //margin-bottom: 4rem;
   line-height: 1.5;
+  background-color: transparentize($color-black, 0.5);
+  padding: 1rem;
 }
 
 .c-mainstory-arrow_a{
