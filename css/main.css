@@ -2774,14 +2774,18 @@ body {
   margin: 0;
   position: fixed;
   right: 0.3rem;
-  top: 0.3rem;
-  bottom: 0.3rem; }
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
   .c-ads-right a img {
     width: 10rem;
-    height: calc(50vh - 0.6rem);
+    height: 37rem;
     object-fit: cover; }
   .c-ads-right a img:hover {
     opacity: 0.5; }
+  @media (max-width: 1100px) {
+    .c-ads-right {
+      display: none; } }
 
 .cookie-consent {
   position: fixed;

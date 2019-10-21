@@ -37,23 +37,24 @@
   align-items: center;
   text-decoration: none;
   float: right;
-  //margin-top: 6.5rem;
   margin: 0;
   position: fixed;
   right: 0.3rem;
-  //top: 5rem;
-  top: 0.3rem;
-  bottom: 0.3rem;
+  //bottom: 0.3rem;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   a{
     img{
       width: 10rem;
-      //height: 30rem;
-      height: calc(50vh - 0.6rem);
+      height: 37rem;
       object-fit: cover;
     }
     img:hover{
       opacity: 0.5;
     }
   }
-
+@media (max-width: $tablet){
+  display: none;
+}
 }
