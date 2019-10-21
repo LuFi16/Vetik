@@ -2563,17 +2563,21 @@ body {
   position: relative;
   width: 100%;
   margin: 1rem auto 0 auto;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  height: 15.5rem; }
   @media (min-width: 700px) {
     .c-article_header {
-      height: 15.5rem;
       max-width: 42rem; } }
   .c-article_header img {
     margin: 0;
     padding: 0;
     object-fit: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-    width: 100%; }
+    width: 100%;
+    height: 15.5rem; }
+    @media (min-width: 700px) {
+      .c-article_header img {
+        border-radius: 10px; } }
   .c-article_header p {
     font-family: "Roboto", sans-serif;
     color: #f7f7f7;
