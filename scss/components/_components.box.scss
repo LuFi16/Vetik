@@ -81,6 +81,7 @@
 
 .c-content_boxes{
   display: flex;
+  text-align: right;
   @media (min-width: 1181px) {
     flex-direction: row;
     width: 70rem;
@@ -187,6 +188,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 1rem;
   img{
     margin: 0;
     padding: 0 0 0 0.5rem;
@@ -201,7 +203,7 @@
     color: $color-black;
     cursor: pointer;
   }
-  i:first-child{
+  a:first-child > i{
     padding-right: 0;
   }
 }
@@ -414,6 +416,11 @@
   font-weight: 600;
 }
 
+.c-coupon-smaller_btn{
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0 1.5rem 0;
+}
 
 /* add card*/
 
