@@ -3069,7 +3069,7 @@ body {
 
 .slide {
   position: relative;
-  background-color: red; }
+  background-color: #312b25; }
   @media (min-width: 720px) {
     .slide {
       height: 30rem; } }

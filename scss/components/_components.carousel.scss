@@ -60,7 +60,7 @@
 
 .slide {
   position: relative;
-  background-color: red;
+  background-color: $color-black;
   @media (min-width: 720px){
     height: 30rem;
   }
