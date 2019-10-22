@@ -120,7 +120,25 @@
     letter-spacing: 1px;
     text-align: left;
   }
-
+  div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    > img, .img-replace{
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      object-fit: cover;
+      margin-right: 1.5rem;
+    }
+    .img-replace{
+      box-sizing: border-box;
+      background-color: $color-primary-light;
+      object-fit: contain;
+      padding: 0.5rem;
+    }
+  }
   div:nth-child(3){
     display: flex;
     margin: 0.5rem 0;

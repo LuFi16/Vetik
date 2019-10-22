@@ -603,6 +603,12 @@
   padding: 2rem;
   margin: 0 auto;
   width: 60rem;
+  > div:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 1rem 0;
+  }
 }
 
 .c-heca-box_name{
@@ -611,7 +617,21 @@
   letter-spacing: 2px;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0 0 1rem 0;
+}
+
+.c-heca-box-img{
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.img-replace{
+  box-sizing: border-box;
+  background-color: $color-primary-light;
+  object-fit: contain;
+  padding: 0.5rem;
 }
 
 .c-heca-box_record{

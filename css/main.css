@@ -1803,14 +1803,31 @@ body {
   padding: 2rem;
   margin: 0 auto;
   width: 60rem; }
+  .c-heca_box > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 1rem 0; }
 
 .c-heca-box_name {
   color: #5bb798;
   font-family: "Baloo Bhaijaan", cursive;
   letter-spacing: 2px;
   font-size: 1.5rem;
-  font-weight: 400;
-  margin: 0 0 1rem 0; }
+  font-weight: 400; }
+
+.c-heca-box-img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  margin-right: 1.5rem; }
+
+.img-replace {
+  box-sizing: border-box;
+  background-color: #dbf1e9;
+  object-fit: contain;
+  padding: 0.5rem; }
 
 .c-heca-box_record {
   display: grid;
@@ -1968,6 +1985,22 @@ body {
     max-width: 16rem;
     letter-spacing: 1px;
     text-align: left; }
+  .c-card div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .c-card div:nth-child(2) > img, .c-card div:nth-child(2) .img-replace {
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      object-fit: cover;
+      margin-right: 1.5rem; }
+    .c-card div:nth-child(2) .img-replace {
+      box-sizing: border-box;
+      background-color: #dbf1e9;
+      object-fit: contain;
+      padding: 0.5rem; }
   .c-card div:nth-child(3) {
     display: flex;
     margin: 0.5rem 0;
