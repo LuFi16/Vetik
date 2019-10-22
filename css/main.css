@@ -1978,7 +1978,8 @@ body {
 /* ---  CARDS ---*/
 .c-content_boxes {
   display: flex;
-  text-align: right; }
+  text-align: right;
+  margin: auto; }
   @media (min-width: 1181px) {
     .c-content_boxes {
       flex-direction: row;
@@ -1987,12 +1988,6 @@ body {
   @media (max-width: 1180px) {
     .c-content_boxes {
       flex-direction: column; } }
-  @media (min-width: 651px) {
-    .c-content_boxes {
-      margin: auto; } }
-  @media (max-width: 650px) {
-    .c-content_boxes {
-      margin: 0; } }
 
 .c-card {
   box-sizing: border-box;
@@ -2016,9 +2011,17 @@ body {
     text-align: left; }
   .c-card div:nth-child(2) {
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-bottom: 1rem; }
+    @media (min-width: 380px) {
+      .c-card div:nth-child(2) {
+        flex-direction: row; } }
+    @media (max-width: 379px) {
+      .c-card div:nth-child(2) {
+        flex-direction: column;
+        text-align: center; }
+        .c-card div:nth-child(2) > img {
+          margin-bottom: 1rem; } }
     .c-card div:nth-child(2) > img, .c-card div:nth-child(2) .img-replace {
       border-radius: 50%;
       width: 4rem;
@@ -2041,12 +2044,14 @@ body {
           margin: 0 2rem 0 0; } }
     @media (max-width: 379px) {
       .c-card div:nth-child(3) {
-        flex-direction: column; } }
+        flex-direction: column;
+        text-align: center; } }
     .c-card div:nth-child(3) p:first-child {
       color: #5bb798;
-      font-weight: 600;
-      margin: 0 2rem 0 0;
-      max-width: 16rem; }
+      font-weight: 600; }
+      @media (min-width: 380px) {
+        .c-card div:nth-child(3) p:first-child {
+          margin: 0 2rem 0 0; } }
     .c-card div:nth-child(3) p:last-child {
       color: #8d8d8d;
       font-size: 0.9rem;
@@ -2060,7 +2065,8 @@ body {
     margin-right: auto; }
     @media (max-width: 379px) {
       .c-card > p:nth-child(4) {
-        margin-right: 2rem; } }
+        margin-right: 2rem;
+        text-align: center; } }
   .c-card > div:nth-child(5) {
     display: flex;
     margin: 1rem 2rem 0 0; }
@@ -2268,6 +2274,10 @@ body {
 .c-card-form-bold {
   color: #5bb798;
   font-weight: 600; }
+
+@media (max-width: 605px) {
+  .c-coupon-smaller_btns {
+    text-align: center; } }
 
 .c-coupon-smaller_btn {
   padding: 0.5rem 1rem;
@@ -2647,30 +2657,26 @@ body {
   display: flex;
   flex-direction: row;
   font-family: "Roboto", sans-serif;
-  position: relative;
-  /*display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);*/
-  /*@media (max-width: $mobile){
-    box-sizing: border-box;
-    width: 100%;
-    margin: 1rem 0;
-  }*/ }
+  position: relative; }
   .c-coupon > a {
     box-sizing: border-box;
     margin: 0;
-    padding: 2rem 2rem 2rem 4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 20rem; }
+    justify-content: center; }
+    @media (min-width: 606px) {
+      .c-coupon > a {
+        width: 20rem;
+        padding: 2rem 2rem 2rem 4rem; } }
     .c-coupon > a img {
       box-sizing: border-box;
       width: 100%;
       height: 100%;
-      max-width: 16rem;
-      max-height: 100%;
       object-fit: contain; }
+      @media (min-width: 606px) {
+        .c-coupon > a img {
+          max-width: 16rem;
+          max-height: 100%; } }
   .c-coupon div:nth-child(2) {
     box-sizing: border-box;
     display: flex;
@@ -2699,12 +2705,14 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    border-left: 1px dashed #312b25;
     margin: 0;
     text-align: center;
-    padding: 1rem 2rem 1rem 1rem;
-    width: 15rem;
     justify-content: space-between; }
+    @media (min-width: 606px) {
+      .c-coupon div:last-child {
+        padding: 1rem 2rem 1rem 1rem;
+        width: 15rem;
+        border-left: 1px dashed #312b25; } }
     .c-coupon div:last-child p:first-child {
       color: #8d8d8d;
       margin: 0;
@@ -2722,46 +2730,26 @@ body {
       margin: 0.5rem 0 0 0;
       font-size: 0.9rem; }
 
-.c-coupon:before,
-.c-coupon:after {
-  box-sizing: border-box;
-  content: '';
-  position: absolute;
-  top: calc(50% - 1.5rem);
-  height: 3rem;
-  width: 1.7rem;
-  border: 1px solid #312b25; }
+@media (min-width: 606px) {
+  .c-coupon:before,
+  .c-coupon:after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    height: 3rem;
+    width: 1.7rem;
+    border: 1px solid #312b25; }
 
-.c-coupon:before {
-  left: -1px;
-  border-radius: 0 20rem 20rem 0;
-  border-left-color: #ffffff; }
+  .c-coupon:before {
+    left: -1px;
+    border-radius: 0 20rem 20rem 0;
+    border-left-color: #ffffff; }
 
-.c-coupon:after {
-  right: -1px;
-  border-radius: 20rem 0 0 20rem;
-  border-right-color: #ffffff; }
-
-/*
-.c-coupon::before, .c-coupon::after{
-  position: relative;
-  content: '';
-  width: 150px;
-  height: 150px;
-  background: red;
-  //bottom: -1em;
-  //z-index: 100;
-}
-
-.c-coupon::before{
-  right: 0;
-  transform: skew(0, 20deg)
-}
-
-.c-coupon::after{
-  left: 0;
-  transform: skew(0, -20deg)
-}*/
+  .c-coupon:after {
+    right: -1px;
+    border-radius: 20rem 0 0 20rem;
+    border-right-color: #ffffff; } }
 .c-coupon-choose {
   margin-left: 3rem;
   padding: 0.5rem 1.5rem; }
@@ -2785,22 +2773,7 @@ body {
 .c-coupon-inactive .c-coupon {
   background-color: #f0f0f0;
   color: #d7d7d7;
-  border-color: #d7d7d7;
-  /*.test{    //image overlay
-    position: relative;
-  }
-  .test:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $color-gray;
-    opacity: .35;
-    padding: 0;
-    margin: 0;
-  }*/ }
+  border-color: #d7d7d7; }
   .c-coupon-inactive .c-coupon > div > a {
     color: #d7d7d7; }
   .c-coupon-inactive .c-coupon img {
@@ -2809,22 +2782,39 @@ body {
     border-color: #d7d7d7; }
     .c-coupon-inactive .c-coupon div:last-child p {
       color: #d7d7d7; }
-.c-coupon-inactive .c-coupon:before {
-  background-color: #ffffff;
-  border-color: #d7d7d7 #d7d7d7 #d7d7d7 #ffffff; }
-.c-coupon-inactive .c-coupon:after {
-  background-color: #ffffff;
-  border-color: #d7d7d7 #ffffff #d7d7d7 #d7d7d7; }
+@media (min-width: 606px) {
+  .c-coupon-inactive .c-coupon:before {
+    background-color: #ffffff;
+    border-color: #d7d7d7 #d7d7d7 #d7d7d7 #ffffff; }
+  .c-coupon-inactive .c-coupon:after {
+    background-color: #ffffff;
+    border-color: #d7d7d7 #ffffff #d7d7d7 #d7d7d7; } }
 
-.c-coupon-smaller > a {
-  width: 20rem; }
-  .c-coupon-smaller > a img {
+@media (max-width: 605px) {
+  .c-coupon-smaller {
+    flex-direction: column; } }
+@media (min-width: 606px) {
+  .c-coupon-smaller > a {
+    width: 20rem; } }
+.c-coupon-smaller > a img {
+  width: 100%;
+  height: 100%; }
+  @media (min-width: 606px) {
+    .c-coupon-smaller > a img {
+      max-width: 15rem;
+      max-height: 10rem; } }
+  @media (max-width: 605px) {
+    .c-coupon-smaller > a img {
+      padding: 2rem;
+      max-height: 9rem; } }
+@media (min-width: 606px) {
+  .c-coupon-smaller div:nth-child(2), .c-coupon-smaller div:last-child {
+    width: 15rem; } }
+@media (max-width: 605px) {
+  .c-coupon-smaller div:nth-child(2), .c-coupon-smaller div:last-child {
+    border-top: 1px dashed #312b25;
     width: 100%;
-    height: 100%;
-    max-width: 15rem;
-    max-height: 10rem; }
-.c-coupon-smaller div:nth-child(2), .c-coupon-smaller div:last-child {
-  width: 15rem; }
+    margin: 0; } }
 
 .c-box {
   display: flex;

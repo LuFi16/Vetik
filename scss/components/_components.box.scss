@@ -82,6 +82,7 @@
 .c-content_boxes{
   display: flex;
   text-align: right;
+  margin: auto;
   @media (min-width: 1181px) {
     flex-direction: row;
     width: 70rem;
@@ -90,11 +91,8 @@
   @media (max-width: 1180px) {
     flex-direction: column;
   }
-  @media (min-width: $mobile+1px){
-    margin: auto;
-  }
-  @media (max-width: $mobile){
-    margin: 0;
+  @media (max-width: 605px) {
+
   }
 }
 
@@ -122,9 +120,18 @@
   }
   div:nth-child(2){
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-bottom: 1rem;
+    @media (min-width: 380px){
+      flex-direction: row;
+    }
+    @media (max-width: 379px){
+      flex-direction: column;
+      text-align: center;
+      > img{
+        margin-bottom: 1rem;
+      }
+    }
     > img, .img-replace{
       border-radius: 50%;
       width: 4rem;
@@ -151,12 +158,14 @@
     }
     @media (max-width: 379px){
       flex-direction: column;
+      text-align: center;
     }
     p:first-child{               //breed
       color: $color-primary;
       font-weight: 600;
-      margin: 0 2rem 0 0;
-      max-width: 16rem; //depends on the length of dog chip
+      @media (min-width: 380px){
+        margin: 0 2rem 0 0;
+      }
     }
     p:last-child{               //birth
       color: $color-gray;
@@ -174,6 +183,7 @@
     margin-right: auto;
     @media (max-width: 379px){
       margin-right: 2rem;
+      text-align: center;
     }
   }
   > div:nth-child(5){               //buttons
@@ -433,6 +443,12 @@
 .c-card-form-bold{
   color: $color-primary;
   font-weight: 600;
+}
+
+.c-coupon-smaller_btns{
+  @media (max-width: 605px) {
+    text-align: center;
+  }
 }
 
 .c-coupon-smaller_btn{
