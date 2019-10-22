@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Vetik</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/dog/icon-kriz.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js"></script>  <!-- odkaz pro mou registraci -->
+
+</head>
+<body>
+<!--[if lt IE 8]
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+[endif]-->
+
+<header class="c-header">
+
+    <!-- ↓ ONLY FOR MOBILE ↓ -->
+    <div class="c-nav_mob c-desktop-hide">
+        <a href="index.html" class="c-header_brand">
+            <h1 class="c-brand_name">VETÍK</h1>
+        </a>
+        <ul class="c-no-margpadd">
+            <li>
+                <input id="input1" type="checkbox" name="menu" class="c-dropdown_input"/>
+                <label for="input1" class="c-dropdown_label">
+                    <i class="fas fa-chevron-down c-dropdown_arrow"></i>
+                    <i class="fas fa-chevron-up c-dropdown_arrow"></i>
+                </label>
+                <ul class="c-dropdown_submenu">
+                    <li>
+                        <input id="input2" type="checkbox" name="submenu" class="c-dropdown_input"/>
+                        <label for="input2" class="c-dropdown-submenu_submenu-label">
+                            O projektu
+                            <i class="fas fa-chevron-down c-dropdown-submenu_arrow"></i>
+                            <i class="fas fa-chevron-up c-dropdown-submenu_arrow"></i>
+                        </label>
+                        <ul class="c-dropdown-submenu_submenu">
+                            <li class=""><a href="#">1 položka</a></li>
+                            <li class=""><a href="#">2 položka</a></li>
+                            <li class=""><a href="#">3 položka</a></li>
+                            <li class=""><a href="#">4 položka</a></li>
+                            <li class=""><a href="#">další položka</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">
+                        <img src="img/user-man.jpg" alt="jméno uživatele" class=" c-nav-item-user_img">
+                        Honza
+                    </a></li>
+                    <li><a href="#" class="c-no-border">
+                        <img src="img/cz_icon.svg" alt="česky" class="c-nav_language" title="switch to english">
+                    </a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <!-- ↑ ONLY FOR MOBILE ↑ -->
+
+    <!-- ↓ ONLY FOR DESKTOP ↓ -->
+    <a href="index.html" class="c-header_brand c-tablet-hide">
+        <!--<img class="c-brand_logo" src="img/dog/vetik-logo.svg" alt="Vetík" longdesc="Vetíkovo logo">-->
+        <h1 class="c-brand_name">VETÍK</h1>
+    </a>
+    <!-- ↑ ONLY FOR DESKTOP ↑ -->
+
+    <div class="c-header_counters">
+        <!--<ul class="c-counters_ul">
+            <li class="c-counter_li c-counter_name">Vybráno</li>
+            <li class="c-counter_li c-counter_value">112&nbsp;000&nbsp;Kč</li>
+        </ul>-->
+        <ul class="c-counters_ul">
+            <li class="c-counter_li c-counter_name" id="c-count-li_help">Pomohli jsme</li>
+            <li class="c-counter_li c-counter_value">359&nbsp;Pejskům</li>
+        </ul>
+    </div>
+
+    <!-- ↓ ONLY FOR DESKTOP ↓ -->
+    <nav class="c-header_nav c-tablet-hide">
+        <ul class="c-nav_ul">
+            <li class="c-nav_li">
+                <a class="c-nav_item" id="c-nav-item-submenu" href="#">O&nbsp;projektu</a>
+                <div class="c-nav_submenu">
+                    <ul class="c-nav-submenu_container">
+                        <li class="c-nav-submenu_li c-nav-submenu_first"><a href="#">1 položka</a></li>
+                        <li class="c-nav-submenu_li"><a href="#">2 položka</a></li>
+                        <li class="c-nav-submenu_li"><a href="#">3 položka</a></li>
+                        <li class="c-nav-submenu_li"><a href="#">4 položka</a></li>
+                        <li class="c-nav-submenu_li c-nav-submenu_last"><a href="#">další položka</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li class="c-nav_li">
+                <a class="c-nav_item" href="">Kontakt</a>
+                <div class="c-nav_submenu">
+                    <ul class="c-nav-submenu_container">
+                        <li class="c-nav-submenu_li c-nav-submenu_first"><a href="#">111</a></li>
+                        <li class="c-nav-submenu_li c-nav-submenu_last"><a href="#">222222</a></li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <!-- Not logged in -->
+            <!--<li class="c-nav_li"><a class="c-nav_item" href="">Příhlášení</a></li>-->
+
+            <!-- Logged in -->
+            <li class="c-nav_li">
+                <a class="c-nav_item c-nav-item_user" href="">
+                    <img src="img/user-man.jpg" alt="jméno uživatele" class=" c-nav-item-user_img">
+                    Honza
+                </a>
+                <div class="c-nav_submenu">
+                    <ul class="c-nav-submenu_container">
+                        <li class="c-nav-submenu_li c-nav-submenu_first"><a href="#">aaa</a></li>
+                        <li class="c-nav-submenu_li"><a href="#">bbb bbb</a></li>
+                        <li class="c-nav-submenu_li"><a href="#">ccc</a></li>
+                        <li class="c-nav-submenu_li"><a href="#">ddd ddd ddd ddd</a></li>
+                        <li class="c-nav-submenu_li c-nav-submenu_last"><a href="#">eee eee eee</a></li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <!-- Czech flag -->
+            <li class="c-nav_li">
+                <a href="#" class="c-nav_item">
+                    <img src="img/cz_icon.svg" alt="česky" class="c-nav_language" title="switch to english">
+                </a>
+            </li>
+
+            <!-- UK flag -->
+            <!--<li class="c-nav_li">
+                <img src="img/en_icon.svg" alt="english" class="c-nav_language" title="přepnout do češtiny">
+            </li>-->
+        </ul>
+    </nav>
+    <!-- ↑ ONLY FOR DESKTOP ↑ -->
+
+</header>
+
+<main class="c-content">
+
+    <div class="c-breadcrumbs_nav c-tiny-hide">
+        <span class="c-breadcrumbs-nav_1st">Vetíkovy připomínky</span>
+    </div>
+
+    <h2 class="c-remind_h">
+        Vetíkovi připomínky
+        <img src="img/dog/pilulka.svg" alt="pilulka">
+    </h2>
+
+    <img src="img/dog/pes-injekce.svg" alt="Vetík" class="c-remind_head-img">
+
+    <div class="c-remind_box">
+        <p class="c-remind-box_record c-remind-box_1strecord">
+            <i class="fas fa-syringe c-remind_hide"></i>
+            <span>datum</span>
+            <span>pes</span>
+            <span>zákrok</span>
+            <span>poznámka</span>
+            <span>příští návštěva</span>
+            <a class="c-remind_hide"><i class="fas fa-times c-remind_close"></i></a>
+        </p>
+
+        <p class="c-remind-box_record">
+            <i class="fas fa-syringe"></i>
+            <span>26. 12. 2025</span>
+            <span>Arvika Nella Belavia</span>
+            <span>Odčervení (čtvrtletně)</span>
+            <span>Nenalezeny žádné obtíže</span>
+            <span>28. 12. 2029</span>
+            <a><i class="fas fa-times c-remind_close"></i></a>
+        </p>
+
+        <p class="c-remind-box_record">
+            <i class="fas fa-syringe"></i>
+            <span>11. 01. 2011</span>
+            <span>Rexík</span>
+            <span>Očkování (ročně)</span>
+            <span></span>
+            <span>11. 11. 2021</span>
+            <a><i class="fas fa-times c-remind_close"></i></a>
+        </p>
+
+        <p class="c-remind-box_record">
+            <i class="fas fa-syringe"></i>
+            <span>18. 05. 2019</span>
+            <span>Charlie</span>
+            <span>Očkování (ročně)</span>
+            <span>Změnit veterináře</span>
+            <span>18. 05. 2020</span>
+            <a><i class="fas fa-times c-remind_close"></i></a>
+        </p>
+
+        <form class="c-remind-boxform_row">
+            <i class="fas fa-plus"></i>
+
+            <label for="date" class="c-remind_disp-none"></label>
+            <input id="date" type="date" placeholder="2019-10-22">
+
+            <label for="dog" class="c-remind_disp-none"></label>
+            <input id="dog" type="text" placeholder="jméno psa">
+
+            <label for="zakrok" class="c-remind_disp-none"></label>
+            <select id="zakrok">
+                <option value="">---</option>
+                <option value="">Odčervení (čtvrtletně)</option>
+                <option value="">Očkování (ročně)</option>
+            </select>
+
+            <label for="pozn" class="c-remind_disp-none"></label>
+            <input id="pozn" type="text" placeholder="poznámka">
+
+            <button class="c-remind-boxform_btn">přidat</button>
+        </form>
+
+    </div>
+
+
+
+
+</main>
+
+<footer class="c-footer">
+
+    <div class="c-footer_in">
+
+        <div class="c-footer_desc">
+            <h3>Vetík</h3>
+            <p class="c-ftr-desc_text">
+                První projekt svého druhu pomáhající s&nbsp;placením účtů
+                za&nbsp;veterinární zákroky a&nbsp;péči týraným a&nbsp;opuštěným psům
+            </p>
+        </div>
+
+        <div class="c-footer_insta">
+            <h3 class="c-ftr_line-height-padding">Instagram</h3>
+            <img src="img/insta-img-small.png" alt="obrazek1" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek2" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek3" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek4" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek5" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek6" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek7" class="c-ftr-insta_img">
+            <img src="img/insta-img-small.png" alt="obrazek8" class="c-ftr-insta_img">
+        </div>
+
+        <div class="c-footer_links-in">
+            <h3>Odkazy</h3>
+            <ul class="c-ftr_ul">
+                <li class="c-ftr_li"><a href="#">O&nbsp;projektu</a></li>
+                <li class="c-ftr_li"><a href="#">Aktuality</a></li>
+                <li class="c-ftr_li"><a href="#">Akce</a></li>
+                <li class="c-ftr_li"><a href="#">Přispět</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="c-footer_links-out">
+        <a href="#"><i class="fab fa-facebook c-ftr_links-out_img" id="c-logo-fb"></i></a>
+        <a href="#"><i class="fab fa-youtube c-ftr_links-out_img" id="c-logo-yt"></i></a>
+
+
+        <!--<img src="img/FB-logo.svg" alt="Facebook" longdesc="Facebook logo" class="c-ftr_links-out_img" id="c-logo-fb">
+        <img src="img/YT-logo.svg" alt="YouTube" longdesc="YouTube logo" class="c-ftr_links-out_img" id="c-logo-yt">-->
+    </div>
+
+</footer>
+
+</body>
+</html>
