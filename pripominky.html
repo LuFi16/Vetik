@@ -158,7 +158,32 @@
 
     <img src="img/dog/pes-injekce.svg" alt="Vetík" class="c-remind_head-img">
 
+
+
     <div class="c-remind_box">
+
+        <form class="c-remind-boxform_row">
+        <i class="fas fa-plus"></i>
+
+        <label for="date" class="c-remind_disp-none"></label>
+        <input id="date" type="date" placeholder="2019-10-22">
+
+        <label for="dog" class="c-remind_disp-none"></label>
+        <input id="dog" type="text" placeholder="jméno psa">
+
+        <label for="zakrok" class="c-remind_disp-none"></label>
+        <select id="zakrok">
+            <option value="">---</option>
+            <option value="">Odčervení (čtvrtletně)</option>
+            <option value="">Očkování (ročně)</option>
+        </select>
+
+        <label for="pozn" class="c-remind_disp-none"></label>
+        <input id="pozn" type="text" placeholder="poznámka">
+
+        <button class="c-remind-boxform_btn">přidat</button>
+    </form>
+
         <p class="c-remind-box_record c-remind-box_1strecord">
             <i class="fas fa-syringe c-remind_hide"></i>
             <span>datum</span>
@@ -168,6 +193,7 @@
             <span>příští návštěva</span>
             <a class="c-remind_hide"><i class="fas fa-times c-remind_close"></i></a>
         </p>
+
 
         <p class="c-remind-box_record">
             <i class="fas fa-syringe"></i>
@@ -199,27 +225,6 @@
             <a><i class="fas fa-times c-remind_close"></i></a>
         </p>
 
-        <form class="c-remind-boxform_row">
-            <i class="fas fa-plus"></i>
-
-            <label for="date" class="c-remind_disp-none"></label>
-            <input id="date" type="date" placeholder="2019-10-22">
-
-            <label for="dog" class="c-remind_disp-none"></label>
-            <input id="dog" type="text" placeholder="jméno psa">
-
-            <label for="zakrok" class="c-remind_disp-none"></label>
-            <select id="zakrok">
-                <option value="">---</option>
-                <option value="">Odčervení (čtvrtletně)</option>
-                <option value="">Očkování (ročně)</option>
-            </select>
-
-            <label for="pozn" class="c-remind_disp-none"></label>
-            <input id="pozn" type="text" placeholder="poznámka">
-
-            <button class="c-remind-boxform_btn">přidat</button>
-        </form>
 
     </div>
 

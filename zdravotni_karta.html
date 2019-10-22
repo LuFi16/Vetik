@@ -159,13 +159,39 @@
 
     <div class="c-heca_box">
 
-        <div>
-            <!--<img src="img/icons/dog-green.svg" alt="pes" class="c-heca-box-img img-replace">-->
-            <!-- ↑ if user dont place image of his dog -->
-            <img src="img/photos/4.jpg" alt="pes" class="c-heca-box-img">
-            <h3 class="c-heca-box_name">Rexík</h3>
+
+        <div class="c-heca-box-header_wrapper">
+            <div class="c-heca-box_header">
+                <!--<img src="img/icons/dog-green.svg" alt="pes" class="c-heca-box-img img-replace">-->
+                <!-- ↑ if user dont place image of his dog -->
+                <img src="img/photos/4.jpg" alt="pes" class="c-heca-box-img">
+                <h3 class="c-heca-box_name">Rexík</h3>
+            </div>
+            <div class="c-heca-box_info">
+                <p>Zlatý retrívr</p>
+                <p>14. 11. 2001</p>
+                <p>ČIP: 203097100431809</p>
+            </div>
         </div>
 
+        <form class="c-heca-boxform_row">
+            <i class="fas fa-plus"></i>
+
+            <label for="date" class="c-heca_disp-none"></label>
+            <input id="date" type="date" placeholder="2019-10-22">
+
+            <label for="zakrok" class="c-heca_disp-none"></label>
+            <select id="zakrok">
+                <option value="">---</option>
+                <option value="">Odčervení</option>
+                <option value="">Očkování</option>
+            </select>
+
+            <label for="pozn" class="c-heca_disp-none"></label>
+            <input id="pozn" type="text" placeholder="poznámka">
+
+            <button class="c-heca-boxform_btn">přidat</button>
+        </form>
 
         <p class="c-heca-box_record c-heca-box_1strecord">
             <i class="fas fa-syringe c-heca_hide"></i>
@@ -199,24 +225,6 @@
             <a><i class="fas fa-times c-heca_close"></i></a>
         </p>
 
-        <form class="c-heca-boxform_row">
-            <i class="fas fa-plus"></i>
-
-            <label for="date" class="c-heca_disp-none"></label>
-            <input id="date" type="date" placeholder="2019-10-22">
-
-            <label for="zakrok" class="c-heca_disp-none"></label>
-            <select id="zakrok">
-                <option value="">---</option>
-                <option value="">Odčervení</option>
-                <option value="">Očkování</option>
-            </select>
-
-            <label for="pozn" class="c-heca_disp-none"></label>
-            <input id="pozn" type="text" placeholder="poznámka">
-
-            <button class="c-heca-boxform_btn">přidat</button>
-        </form>
 
     </div>
 
