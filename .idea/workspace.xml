@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="244fd94e-cacd-42af-8555-308226f4a5c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scss/components/_components.box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_components.box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kupon_tisk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/.sass-cache/ecd19a6e438f43b988cd81b710510b53634176d9/_components.box2.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/scss/.sass-cache/ecd19a6e438f43b988cd81b710510b53634176d9/_components.box2.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_components.box2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_components.box2.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +98,7 @@
       <workItem from="1571648905649" duration="19610000" />
       <workItem from="1571730891450" duration="4014000" />
       <workItem from="1571735514503" duration="21000" />
-      <workItem from="1571735647022" duration="5006000" />
+      <workItem from="1571735647022" duration="7280000" />
     </task>
     <servers />
   </component>
