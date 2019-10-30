@@ -160,6 +160,10 @@
   max-width: 40rem;     //if change you have to change also height in c--article_header
   margin: auto;
   padding: 0 2rem;
+  .c-article_gallery{
+    margin: auto;
+    text-align: center;
+  }
 }
 
 .c-article_text{

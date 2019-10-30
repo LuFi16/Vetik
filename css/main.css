@@ -284,6 +284,9 @@ body {
   padding: 0 2rem;
   display: flex;
   align-items: center; }
+  @media (min-width: 1100px) and (max-width: 1400px) {
+    .c-nav_item {
+      padding: 0 1rem; } }
 
 .c-nav_item:hover {
   color: #347861; }
@@ -3097,6 +3100,9 @@ body {
   max-width: 40rem;
   margin: auto;
   padding: 0 2rem; }
+  .c-content_article .c-article_gallery {
+    margin: auto;
+    text-align: center; }
 
 .c-article_text {
   font-family: "Roboto", sans-serif;

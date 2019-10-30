@@ -151,6 +151,9 @@
   padding: 0 2rem;
   display: flex;
   align-items: center;
+  @media (min-width: $tablet) and (max-width: 1400px) {
+    padding: 0 1rem;
+  }
 }
 
 .c-nav_item:hover{
