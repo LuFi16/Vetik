@@ -127,12 +127,11 @@
 
 .c-coupon-wrapper{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  flex-direction: row;
+  justify-content: center;
 }
-
 
 .c-coupon{
   box-sizing: border-box;
@@ -142,7 +141,7 @@
   flex-direction: row;
   font-family: $font-main-thick;
   position: relative;
-  > a{
+  > a{                              //logo
     box-sizing: border-box;
     margin: 0;
     display: flex;
@@ -152,7 +151,7 @@
       width: 20rem;
       padding: 2rem 2rem 2rem 4rem;
     }
-    img{
+    img{                            //logo
       box-sizing: border-box;
       width: 100%;
       height: 100%;
@@ -163,7 +162,7 @@
       }
     }
   }
-  div:nth-child(2){
+  div:nth-child(2){                  //texts
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -171,18 +170,18 @@
     padding: 1rem;
     width: 18rem;
     justify-content: space-between;
-    h2{
+    h2{                             //company name
       font-family: $font-secondary;
       font-weight: 200;
       letter-spacing: 1px;
       margin: 0;
       text-transform: uppercase;
     }
-    p{
+    p{                             //company info
       margin: 0.5rem 0 0.5rem 0;
       font-size: 1rem;
     }
-    a{
+    a{                             //company link on web
       margin: 0;
       text-decoration: none;
       color: $color-primary;
@@ -192,7 +191,7 @@
       font-weight: bold;
     }
   }
-  div:last-child{
+  div:last-child{                 //discount box
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -204,22 +203,22 @@
       width: 15rem;
       border-left: 1px dashed $color-black;
     }
-    p:first-child{
+    p:first-child{                // "sleva"
       color: $color-gray;
       margin: 0;
       font-size: 0.9rem;
     }
-    p:nth-child(2){
+    p:nth-child(2){                // %
       font-family: $font-secondary;
       font-size: 3rem;
       margin: 0;
     }
-    p:nth-child(3){
+    p:nth-child(3){                // on what
       color: $color-gray;
       margin: 0;
       font-size: 0.9rem;
     }
-    p:last-child{
+    p:last-child{                // validity
       color: $color-gray;
       margin: 0.5rem 0 0 0;
       font-size: 0.9rem;
@@ -227,7 +226,8 @@
   }
 }
 
-@media (min-width: 606px) {
+
+@media (min-width: 606px) {   // coupon border with arch
   .c-coupon:before,
   .c-coupon:after{
     box-sizing: border-box;
@@ -337,6 +337,99 @@
     }
   }
 }
+
+.c-coupon-wrapper{
+  @media (min-width: $tablet+1px){
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: $tablet){
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(100% - 2rem);
+    margin: 0 1rem 2rem 1rem;
+    > .c-btn-primary{
+      margin: 1rem 0 0 auto;
+    }
+  }
+  > .c-coupon{
+    @media (min-width: 881px){
+      flex-direction: row;
+    }
+    @media (max-width: 880px){
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      > a{                            //logo
+        width: 100%;
+        padding: 2rem;
+      }
+      div:nth-child(2) {              //texts
+        width: 100%;
+        padding: 0 4rem 2rem 4rem;
+        border-bottom: 1px dashed $color-black;
+      }
+      div:last-child {                //discount box
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: none;
+        p:first-child{                // "sleva"
+          padding: 1rem;
+          margin: 0;
+        }
+        p:nth-child(2){                // %
+          padding: 1rem;
+          margin: 0;
+          line-height: 1;
+        }
+        p:nth-child(3){                // on what
+          padding: 1rem;
+          margin: 0;
+        }
+        p:last-child{                // validity
+          padding: 1rem;
+          margin: 0;
+        }
+      }
+    }
+
+    @media (max-width: 606px){
+      div:nth-child(2) {              //texts
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+        border-bottom: 1px dashed $color-black;
+      }
+    }
+    @media (max-width: 400px){
+      div:last-child {              //discount box
+        flex-direction: column;
+        padding: 1rem;
+        p:first-child{                // "sleva"
+          padding: 0 0 0.5rem 0;
+        }
+        p:nth-child(2){                // %
+          padding: 0.5rem 0;
+        }
+        p:nth-child(3){                // on what
+          padding: 0.5rem 0;
+        }
+        p:last-child{                // validity
+          padding: 0.5rem 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
 
 
 
