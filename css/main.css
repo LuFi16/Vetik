@@ -1828,14 +1828,16 @@ body {
     color: #8d8d8d;
     font-size: 0.9rem;
     font-weight: 600;
-    margin: 1rem 0; }
-  .c-heca-box_info p:nth-child(3) {
+    margin: 0.5rem 0; }
+  .c-heca-box_info p:nth-child(3), .c-heca-box_info p:nth-child(4) {
     font-size: 0.9rem;
     background-color: #d7d7d7;
     border-radius: 3px;
     padding: 0.3rem 0.6rem;
     font-weight: 600;
     margin: 0; }
+  .c-heca-box_info p:nth-child(4) {
+    margin-top: 0.5rem; }
 
 .c-heca-box_name {
   color: #5bb798;
@@ -2056,7 +2058,7 @@ body {
       color: #8d8d8d;
       font-size: 0.9rem;
       font-weight: 600; }
-  .c-card > p:nth-child(4) {
+  .c-card > p:nth-child(4), .c-card p:nth-child(5) {
     font-size: 0.9rem;
     background-color: #d7d7d7;
     border-radius: 3px;
@@ -2064,20 +2066,22 @@ body {
     font-weight: 600;
     margin-right: auto; }
     @media (max-width: 379px) {
-      .c-card > p:nth-child(4) {
+      .c-card > p:nth-child(4), .c-card p:nth-child(5) {
         margin-right: 2rem;
         text-align: center; } }
-  .c-card > div:nth-child(5) {
+  .c-card > p:nth-child(5) {
+    margin-top: 0.5rem; }
+  .c-card > div:last-child {
     display: flex;
     margin: 1rem 2rem 0 0; }
     @media (min-width: 380px) {
-      .c-card > div:nth-child(5) {
+      .c-card > div:last-child {
         flex-direction: row;
         justify-content: space-between; } }
     @media (max-width: 379px) {
-      .c-card > div:nth-child(5) {
+      .c-card > div:last-child {
         flex-direction: column; }
-        .c-card > div:nth-child(5) button:first-child {
+        .c-card > div:last-child button:first-child {
           margin-bottom: 0.5rem; } }
   @media (min-width: 651px) {
     .c-card {
