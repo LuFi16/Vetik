@@ -191,7 +191,7 @@
   //background: $color-white;
   position: absolute;
   padding: 0;
-  z-index: 20;
+  z-index: 200;
 }
 
 .c-nav-submenu_container{
@@ -254,6 +254,7 @@
 
 .c-dropdown_input:checked ~ .c-dropdown_submenu{  //show submenu
   max-height: 100rem;
+  z-index: 300;
 }
 
 .c-dropdown_input:checked ~ .c-dropdown-submenu_submenu{  //show submenu of submenu
@@ -304,6 +305,7 @@
   box-shadow: 0 0 15px 0 $color-shadow;
   margin: 1.5rem 0 0 0;
   text-align: center;
+  z-index: 300;
   li a, .c-dropdown-submenu_submenu-label{
     box-sizing: border-box;
     display: flex;
