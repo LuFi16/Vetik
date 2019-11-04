@@ -1773,6 +1773,13 @@ body {
 .c-remind-boxform_btn:hover {
   background-color: #347861; }
 
+.c-remind-box_record-small {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1rem 9rem 27.5% 40%;
+  grid-column-gap: 1rem; }
+
 /* --- HEALTH CARD --- */
 .c-heca_hide {
   visibility: hidden; }
