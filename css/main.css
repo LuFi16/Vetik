@@ -2824,6 +2824,15 @@ body {
       color: #8d8d8d;
       margin: 0;
       font-size: 0.9rem; }
+    .c-coupon div:last-child p:nth-child(4) {
+      color: #8d8d8d;
+      font-size: 0.9rem; }
+      @media (max-width: 880px) {
+        .c-coupon div:last-child p:nth-child(4) {
+          margin: 0; } }
+      @media (min-width: 881px) {
+        .c-coupon div:last-child p:nth-child(4) {
+          margin: 0.5rem 0 0 0; } }
     .c-coupon div:last-child p:last-child {
       color: #8d8d8d;
       margin: 0.5rem 0 0 0;
@@ -2855,7 +2864,7 @@ body {
 
 .c-coupon-chosen {
   background-color: #dbf1e9;
-  margin: 0 3.6rem 0 3rem;
+  margin: 0 7rem 0 3rem;
   padding: 0.8rem 1.5rem;
   line-height: 0; }
 
@@ -2981,6 +2990,10 @@ body {
       padding: 0.5rem 0; }
     .c-coupon-wrapper > .c-coupon div:last-child p:last-child {
       padding: 0.5rem 0 0 0; } }
+
+@media (max-width: 880px) {
+  .c-coupon-inactive > .c-coupon div:nth-child(2) {
+    border-bottom: 1px dashed #d7d7d7; } }
 
 .c-box {
   display: flex;

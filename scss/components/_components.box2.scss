@@ -218,6 +218,16 @@
       margin: 0;
       font-size: 0.9rem;
     }
+    p:nth-child(4){                // code
+      color: $color-gray;
+      font-size: 0.9rem;
+      @media (max-width: 880px){
+        margin: 0;
+      }
+      @media (min-width: 881px){
+        margin: 0.5rem 0 0 0;
+      }
+    }
     p:last-child{                // validity
       color: $color-gray;
       margin: 0.5rem 0 0 0;
@@ -254,11 +264,12 @@
 .c-coupon-choose{
   margin-left: 3rem;
   padding: 0.5rem 1.5rem;
+
 }
 
 .c-coupon-chosen{
   background-color: $color-primary-light;
-  margin: 0 3.6rem 0 3rem;
+  margin: 0 7rem 0 3rem;
   padding: 0.8rem 1.5rem;
   line-height: 0;
 }
@@ -289,7 +300,6 @@
       border-color: $color-lightgray;
       p{
         color: $color-lightgray;
-
       }
     }
   }
@@ -426,8 +436,15 @@
   }
 }
 
-
-
+.c-coupon-inactive{
+  > .c-coupon{
+    @media (max-width: 880px){
+      div:nth-child(2) {
+        border-bottom: 1px dashed $color-lightgray;
+      }
+    }
+  }
+}
 
 
 
