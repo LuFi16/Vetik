@@ -1813,12 +1813,19 @@ body {
 .c-remind-boxform_btn:hover {
   background-color: #347861; }
 
-.c-remind-box_record-small {
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1rem 9rem 27.5% 40%;
-  grid-column-gap: 1rem; }
+@media (max-width: 650px) {
+  .c-remind-box_record-small {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .c-remind-box_record-small span, .c-remind-box_record-small i {
+      margin-bottom: 0.5rem; } }
+@media (min-width: 651px) {
+  .c-remind-box_record-small {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1rem 9rem 27.5% 40%;
+    grid-column-gap: 1rem; } }
 
 /* --- HEALTH CARD --- */
 .c-heca_hide {
